@@ -1,0 +1,13 @@
+:root {
+  --blue: #10828c;
+  --orange: #eba10c;
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #efefef;
+  --light-blue: #aacfd3;
+  --light-orange: rgba(235, 161, 12, 0.75);
+  --medium-blue: #4ca1a9;
+  --dark-grey: #676464;
+  --body-fonts: "Roboto";
+  --logo-fonts: "Sansation", sans-serif;
+}
