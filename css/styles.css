@@ -10,4 +10,7 @@
   --dark-grey: #676464;
   --body-fonts: "Roboto";
   --logo-fonts: "Sansation", sans-serif;
+  --font-size-headline: 90px;
+  --font-size-nav: 50px;
+  --font-size-nav-active: 60px;
 }
