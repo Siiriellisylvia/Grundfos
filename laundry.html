@@ -59,6 +59,25 @@
                 </div>
               </div>
               <div class="status-taken">
+                <div class="progress-bar">
+                  <div class="outer-border">
+                    <div class="timer">09:12</div>
+                    <div class="inner-border"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      width="7vw"
+                      height="7vw"
+                    >
+                      <circle
+                        cx="3vw"
+                        cy="3vw"
+                        r="2.5vw"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
                 <div class="circle-around">
                   <div class="machine-info">
                     <p class="machine-status">09:12</p>
@@ -72,8 +91,11 @@
             <h2 class="status-heading">DRYING MACHINES STATUS</h2>
           </div>
         </div>
+
+        <p id="countdown">10:00</p>
         <div class="laundry-statistics"></div>
       </div>
     </div>
+    <script src="js/script-laundry.js"></script>
   </body>
 </html>
