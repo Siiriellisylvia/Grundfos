@@ -1,0 +1,91 @@
+:root {
+    --blue: #10828c;
+    --orange: #eba10c;
+    --white: #ffffff;
+    --black: #000000;
+    --light-grey: #efefef;
+    --light-blue: #aacfd3;
+    --light-orange: rgba(235, 161, 12, 0.75);
+    --medium-blue: #4ca1a9;
+    --dark-grey: #676464;
+    --body-fonts: "Roboto";
+    --logo-fonts: "Sansation", sans-serif;
+    --font-size-heading: 2.9vw;
+    --font-size-nav: 50px;
+    --font-size-nav-active: 60px;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+/*navigation styles*/
+.navigation {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--blue);
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-grundfos {
+    font-family: var(--logo-fonts);
+    font-size: 2.5vw;
+    letter-spacing: 0.3vw;
+    color: var(--white);
+    margin: 0vh 0px;
+    margin-top: 2vh;
+  }
+  .logo-kollegiet {
+    font-family: var(--logo-fonts);
+    font-weight: lighter;
+    font-size: 2vw;
+    letter-spacing: 0.69vw;
+    color: var(--white);
+    margin: -0.5vw 0.1vw;
+  }
+  
+  /*news styles*/
+      /*icons*/
+  #news-icons-container {
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1 1 auto;
+    column-gap: 2vw;
+  }
+  
+  .news-icon {
+    margin: auto;
+  }
+  
+  .news-icon-image {
+    justify-content: center; /*doesn't work*/
+  }
+  
+    /*articles*/
+  #news-articles-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 5vw 20vw;
+    column-gap: 0vw; 
+    row-gap: 10vw;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #newsIcon1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #newsArticle1 {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 2vw;
+  }
