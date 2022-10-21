@@ -20,6 +20,13 @@
     margin: 0;
   }
 
+#newsPageContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex: 1 1 auto;
+}
+
 /*navigation styles*/
 .navigation {
     width: 20vw;
@@ -30,6 +37,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   /* position:fixed; - makes news content disappear beind the nav bar...*/
+  
   }
   .logo-grundfos {
     font-family: var(--logo-fonts);
@@ -49,9 +58,12 @@
   }
   
   /*news styles*/
+.newsH1 {
+  justify-content: center; /*doesn't work*/ 
+}
+
       /*icons*/
   #news-icons-container {
-    width: 60%;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
@@ -76,7 +88,7 @@
     grid-template-columns: 5vw 40vw;
     column-gap: 0vw; 
     row-gap: 2vw;
-    justify-items: center;
+    justify-items: center; 
     align-items: center;
   }
   

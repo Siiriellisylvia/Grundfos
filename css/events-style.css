@@ -49,6 +49,58 @@
   }
 
 /*events sytles*/
+.eventsContent {
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1 1 auto;
+    column-gap: 5vw;
+}
+
+.eventsListings {
+    
+    margin-left: 2vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20vw 20vw;
+    column-gap: 0vw; 
+    row-gap: 2vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#eventImage1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#eventDetails1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.eventsReadMore {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 0.5vw 1vw;
+}
+
+#wholeCalendarSection {
+    margin-left: 0vw;
+}
+
+#eventIdeaButton {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 0.5vw 1vw;
+}
+
 
 /*calendar*/
 .tg  {border-collapse:collapse;border-spacing:0;}
