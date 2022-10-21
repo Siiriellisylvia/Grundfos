@@ -1,7 +1,7 @@
 const startingMinutes = 10;
 let time = startingMinutes * 60;
 
-const countdownEl = document.getElementById("countdown");
+let countdownEl = document.getElementById("countdown");
 
 setInterval(updateCountdown, 1000);
 
@@ -18,3 +18,21 @@ function updateCountdown() {
     time--;
   }
 }
+
+const graph = document.getElementsByClassName("graphContainer");
+
+let graphContainer = new chart(graph, {
+  type: "line",
+  data: {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [65, 59, 80, 81, 56, 55, 40],
+        fill: false,
+        borderColor: "rgb(240, 192, 192)",
+        tension: 0.1,
+      },
+    ],
+  },
+});

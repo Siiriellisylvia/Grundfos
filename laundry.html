@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,7 +62,7 @@
               <div class="status-taken">
                 <div class="progress-bar">
                   <div class="outer-border">
-                    <div class="timer">09:12</div>
+                    <div class="timer">
                     <div class="inner-border"></div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -80,22 +81,29 @@
                 </div>
                 <div class="circle-around">
                   <div class="machine-info">
-                    <p class="machine-status">09:12</p>
+                    <p class="machine-status"><p id="countdown">10:00</p></p>
                     <p class="machine-number-taken">4</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          </div>
           <div class="dryers-status">
             <h2 class="status-heading">DRYING MACHINES STATUS</h2>
           </div>
         </div>
 
-        <p id="countdown">10:00</p>
-        <div class="laundry-statistics"></div>
+        <div class="laundry-statistics">
+          <h2 id="statistics-heading">POPULAR TIMES</h2>
+          <p id="statistics-description">
+          This chart shows when Grundfos' residents like to do their laundry. Do your wisely!</p>
+        </div>
+
+        <canvas class="graphContainer"></canvas>
       </div>
     </div>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
     <script src="js/script-laundry.js"></script>
   </body>
 </html>
