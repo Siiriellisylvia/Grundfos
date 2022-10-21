@@ -70,6 +70,7 @@
   
     /*articles*/
   #news-articles-container {
+    margin-left: 2vw;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 5vw 40vw;
