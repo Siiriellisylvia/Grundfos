@@ -262,14 +262,14 @@ svg {
   margin-left: 5vw;
 }
 
-.graphContainer {
+#graphContainer {
   display: flex;
   justify-content: center;
   background-color: var(--light-grey);
   /* Layout Properties */
   width: 60vw;
   height: 18vw;
-  /* UI Properties */
+  /*UI Properties */
   border-radius: 15px;
   opacity: 1;
   margin-left: 5vw;
