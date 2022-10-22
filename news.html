@@ -11,7 +11,7 @@
 
 <body>
 
-   <div id="newsPageContent"> 
+   <div id="newsWrapper"> 
     <nav class="navigation">
         <div class="logo">
           <p class="logo-grundfos">GRUNDFOS</p>
@@ -19,40 +19,52 @@
         </div>
     </nav>
 
-    <div class="newsContent">
+    <section class="newsContent">
         <h1 class="newsH1">NEWS</h1>
 
-         <section id="news-icons-container">
-          <section class="news-icon" id="maintenanceFilterButton">
+         <ul id="news-icons-container">
+          <li class="news-icon" id="maintenanceFilterButton">
+            <figure>
             <img class="news-icon-image" src="/images/maintenance_icon.svg" alt="Spanner">
-            <h2 class="news-icon-label">Maintenance</h2>
-            </section>
+            <figcaption class="news-icon-label">Maintenance</figcaption>
+            </figure>
+          </li>
 
-         <section class="news-icon" id="communityFilterButton"> 
+         <li class="news-icon" id="communityFilterButton"> 
+            <figure>
             <img class="news-icon-image" src="/images/community_icon.svg" alt="Group of people">
-            <h2 class="news-icon-label">Community</h2>
-         </section>
+            <figcaption class="news-icon-label">Community</figcaption>
+        </figure>
+    </li>
 
-            <section class="news-icon" id="laundryFilterButton">
+            <li class="news-icon" id="laundryFilterButton">
+                <figure>
             <img class="news-icon-image" src="/images/laundry_icon.svg" alt="Washing machine">
-            <h2 class="news-icon-label">Laundry</h2>
-         </section>
+            <figcaption class="news-icon-label">Laundry</figcaption>
+        </figure>
+    </li>
 
-            <section class="news-icon" id="outdoorFilterButton">
+            <li class="news-icon" id="outdoorFilterButton">
+                <figure>
             <img class="news-icon-image" src="/images/outdoor_icon.svg" alt="Trees">
-             <h2 class="news-icon-label">Outdoor areas</h2>
-             </section>
+             <figcaption class="news-icon-label">Outdoor areas</figcaption>
+            </figure>
+        </li>
 
-         <section class="news-icon" id="holidaysFilterButton">
+         <li class="news-icon" id="holidaysFilterButton">
+            <figure>
            <img class="news-icon-image" src="/images/holidays_icon.svg" alt="Sun">
-           <h2 class="news-icon-label">Holidays</h2>
-         </section>
+           <figcaption class="news-icon-label">Holidays</figcaption>
+        </figure>
+    </li>
 
-            <section class="news-icon" id="clearFilterButton">
+            <li class="news-icon" id="clearFilterButton">
+                <figure>
          <img class="news-icon-image" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
-         <h2 class="news-icon-label">Clear filter</h2>
-            </section>
-         </section>
+         <figcaption class="news-icon-label">Clear filter</figcaption>
+        </figure>
+    </li>
+         </ul>
 
     <section id="news-articles-container">
     <section id="newsIcon1" class="news_article_icon">
@@ -175,9 +187,9 @@
     </section>
 
     
-    </section>
-</div>
-</div>
+    
+    </section> <!--end of news content section-->
+</div> <!--end of wrapper-->
 
     <script src="js/js.js"></script>
 </body>

@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-#newsPageContent {
+#newsWrapper {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
@@ -64,6 +64,7 @@
 
       /*icons*/
   #news-icons-container {
+    list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
