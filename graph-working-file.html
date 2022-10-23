@@ -12,8 +12,8 @@
         justify-content: center;
         background-color: var(--light-grey);
         /* Layout Properties */
-        width: 60vw;
-        height: 18vw;
+        width: 50vw;
+        height: 10vw;
         /*UI Properties */
         border-radius: 15px;
         opacity: 1;
@@ -23,6 +23,7 @@
         background-color: #efefef;
         padding: 30px;
         border-radius: 15px;
+        position: absolute;
       }
     </style>
   </head>
@@ -43,8 +44,7 @@
             label: "My first Data",
             //backgroundColor: "rgb(255, 99, 132)",
             borderColor: "rgb(0, 0,0)",
-            data: [0, 20, 10, 30, 35, 20, 50, 60],
-            tension: 0.1,
+            data: [0, 15, 10, 30, 30, 20, 50, 60],
             borderWidth: 5,
           },
         ],
@@ -57,14 +57,18 @@
           scales: {
             x: {
               grid: {
+                borderColor: "black",
+                borderWidth: 2,
                 display: false,
               },
               ticks: {
-                font: {},
+                color: "black",
               },
             },
             y: {
               grid: {
+                borderColor: "black",
+                borderWidth: 2,
                 display: false,
               },
               ticks: {
@@ -74,9 +78,10 @@
                 display: true,
                 text: "Occupancy",
                 font: {
-                  size: 15,
+                  size: 20,
                   family: "'Roboto', sans-serif",
                   weight: "bold",
+                  lineHeight: 1,
                 },
               },
             },
@@ -90,6 +95,15 @@
           plugins: {
             legend: {
               display: false,
+            },
+          },
+          animations: {
+            tension: {
+              duration: 2000,
+              easing: "linear",
+              from: 1,
+              to: 0.3,
+              loop: false,
             },
           },
         },

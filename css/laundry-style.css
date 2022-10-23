@@ -262,8 +262,9 @@ svg {
   margin-left: 5vw;
 }
 
-#graphContainer {
+.graphContainer {
   display: flex;
+  position: relative;
   justify-content: center;
   background-color: var(--light-grey);
   /* Layout Properties */
@@ -273,4 +274,10 @@ svg {
   border-radius: 15px;
   opacity: 1;
   margin-left: 5vw;
+}
+#myChart {
+  background-color: #efefef;
+  padding: 30px;
+  border-radius: 15px;
+  position: absolute;
 }

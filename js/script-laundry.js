@@ -18,21 +18,82 @@ function updateCountdown() {
     time--;
   }
 }
+const labels = ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-const graph = document.getElementsByClassName("graphContainer");
+const data = {
+  labels: labels,
+  datasets: [
+    {
+      label: "My first Data",
+      //backgroundColor: "rgb(255, 99, 132)",
+      borderColor: "rgb(0, 0,0)",
+      data: [0, 15, 10, 30, 30, 20, 50, 60],
+      borderWidth: 5,
+    },
+  ],
+};
 
-let graphContainer = new chart(graph, {
+const config = {
   type: "line",
-  data: {
-    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-    datasets: [
-      {
-        label: "My First Dataset",
-        data: [65, 59, 80, 81, 56, 55, 40],
-        fill: false,
-        borderColor: "red",
-        tension: 0.1,
+  data: data,
+  options: {
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        grid: {
+          borderColor: "black",
+          borderWidth: 2,
+          display: false,
+        },
+        ticks: {
+          color: "black",
+          font: {
+            size: 15,
+          },
+        },
       },
-    ],
+      y: {
+        grid: {
+          borderColor: "black",
+          borderWidth: 2,
+          display: false,
+        },
+        ticks: {
+          display: false,
+        },
+        title: {
+          display: true,
+          text: "Occupancy",
+          font: {
+            size: 20,
+            family: "'Roboto', sans-serif",
+            weight: "bold",
+            lineHeight: 1,
+          },
+        },
+      },
+    },
+    elements: {
+      point: {
+        radius: 0,
+      },
+    },
+
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    animations: {
+      tension: {
+        duration: 2000,
+        easing: "linear",
+        from: 1,
+        to: 0.3,
+        loop: false,
+      },
+    },
   },
-});
+};
+
+const myChart = new Chart(document.getElementById("myChart"), config);
