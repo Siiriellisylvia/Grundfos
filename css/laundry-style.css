@@ -69,8 +69,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.2vw;
   text-align: center;
-  margin: 2vh 30vh;
-  max-width: 30vw;
+  /*margin: 2vw 0vw;
+  margin-left: 20vw;
+  max-width: 30vw;*/
   flex: 1;
 }
 .laundry-search-icon {
