@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   /* position:fixed; - makes news content disappear beind the nav bar...*/
+    /*position:fixed; - makes news content disappear beind the nav bar...*/
   
   }
   .logo-grundfos {
@@ -58,8 +58,26 @@
   }
   
   /*news styles*/
+
+ .newsContent {
+   background-color: var(--white);
+   max-width: 80vw;
+   margin: 0;
+   padding: 0;
+  }
+
 .newsH1 {
-  justify-content: center; /*doesn't work*/ 
+  display: block;
+  justify-content: center;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-heading);
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  margin: 2vh 30vh;
+  max-width: 30vw;
+  flex: 1;
+  padding-bottom: 4vh;
 }
 
       /*icons*/
@@ -67,10 +85,11 @@
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     flex: 1 1 auto;
     column-gap: 2vw;
+    max-width: 80vw;
   }
   
   .news-icon {
@@ -79,15 +98,22 @@
   
   .news-icon-image {
     justify-content: center; /*doesn't work*/
+    max-width: 4vw;
+  }
+
+  .news-icon-label {
+    justify-content: center; /*doesn't work*/
+    font-family: var(--body-fonts);
   }
   
     /*articles*/
   #news-articles-container {
-    margin-left: 2vw;
+    margin-left: 17.5vw;
+    margin-top: 10vh;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 3vh;
     grid-template-columns: 5vw 40vw;
-    column-gap: 0vw; 
+    column-gap: none; 
     row-gap: 2vw;
     justify-items: center; 
     align-items: center;
@@ -108,16 +134,22 @@
   border: 2px solid var(--light-grey);
   border-radius: 0px 15px 15px 0px;
   background-color: var(--light-grey);
+
 }
 
 .newsHeader {
     display: flex;
     flex-wrap: wrap;
-
+    font-family: var(--body-fonts);
 }
 
 .newsDate {
     justify-content: right;
+
+}
+
+.newsDescription {
+  font-family: var(--body-fonts);
 }
 
 .news_article_icon{
@@ -125,4 +157,5 @@
     border: 2px solid var(--light-grey);
     border-radius: 15px 0px 0px 15px;
     background-color: var(--light-blue);
+    height: 5.5vw;
 }
