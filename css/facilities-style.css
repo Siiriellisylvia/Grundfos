@@ -1,0 +1,131 @@
+:root {
+  --blue: #10828c;
+  --orange: #eba10c;
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #efefef;
+  --light-blue: #aacfd3;
+  --light-orange: rgba(235, 161, 12, 0.75);
+  --medium-blue: #4ca1a9;
+  --dark-grey: #676464;
+  --body-fonts: "Roboto";
+  --logo-fonts: "Sansation", sans-serif;
+  --font-size-heading: 2.6vw;
+  --font-size-subheading: 1.5vw;
+  --font-size-bodytext: 1.2vw;
+  --font-size-nav: 50px;
+  --font-size-nav-active: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/*LAUNDRY STYLING*/
+.laundry-page {
+  display: flex;
+  flex-direction: row;
+}
+.laundry-navigation {
+  width: 22vw;
+  height: 100vh;
+  background-color: var(--blue);
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-grundfos {
+  font-family: var(--logo-fonts);
+  font-size: 2.5vw;
+  letter-spacing: 0.3vw;
+  color: var(--white);
+  margin: 0vh 0px;
+  margin-top: 2vh;
+}
+.logo-kollegiet {
+  font-family: var(--logo-fonts);
+  font-weight: lighter;
+  font-size: 2vw;
+  letter-spacing: 0.69vw;
+  color: var(--white);
+  margin: -0.5vw 0.1vw;
+}
+.laundry-content {
+  width: 78vw;
+  background-color: var(--white);
+}
+
+.laundry-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.laundry-heading {
+  display: block;
+  justify-content: center;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-heading);
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 1.5vw;
+}
+.laundry-search-icon {
+  width: 2.8vw;
+  margin-right: 2vw;
+}
+.facility-display {
+  display: flex;
+  flex-direction: row;
+}
+.facility-list {
+  width: 48vw;
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.facility-layout {
+  width: 30vw;
+}
+.facility-icon {
+  width: 4vw;
+  stroke-width: 3vw;
+}
+.facility-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 35vw;
+}
+#image-icon {
+  fill: rgb(0, 0, 0);
+  width: 3.8vw;
+  margin: 0;
+
+  margin-left: 0.3vw;
+}
+.room-button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 3vw;
+  width: 6.8vw;
+  height: 2.9vw;
+  font-family: var(--body-fonts);
+  font-size: 1.8vw;
+  margin-left: 1.5vw;
+}
+.facility-click {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--body-fonts);
+  font-size: 2vw;
+  margin: 1vw 0vw;
+  text-align: center;
+}
