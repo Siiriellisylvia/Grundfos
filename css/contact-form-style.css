@@ -1,0 +1,97 @@
+:root {
+  --blue: #10828c;
+  --orange: #eba10c;
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #efefef;
+  --light-blue: #aacfd3;
+  --light-orange: rgba(235, 161, 12, 0.75);
+  --medium-blue: #4ca1a9;
+  --dark-grey: #676464;
+  --body-fonts: "Roboto";
+  --logo-fonts: "Sansation", sans-serif;
+  --font-size-heading: 2.9vw;
+  --font-size-subheading: 1.5vw;
+  --font-size-nav: 50px;
+  --font-size-nav-active: 60px;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-form-page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-form-navigation {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--blue);
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-grundfos {
+    font-family: var(--logo-fonts);
+    font-size: 2.5vw;
+    letter-spacing: 0.3vw;
+    color: var(--white);
+    margin: 0vh 0px;
+    margin-top: 2vh;
+  }
+
+  .logo-kollegiet {
+    font-family: var(--logo-fonts);
+    font-weight: lighter;
+    font-size: 2vw;
+    letter-spacing: 0.69vw;
+    color: var(--white);
+    margin: -0.5vw 0.1vw;
+  }
+
+  .contact-form-content {
+    width: 80vw;
+    background-color: var(--white);
+  }
+  .contact-form-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-form-heading {
+    display: block;
+    justify-content: center;
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-heading);
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    /*margin: 2vw 0vw;
+    margin-left: 20vw;
+    max-width: 30vw;*/
+    flex: 1;
+  }
+
+  .contact-form-search-icon {
+    width: 2.8vw;
+  margin-right: 2vw;
+  }
+
+  .contact-form-text {
+    font-family: var(--body-fonts);
+    font-size: 1.2vw;
+    letter-spacing: 0.11vw;
+    margin-left: 5vw;
+  }
+
+  .profile-icon {
+    width: 22vw;
+    height: 22vh;
+  }
