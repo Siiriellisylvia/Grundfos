@@ -37,7 +37,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*position:fixed; - makes news content disappear beind the nav bar...*/
+    position: fixed;
+    position: sticky; /*- makes news content disappear beind the nav bar...*/
   
   }
   .logo-grundfos {
