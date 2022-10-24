@@ -11,6 +11,7 @@
   --body-fonts: "Roboto";
   --logo-fonts: "Sansation", sans-serif;
   --font-size-heading: 2.9vw;
+  --font-size-subheading: 1.5vw;
   --font-size-nav: 50px;
   --font-size-nav-active: 60px;
 }
@@ -102,7 +103,7 @@ body {
 }
 .status-heading {
   font-family: var(--body-fonts);
-  font-size: 1.6vw;
+  font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
   margin-left: 5vw;
 }
@@ -252,7 +253,7 @@ svg {
 
 #statistics-heading {
   font-family: var(--body-fonts);
-  font-size: 1.6vw;
+  font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
   margin-left: 5vw;
 }
