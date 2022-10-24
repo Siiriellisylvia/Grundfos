@@ -27,7 +27,7 @@ body {
   flex-direction: row;
 }
 .laundry-navigation {
-  width: 20vw;
+  width: 25vw;
   height: 100vh;
   background-color: var(--blue);
   margin-top: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 .laundry-content {
-  width: 80vw;
+  width: 75vw;
   background-color: var(--white);
 }
 .laundry-top {
