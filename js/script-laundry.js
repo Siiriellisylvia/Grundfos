@@ -27,8 +27,9 @@ const data = {
       label: "My first Data",
       //backgroundColor: "rgb(255, 99, 132)",
       borderColor: "rgb(0, 0,0)",
-      data: [0, 15, 10, 30, 30, 20, 50, 60],
+      data: [0, 15, 10, 30, 30, 20, 50, 58],
       borderWidth: 5,
+      borderCapStyles: "round",
     },
   ],
 };

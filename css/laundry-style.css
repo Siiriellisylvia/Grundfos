@@ -10,7 +10,7 @@
   --dark-grey: #676464;
   --body-fonts: "Roboto";
   --logo-fonts: "Sansation", sans-serif;
-  --font-size-heading: 2.9vw;
+  --font-size-heading: 2.6vw;
   --font-size-subheading: 1.5vw;
   --font-size-bodytext: 1.2vw;
   --font-size-nav: 50px;
@@ -27,7 +27,7 @@ body {
   flex-direction: row;
 }
 .laundry-navigation {
-  width: 25vw;
+  width: 22vw;
   height: 100vh;
   background-color: var(--blue);
   margin-top: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 .laundry-content {
-  width: 75vw;
+  width: 78vw;
   background-color: var(--white);
 }
 .laundry-top {
@@ -72,6 +72,7 @@ body {
   letter-spacing: 0.2vw;
   text-align: center;
   flex: 1;
+  margin-bottom: 1.5vw;
 }
 .laundry-search-icon {
   width: 2.8vw;
@@ -79,31 +80,39 @@ body {
 }
 
 .laundry-status {
+  width: 78vw;
   display: flex;
   flex-direction: row;
 }
 .washers-status {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 39vw;
   height: 35vh;
+  margin-right: -1vw;
   align-items: center;
 }
 .row-washers {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
-
+.row-dryers {
+  display: flex;
+  flex-direction: row;
+}
 .dryers-status {
-  width: 30vw;
+  margin-left: 5vw;
+  width: 39vw;
   height: 35vh;
   align-items: center;
+  justify-content: center;
 }
 .status-heading {
   font-family: var(--body-fonts);
   font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
-  margin-left: 5vw;
+  margin-bottom: 0.4vw;
 }
 
 .status-free {
@@ -116,7 +125,7 @@ body {
   justify-content: center;
   font-family: var(--body-fonts);
   color: var(--white);
-  margin: 1vw;
+  margin: 0.5vw;
 }
 .status-taken {
   display: flex;
@@ -129,7 +138,7 @@ body {
   justify-content: center;
   font-family: var(--body-fonts);
   color: var(--white);
-  margin: 0.3vw 1vw;
+  margin: 0.3vw 0.5vw;
 }
 .circle-around {
   display: flex;
@@ -190,13 +199,13 @@ body {
   border-radius: 40%;
   margin: 0;
   margin-bottom: -0.2vw;
-  margin-top: 0.5vw;
+  margin-top: 0.4vw;
 }
 
 .progress-bar {
   display: flex;
 }
-.outer-border {
+/*.outer-border {
   width: 5.1vw;
   height: 5.1vw;
   border-radius: 50%;
@@ -222,24 +231,33 @@ body {
   margin: 0;
   font-size: 1.3vw;
   position: absolute;
+}*/
+#rules-description {
+  text-align: center;
+  width: 22vw;
+  padding: 10px 12px;
+  border-radius: 15px;
+  background-color: var(--light-grey);
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
 }
-
 circle {
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--white);
   stroke-width: 0.2vw;
   stroke-dasharray: 200;
   stroke-dashoffset: 200;
   animation: anim 10s linear forwards;
+  z-index: 10;
+  transform: rotate(6deg);
 }
 svg {
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
 }
 #countdown {
   margin: 0;
+  padding: 0;
   font-size: 1.2vw;
 }
 
@@ -253,13 +271,13 @@ svg {
   font-family: var(--body-fonts);
   font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
-  margin-left: 5vw;
+  margin-left: 7vw;
 }
 #statistics-description {
   font-family: var(--body-fonts);
   font-size: 1.2vw;
   letter-spacing: 0.11vw;
-  margin-left: 5vw;
+  margin-left: 7vw;
 }
 
 .graphContainer {
@@ -273,7 +291,7 @@ svg {
   /*UI Properties */
   border-radius: 15px;
   opacity: 1;
-  margin-left: 5vw;
+  margin-left: 7vw;
 }
 #myChart {
   background-color: #efefef;
