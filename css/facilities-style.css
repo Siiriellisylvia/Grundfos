@@ -83,49 +83,53 @@ body {
   flex-direction: row;
 }
 .facility-list {
-  width: 48vw;
-  margin-top: 3vw;
+  width: 30vw;
+  margin-top: 4vw;
+  margin-left: 6vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .facility-layout {
-  width: 30vw;
+  width: 48vw;
 }
 .facility-icon {
-  width: 4vw;
-  stroke-width: 3vw;
+  width: 3.8vw;
+  stroke-width: 1vw;
+  margin-bottom: 0.05vw;
 }
 .facility-element {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 35vw;
+  width: 30vw;
 }
 #image-icon {
   fill: rgb(0, 0, 0);
-  width: 3.8vw;
-  margin: 0;
-
-  margin-left: 0.3vw;
+  width: 3.9vw;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 0.2vw;
 }
 .room-button {
   background-color: var(--orange);
   color: var(--white);
   border: none;
   border-radius: 3vw;
-  width: 6.8vw;
-  height: 2.9vw;
+  width: 6.6vw;
+  height: 2.5vw;
   font-family: var(--body-fonts);
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   margin-left: 1.5vw;
 }
 .facility-click {
   text-decoration: none;
   color: var(--black);
   font-family: var(--body-fonts);
-  font-size: 2vw;
-  margin: 1vw 0vw;
+  font-size: 1.6vw;
+  letter-spacing: 0.05vw;
+  margin: 0.5vw 0vw;
   text-align: center;
 }
