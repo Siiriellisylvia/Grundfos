@@ -1,19 +1,21 @@
 :root {
-    --blue: #10828c;
-    --orange: #eba10c;
-    --white: #ffffff;
-    --black: #000000;
-    --light-grey: #efefef;
-    --light-blue: #aacfd3;
-    --light-orange: rgba(235, 161, 12, 0.75);
-    --medium-blue: #4ca1a9;
-    --dark-grey: #676464;
-    --body-fonts: "Roboto";
-    --logo-fonts: "Sansation", sans-serif;
-    --font-size-heading: 2.9vw;
-    --font-size-nav: 50px;
-    --font-size-nav-active: 60px;
-  }
+  --blue: #10828c;
+  --orange: #eba10c;
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #efefef;
+  --light-blue: #aacfd3;
+  --light-orange: rgba(235, 161, 12, 0.75);
+  --medium-blue: #4ca1a9;
+  --dark-grey: #676464;
+  --body-fonts: "Roboto";
+  --logo-fonts: "Sansation", sans-serif;
+  --font-size-heading: 2.9vw;
+  --font-size-subheading: 1.5vw;
+  --font-size-bodytext: 1.2vw;
+  --font-size-nav: 50px;
+  --font-size-nav-active: 60px;
+}
   
   body {
     padding: 0;
@@ -29,7 +31,7 @@
 
 /*navigation styles*/
 .navigation {
-    width: 20vw;
+    width: 22vw;
     height: 100vh;
     background-color: var(--blue);
     margin-top: 0;
@@ -37,7 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*position:fixed; - makes news content disappear beind the nav bar...*/
+    position: fixed;
+    position: sticky; /*- makes news content disappear beind the nav bar...*/
   
   }
   .logo-grundfos {
@@ -61,7 +64,7 @@
 
  .newsContent {
    background-color: var(--white);
-   max-width: 80vw;
+   max-width: 78vw;
    margin: 0;
    padding: 0;
   }
@@ -69,93 +72,101 @@
 .newsH1 {
   display: block;
   justify-content: center;
+  align-items: center;
   font-family: var(--body-fonts);
   font-size: var(--font-size-heading);
   font-weight: 500;
   letter-spacing: 0.2vw;
   text-align: center;
-  margin: 2vh 30vh;
-  max-width: 30vw;
-  flex: 1;
-  padding-bottom: 4vh;
 }
 
       /*icons*/
-  #news-icons-container {
+  #newsIconsContainer {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
-    column-gap: 2vw;
-    max-width: 80vw;
+    max-width: 70vw;
+    margin-left: 4.5vw;
   }
-  
-  .news-icon {
-    margin: auto;
-  }
-  
-  .news-icon-image {
+    
+  .newsIconImage {
     justify-content: center; /*doesn't work*/
-    max-width: 4vw;
+    max-width: 3vw;
+    padding: 0;
+    margin: 0;
   }
 
-  .news-icon-label {
+  .newsIconLabel {
     justify-content: center; /*doesn't work*/
     font-family: var(--body-fonts);
   }
+
+.newsFigure {
+  justify-content: center;
+}
   
     /*articles*/
-  #news-articles-container {
-    margin-left: 17.5vw;
-    margin-top: 10vh;
+  #newsArticleContainer {
+    margin-left: 16.5vw;
+    margin-top: 2vh;
     display: grid;
-    grid-template-rows: 3vh;
-    grid-template-columns: 5vw 40vw;
-    column-gap: none; 
-    row-gap: 2vw;
+    grid-template-rows: auto;
+    grid-template-columns: 3.5vw 40vw;
+    gap: 1.5vw 0vw;
     justify-items: center; 
     align-items: center;
+        
   }
   
-  #newsIcon1 {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  #newsArticle1 {
-    grid-column: 2;
-    grid-row: 1;
+  .newsArticleIcon{
+    padding: 1vw;
+    border: 2px solid var(--light-grey);
+    border-radius: 15px 0px 0px 15px;
+    background-color: var(--light-blue);
+    height: 4vw;
   }
 
-  .newsArticle {
+  .newsArticle {  /*contains heading, date and desription*/
   padding-left: 2vw;
   border: 2px solid var(--light-grey);
   border-radius: 0px 15px 15px 0px;
   background-color: var(--light-grey);
-
 }
 
 .newsHeader {
     display: flex;
     flex-wrap: wrap;
     font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+ 
+   
+}
+
+newsH3 {
+  margin-top: 0 vw;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
 }
 
 .newsDate {
-    justify-content: right;
-
+  padding-right: 1vw;  
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: .5vw;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
 }
 
 .newsDescription {
   font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
+  margin-top: 0;
+  padding-top: 0;
+  padding-right: 1vw;
 }
 
-.news_article_icon{
-    padding: 1vw;
-    border: 2px solid var(--light-grey);
-    border-radius: 15px 0px 0px 15px;
-    background-color: var(--light-blue);
-    height: 5.5vw;
-}
