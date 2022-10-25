@@ -1,9 +1,8 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+ h3 {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
   }
 
   *,
@@ -37,9 +36,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   #newsWrapper {
       display: flex;
-      flex-flow: row wrap;
-      align-items: stretch;
-      flex: 1 1 auto;
+      direction: row;
   }
   
   /*navigation styles*/
@@ -77,20 +74,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
    .newsContent {
      background-color: var(--white);
-     max-width: 78vw;
-     margin: 0;
-     padding: 0;
+     width: 78vw;
     }
   
+  .newsTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .newsH1 {
     display: block;
     justify-content: center;
-    align-items: center;
     font-family: var(--body-fonts);
     font-size: var(--font-size-heading);
     font-weight: 500;
     letter-spacing: 0.2vw;
     text-align: center;
+    flex: 1;
+    margin-bottom: 1.5vw;
+  }
+
+  .newsSearchIcon {
+    width: 2.8vw;
+    margin-right: 2vw;
   }
   
         /*icons*/
@@ -99,8 +107,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      max-width: 70vw;
-      margin-left: 4.5vw;
+      width: 78vw;
+      padding: 0;
+      margin: 0;
+      flex: 1;
+     
     }
       
     .newsIconImage {
@@ -123,19 +134,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     #newsArticleContainer {
       margin-top: 2vh;
       display: flex;
+      flex: 1;
       flex-direction: column;
       justify-items: center; 
       align-items: center;
       row-gap: 2vw;
-      max-width: 60vw;
-      margin-left: 8vw;      
+      width: 78vw;
+           
     }
 
     .newsArticle {
         display: flex;
         justify-items: center;
         align-items: center;
-        width: 60vw;
+        
     }
     
     .newsArticleIcon {
@@ -143,14 +155,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       border: 2px solid var(--light-grey);
       border-radius: 15px 0px 0px 15px;
       background-color: var(--light-blue);
-      height: 4vw;
+      height: 6vw;
     }
   
     .newsText {  /*contains heading, date and desription*/
-    padding-left: 2vw;
+    padding-left: 1vw;
     border: 2px solid var(--light-grey);
     border-radius: 0px 15px 15px 0px;
     background-color: var(--light-grey);
+    height: 6vw;
+    width: 50vw;
   }
   
   .newsHeader {
