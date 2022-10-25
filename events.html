@@ -20,61 +20,63 @@
         </div>
     </nav>
 
+    <section class="eventsContent">
+      <div class="eventsTop">
+        <h1 id="eventsH1">EVENTS</h1>
+          <img class="eventsSearchIcon" src="images/search.svg" alt="Search icon">
+        </div>
 
  
         <!--Upcoming events-->
-    <div class="eventsContent">
-        <h1 id="eventsH1">EVENTS</h1>
+    <div class="eventsInfo">
+       
     
           <div class="eventsUpcoming">
-             <h2>UPCOMING EVENTS</h2>
+             <h2 class="eventsH2">UPCOMING EVENTS</h2>
+
                <section class="eventListings">
 
-                 <section class="eventImage" id="eventImage1">
-                  <img src="/images/Confetti image.svg" alt="Confetti falling on party">
-                </section>
+                 <article class="eventListing">
+                    <img class="eventListingImage" src="/images/Confetti image.svg" alt="Confetti falling on party">
+                    <div class="eventDetails">
+                        <p class="eventDate">28.10.2022</p>
+                        <h3 class="eventH3">CONFETTI RAIN</h3>
+                        <button class="eventsReadMore">
+                        Read more
+                        </button>
+                    </div>
+                 </article>
 
-                <section class="eventDetails" id="eventDetails1">
-                <p>28.10.2022</p>
-                <h3>CONFETTI RAIN</h3>
-                <button class="eventsReadMore">
-                  Read more
-                </button>
-                </section>
+                <article class="eventListing">
+                  <img class="eventListingImage" src="/images/Ninja Image.svg" alt="Group of people in black clothing wearing ninja masks">
+                  <div class="eventDetails">
+                      <p class="eventDate">02.12.2022</p>
+                      <h3 class="eventH3">NINJA NIGHT</h3>
+                      <button class="eventsReadMore">
+                      Read more
+                      </button>
+                  </div>
+                </article>
 
-                <section class="eventImage">
-                <img src="/images/Ninja Image.svg" alt="Group of people in black clothing wearing ninja masks">
-                </section>
-
-                 <section class="eventDetails">
-                 <p>02.12.2022</p>
-                 <h3>NINJA NIGHT</h3>
-                 <button class="eventsReadMore">
-                   Read more
-                 </button>
-                 </section>
-
-                 <section class="eventImage">
-                 <img src="/images/Balloon Image.svg" alt="3 balloons">
-                </section>
-
-                 <section class="eventDetails">
-                <p>02.12.2022</p>
-                <h3>BALLOON POPPING</h3>
-                <button class="eventsReadMore">
-                 Read more
-                 </button>
-                </section>
-              </section>
+                <article class="eventListing">
+                 <img class="eventListingImage" src="/images/Balloon Image.svg" alt="3 balloons">
+                 <div class="eventDetails">
+                      <p class="eventDate">02.12.2022</p>
+                      <h3 class="eventH3">BALLOON POPPING</h3>
+                      <button class="eventsReadMore">
+                      Read more
+                      </button>
+                 </div>
+                </article>
  
           </div>
 
     <!--Calendar-->
           <div class="tg-wrap" id="wholeCalendarSection">
-              <h2>CALENDAR</h2>
+              <h2 class="eventsH2">CALENDAR</h2>
              <table class="tg">
               <thead>
-                <tr>
+                <tr class="eventCalendarHeader">
                  <th class="tg-tvsr" colspan="7"><span style="color:#000">October 2022</span></th>
                </tr>
              </thead>
@@ -146,7 +148,7 @@
              </table>
     
               <section class="eventIdea">
-                 <p> EVENTS IDEA?</p>
+                 <p class="eventP"> EVENT IDEA?</p>
                 <button id="eventIdeaButton">
                 Contact the Residents' Council
                </button>

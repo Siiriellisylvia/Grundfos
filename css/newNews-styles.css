@@ -1,4 +1,4 @@
- h3 {
+h3 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -75,6 +75,8 @@
    .newsContent {
      background-color: var(--white);
      width: 78vw;
+     margin: 0;
+     padding: 0;
     }
   
   .newsTop {
@@ -139,7 +141,6 @@
       justify-items: center; 
       align-items: center;
       row-gap: 2vw;
-      width: 78vw;
       margin-bottom: 4vw;     
     }
 
@@ -147,8 +148,7 @@
         display: flex;
         justify-items: center;
         align-items: center;
-        
-    }
+            }
     
     .newsArticleIcon {
       padding: 1vw;
@@ -164,7 +164,7 @@
     border-radius: 0px 15px 15px 0px;
     background-color: var(--light-grey);
     height: 6vw;
-    width: 50vw;
+    width: 45vw;
   }
   
   .newsHeader {
@@ -188,7 +188,7 @@
   .newsDate {
     padding-right: 1vw;  
     margin-left: auto;
-    margin-bottom: 0;
+    margin-bottom: .5vw;
     padding-bottom: 0;
     margin-top: .5vw;
     font-family: var(--body-fonts);
@@ -201,6 +201,7 @@
     margin-top: 0;
     padding-top: 0;
     padding-right: 1vw;
+    padding-bottom: 1vw;
   }
   
   
