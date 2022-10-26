@@ -23,9 +23,9 @@ body {
 #time {
   font-family: var(--body-fonts);
   font-size: 1vw;
-  margin-top:1vw;
+  margin-top:0.5vw;
   color: var(--black);
-  font-weight: bold;
+  font-weight: light;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: var(--logo-fonts);
-    font-size: 2vw;
+    font-size: 1.95vw;
     font-weight: bold;
     letter-spacing: 0.5vw;
     color: var(--white);
@@ -58,13 +58,13 @@ body {
   .logo-kollegiet {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: var(--logo-fonts);
     font-weight: lighter;
     font-size: 2.45vw;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.22vw;
     color: var(--white);
     margin: 0vw 0.1vw;
+    margin-left: 3.5vw;
   }
 
 .navigation-links {
@@ -76,6 +76,7 @@ body {
   top: 10vw;
   font-family: var(--body-fonts);
   line-height: 4vw;
+  color:var(--light-grey)
 }
 
 .nav-link {
@@ -83,11 +84,18 @@ body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: white;
+  text-decoration:none;
+  font-size: 1.6vw;
+  font-weight: bolder;
+}
+
 .navigation-qr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4.5vw;
+  margin-top: 4vw;
 }
 
 .navigation-qr-code-description {
