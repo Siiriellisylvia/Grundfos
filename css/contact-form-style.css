@@ -10,8 +10,9 @@
   --dark-grey: #676464;
   --body-fonts: "Roboto";
   --logo-fonts: "Sansation", sans-serif;
-  --font-size-heading: 2.9vw;
+  --font-size-heading: 2.6vw;
   --font-size-subheading: 1.5vw;
+  --font-size-bodytext: 1.2vw;
   --font-size-nav: 50px;
   --font-size-nav-active: 60px;
   }
@@ -27,8 +28,8 @@
   }
 
   .contact-form-navigation {
-    width: 20vw;
-    height: 100vh;
+    width: 22vw;
+    height: 109.6vh;
     background-color: var(--blue);
     margin-top: 0;
     padding: 0;
@@ -71,12 +72,10 @@
     font-family: var(--body-fonts);
     font-size: var(--font-size-heading);
     font-weight: 500;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
     text-align: center;
-    /*margin: 2vw 0vw;
-    margin-left: 20vw;
-    max-width: 30vw;*/
     flex: 1;
+    margin-bottom: 1.5vw;
   }
 
   .contact-form-search-icon {
@@ -84,14 +83,94 @@
   margin-right: 2vw;
   }
 
+.contact-form-description {
+  display: block;
+    /*margin: 2vw 0vw;
+    margin-left: 20vw;
+    max-width: 30vw;*/
+    flex: 1;
+    justify-content: center;
+    margin-left: 9.5vw;
+    margin-top: 5vh;
+}
+
   .contact-form-text {
     font-family: var(--body-fonts);
-    font-size: 1.2vw;
+    font-size: var(--font-size-bodytext);
     letter-spacing: 0.11vw;
     margin-left: 5vw;
+    width: 44vw;
+    justify-content: center;
+    text-align: center;
   }
 
   .profile-icon {
     width: 22vw;
     height: 22vh;
+    margin-top: 6vh;
+    display: block;
+    justify-content: center;
+    margin-left: 25.1vw;
+  }
+
+  .scan-chip-text {
+    font-size: 2.2vw;
+    font-family: var(--body-fonts);
+    justify-content: center;
+    margin-left: 27.5vw;
+  }
+
+  .log-button {
+    margin-left: 30.2vw;
+    margin-top: 12vh;
+  }
+
+  .log-btn {
+    border-radius: 20px;
+    border: 1.5px solid;
+    background-color: transparent;
+    border-color: #eba10c;
+    text-align: center;
+    text-decoration: none;
+    color: #eba10c;
+    font-family: var(--body-fonts);
+    display: inline-block;
+    padding: 11px 28px;
+    font-size: 16px;
+    box-shadow: 0px 4px 5px rgba(140, 144, 144, 0.4);
+  }
+
+  .scan-text {
+    font-size: 2vw;
+    font-family: var(--body-fonts);
+    justify-content: center;
+    margin-left: 33.5vw;
+    margin-top: 8vh;
+  }
+
+  .arrow {
+    margin-left: 33.7vw;
+    
+  }
+
+  .arrow {
+    width: 76px;
+    height: 74px;
+    margin-left: 16.8vw
+  }
+
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
