@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
-    <link rel="stylesheet" href="css/news-style.css">
+    <title>New News</title>
+    <link rel="stylesheet" href="/css/news-styles.css">
 </head>
 
 <body>
@@ -20,8 +20,11 @@
     </nav>
 
     <section class="newsContent">
-        <h1 class="newsH1">NEWS</h1>
-
+        <div class="newsTop">
+            <h1 class="newsH1">NEWS</h1>
+            <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
+          </div>
+        
         <!--News filter options-->
 
          <ul id="newsIconsContainer">
@@ -60,138 +63,121 @@
         </figure>
     </li>
 
-            <li class="newsIcon" id="clearFilterButton">
-                <figure>
-         <img class="newsIconImage" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
-         <figcaption class="newsIconLabel">Clear filter</figcaption>
-        </figure>
-    </li>
+           
          </ul>
 
          <!--news articles-->
 
     <section id="newsArticleContainer">
 
-    <section id="newsIcon1" class="newsArticleIcon">
-    <img src="/images/community_icon.svg" alt="group of people">
-    </section>
-
-    <section  class="newsArticle" id="newsArticle1">
-      <div class="newsHeader">
-        <h3 class="newsH3">Hot or not </h3> 
-        <p class="newsDate">19.10.2022</p> 
-      </div>
-        <p class="newsDescription">Don't miss your chance to take part in this week's poll - 
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/community_icon.svg" alt="group of people">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Hot or not </h3> 
+                <p class="newsDate">19.10.2022</p> 
+            </div>
+            <p class="newsDescription">Don't miss your chance to take part in this week's poll - 
         Selfies with a Pumpkin</p>
-    </section>
-
-    <section id="newsIcon2" class="newsArticleIcon">
-        <img src="/images/holidays_icon.svg" alt="sun">
-    </section>
-
-    <section id="newsArticle2" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Week 42</h3>
-            <p class="newsDate">17.10.2022</p>
         </div>
+    </article>
+
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/holidays_icon.svg" alt="sun">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Week 42</h3>
+                <p class="newsDate">17.10.2022</p>
+            </div>
             <p class="newsDescription"> Due to the autumn holiday in Denmark, the caretaker is 
                 working reduced hours this week. Mon - Fri 10:00 - 12:00.</p>
-       
-    </section>
+        </div>     
+    </article>
 
-    <section id="newsIcon3" class="newsArticleIcon">
-        <img src="/images/maintenance_icon.svg" alt="Spanner">
-    </section>
-
-    <section id="newsArticle3" class="newsArticle">
-        <div class="newsHeader">
-            <h3>All power restored</h3>
-            <p class="newsDate">07.10.2022</p>
-        </div>
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">All power restored</h3>
+                <p class="newsDate">07.10.2022</p>
+            </div>
             <p class="newsDescription"> Following a power outage last night, all power has now
                 been restored to the building</p>
-    </section>
-
-       
-    <section id="newsIcon4" class="newsArticleIcon">
-        <img src="/images/outdoor_icon.svg" alt="Trees">
-    </section>
-
-    <section id="newsArticle4" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Rooftop terrace</h3>
-            <p class="newsDate">07.10.2022</p>
         </div>
+    </article>
+    
+    <article class="newsArticle">
+        <img class ="newsArticleIcon" src="/images/outdoor_icon.svg" alt="Trees">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Rooftop terrace</h3>
+                <p class="newsDate">07.10.2022</p>
+            </div>
             <p class="newsDescription"> The door to the rooftop terrace will now be kept closed due
                 to the colder weather. Remember your chip for access.</p>
-    </section>
-
-    <section id="newsIcon5" class="newsArticleIcon">
-        <img src="/images/laundry_icon.svg" alt="Washing machine">
-    </section>
-
-    <section id="newsArticle5" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Lost property</h3>
-            <p class="newsDate">05.10.2022</p>
         </div>
+    </article>
+
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/laundry_icon.svg" alt="Washing machine">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Lost property</h3>
+                <p class="newsDate">05.10.2022</p>
+            </div>
             <p class="newsDescription"> Remember to check the lost property in the laundry room. 
                 Unclaimed items will be sent to charity on 10th October.</p>
-    </section>
-
-    <section id="newsIcon6" class="newsArticleIcon">
-        <img src="/images/community_icon.svg" alt="Group of people">
-    </section>
-
-    <section id="newsArticle6" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Annual Balloon Competition</h3>
-            <p class="newsDate">05.10.2022</p>
         </div>
+    </article>
+
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/community_icon.svg" alt="Group of people">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Annual Balloon Competition</h3>
+                <p class="newsDate">05.10.2022</p>
+            </div>
             <p class="newsDescription"> On 11th of October we hold our annual Balloon Popping
                 Competition. Check Events page for more details.</p>
-    </section>
-
-    <section id="newsIcon7" class="newsArticleIcon">
-        <img src="/images/maintenance_icon.svg" alt="Spanner">
-    </section>
-
-    <section id="newsArticle7" class="newsArticle">
-        <div class="newsHeader">
-            <h3>High water consumption</h3>
-            <p class="newsDate">02.10.2022</p>
         </div>
+    </article>
+
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">High water consumption</h3>
+                <p class="newsDate">02.10.2022</p>
+            </div>
             <p class="newsDescription"> Last month we experienced high water consumption. If
                 you have a leak in your toilet, please contact Caretaker.</p>
-    </section>
-
-    <section id="newsIcon8" class="newsArticleIcon">
-        <img src="/images/laundry_icon.svg" alt="Washing machine">
-    </section>
-
-    <section id="newsArticle8" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Check your pockets</h3>
-            <p class="newsDate">01.10.2022</p>
         </div>
+    </article>
+
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/laundry_icon.svg" alt="Washing machine">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Check your pockets</h3>
+                <p class="newsDate">01.10.2022</p>
+            </div>
             <p class="newsDescription"> We found some unwanted items inside the machines.
                 Please make sure to check your pockets beforehand.</p>
-    </section>
-
-    <section id="newsIcon9" class="newsArticleIcon">
-        <img src="/images/outdoor_icon.svg" alt="Trees">
-    </section>
-
-    <section id="newsArticle9" class="newsArticle">
-        <div class="newsHeader">
-            <h3>Bike parking</h3>
-            <p class="newsDate">01.10.2022</p>
         </div>
+    </article>
+    
+    <article class="newsArticle">
+        <img class="newsArticleIcon" src="/images/outdoor_icon.svg" alt="Trees">
+        <div class="newsText">
+            <div class="newsHeader">
+                <h3 class="newsH3">Bike parking</h3>
+                <p class="newsDate">01.10.2022</p>
+            </div>
             <p class="newsDescription"> We have placed five new bike parking spots on the west
                 side of the building upon residents' request.</p>
-    </section>
-
-    
+        </div>
+    </article>
+  
     
     </section> <!--end of news content section-->
 </div> <!--end of wrapper-->
