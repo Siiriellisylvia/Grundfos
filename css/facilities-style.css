@@ -54,7 +54,7 @@ body {
 }
 .laundry-content {
   width: 78vw;
-  background-color: var(--white);
+  background-color: var(white)
 }
 
 .laundry-top {

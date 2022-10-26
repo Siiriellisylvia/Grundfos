@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="/css/help-style.css">
+</head>
+
+<body>
+<div class="help-page">
+<!-- navigation section-->
+    <nav class="main-navigation">
+        <span id="date"></span>
+        <span id="time"></span>
+        
+        <div class="main-logo">
+            <a href="index.html" class="logo-link">
+                <p class="logo-grundfos">GRUNDFOS</p>
+                <p class="logo-kollegiet">KOLLEGIET</p>
+            </a>
+        </div>
+        
+        <div class="navigation-link-list">
+            <a href="news.html" class="nav-link">NEWS</a>
+            <a href="events.html" class="nav-link">EVENTS</a>
+            <a href="laundry.html" class="nav-link">LAUNDRY</a>
+            <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+            <a href="facilities.html" class="nav-link">FACILITIES</a>
+            <a href="poll-of-the-week.html" class="nav-link">POLL OF THE WEEK</a>
+        </div>
+        
+        <div class="navigation-qr">
+            <p class="navigation-qr-code-description">MOBILE VERSION</p>
+            <img src="images/QR code.png" class="navigation-qr-code-image" alt="QR Code">
+        </div>
+    </nav>
+
+<!--content section-->
+    <div class="help-content">
+    
+<!-- heading and search option -->
+        <div class="help-top">
+            <h1 class="help-heading">HELP</h1>
+            <a href="#"><img src="images/search-icon.png" 
+            alt="Search icon" class="help-search-icon">
+            </a>
+        </div>
+
+        <section class="help-link-list">
+            <div class="help-news-content">
+                <button onclick="openNews()" class="help-news-heading" id="test-news-heading">NEWS</button>
+                <p id="help-news-description">
+                In the News section you can find short announcements about the dormitory's
+                affairs. You can choose a category using the filters.
+                </p>
+            </div>
+
+                <div class="help-events-content">
+                <button onclick="openEvents()" class="help-events-heading" id="help-events-heading">EVENTS</button>
+                <p id="help-events-description">
+                In the Events section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month. 
+                </p>
+            </div>
+
+        </section>
+        
+        <a href="help.html">
+            <img src="images/help-icon.png" 
+            alt="help-help-icon" class="help-help-icon">
+        </a>
+    </div>
+</div>
+<script>
+    function openNews() {
+        var descriptionElement = document.getElementById("help-news-description");
+        var headingElement = document.getElementById("test-news-heading");
+  
+        if (descriptionElement.style.display === "none") 
+        {
+            headingElement.style.borderRadius = "10px 10px 0px 0px"
+            headingElement.style.backgroundColor = "#10828c";
+            headingElement.style.color = "white";
+            descriptionElement.style.display = "block";
+        } 
+        else 
+        {
+            headingElement.style.borderRadius = "10px 10px 10px 10px"
+            headingElement.style.backgroundColor = "#aacfd3";
+            headingElement.style.color = "black";
+            descriptionElement.style.display = "none";
+        }
+}
+
+function openEvents() {
+    var descriptionElement = document.getElementById("help-events-description");
+        var headingElement = document.getElementById("help-events-heading");
+  
+        if (descriptionElement.style.display === "none") 
+        {
+            headingElement.style.borderRadius = "10px 10px 0px 0px"
+            headingElement.style.backgroundColor = "#10828c";
+            headingElement.style.color = "white";
+            descriptionElement.style.display = "block";
+        } 
+        else 
+        {
+            headingElement.style.borderRadius = "10px 10px 10px 10px"
+            headingElement.style.backgroundColor = "#aacfd3";
+            headingElement.style.color = "black";
+            descriptionElement.style.display = "none";
+        }
+  }
+
+
+
+</script>
+</body>
+</html>
+        
+                  
