@@ -51,6 +51,25 @@ body {
   letter-spacing: 0.69vw;
   color: var(--white);
   margin: -0.5vw 0.1vw;
+  margin-bottom: 30px;
+}
+
+.nav-link{
+  font-family: var(--body-fonts);
+  font-size: 1.6vw;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+
+}
+.nav-link-active{
+  font-family: var(--body-fonts);
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+
 }
 
 .laundry-content {
