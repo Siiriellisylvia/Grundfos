@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New News</title>
+    <title>News</title>
     <link rel="stylesheet" href="/css/news-styles.css">
 </head>
 
@@ -30,7 +30,7 @@
          <ul id="newsIconsContainer">
           <li class="newsIcon" id="maintenanceFilterButton">
             <figure class="newsFigure">
-            <img class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
+            <img id="newsIconImage1" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
             <figcaption class="newsIconLabel">Maintenance</figcaption>
             </figure>
           </li>
@@ -61,7 +61,14 @@
            <img class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
            <figcaption class="newsIconLabel">Holidays</figcaption>
         </figure>
-    </li>
+        </li>
+
+        <li class="newsIcon" id="clearFilterButton">
+            <figure>
+                <img class="newsIconImage" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
+                <figcaption class="newsIconLabel">Clear filter</figcaption>
+            </figure>
+        </li>
 
            
          </ul>
@@ -182,7 +189,7 @@
     </section> <!--end of news content section-->
 </div> <!--end of wrapper-->
 
-    <script src="js/js.js"></script>
+    <script src="js/script-news.js"></script>
 </body>
 
 </html>
