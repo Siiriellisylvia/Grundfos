@@ -76,6 +76,7 @@ body {
   top: 10vw;
   font-family: var(--body-fonts);
   line-height: 4vw;
+  color:var(--light-grey)
 }
 
 .nav-link {
@@ -83,11 +84,18 @@ body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: white;
+  text-decoration:none;
+  font-size: 1.6vw;
+  font-weight: bolder;
+}
+
 .navigation-qr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4.5vw;
+  margin-top: 4vw;
 }
 
 .navigation-qr-code-description {
