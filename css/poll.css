@@ -80,8 +80,9 @@ body {
 }
 
 #poll-box {
-  display: block;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 5vw;
   width: 65vw;
   height: 75vh;
@@ -92,13 +93,13 @@ body {
   font-family: var(--body-fonts);
   font-size: 2vw;
   text-align: center;
-  padding-top: 3vh;
+  padding-top: 3vw;
   margin-left: -1.5vw;
 }
 #selfie {
   width: 18vw;
   height: 18vw;
-  margin-top: 6vh;
+  margin-top: 2.6vw;
   border-radius: 15px;
   object-position: center;
   object-fit: cover;
@@ -118,7 +119,7 @@ body {
   flex-direction: column;
   font-family: var(--body-fonts);
   font-size: var(--font-size-bodytext);
-  width: 25vw;
+  width: 27vw;
   padding: 3vh 5vw;
 }
 
@@ -133,6 +134,7 @@ body {
 }
 #vote-heading {
   text-align: center;
+  font-weight: 500;
 }
 #vote-buttons {
   margin-top: 3vh;
@@ -143,14 +145,27 @@ body {
 
 #poll-footer {
   font-family: var(--body-fonts);
-  font-size: var(--font-size-subheading);
+  font-size: 1.25vw;
   display: flex;
   justify-content: space-between;
   margin: 3vh 4vw;
 }
 #contact-RC {
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+#last-week-poll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#pie-chart-icon {
+  width: 5.4vw;
+}
+#link-last-week {
+  text-decoration: none;
+  color: var(--black);
 }
 
 #contact-RC-button {
@@ -160,5 +175,7 @@ body {
   border-color: var(--orange);
   border-style: solid;
   border-radius: 50px;
+  border-width: 0.02vw;
   padding: 1vh 2vw;
+  margin-top: 2vh;
 }
