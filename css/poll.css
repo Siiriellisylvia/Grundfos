@@ -1,0 +1,181 @@
+:root {
+  --blue: #10828c;
+  --orange: #eba10c;
+  --white: #ffffff;
+  --black: #000000;
+  --light-grey: #efefef;
+  --light-blue: #aacfd3;
+  --light-orange: rgba(235, 161, 12, 0.75);
+  --medium-blue: #4ca1a9;
+  --dark-grey: #676464;
+  --body-fonts: "Roboto";
+  --logo-fonts: "Sansation", sans-serif;
+  --font-size-heading: 2.6vw;
+  --font-size-subheading: 1.5vw;
+  --font-size-bodytext: 1.2vw;
+  --font-size-nav: 50px;
+  --font-size-nav-active: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/*LAUNDRY STYLING*/
+.laundry-page {
+  display: flex;
+  flex-direction: row;
+}
+.laundry-navigation {
+  width: 22vw;
+  height: 100vh;
+  background-color: var(--blue);
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-grundfos {
+  font-family: var(--logo-fonts);
+  font-size: 2.5vw;
+  letter-spacing: 0.3vw;
+  color: var(--white);
+  margin: 0vh 0px;
+  margin-top: 2vh;
+}
+.logo-kollegiet {
+  font-family: var(--logo-fonts);
+  font-weight: lighter;
+  font-size: 2vw;
+  letter-spacing: 0.69vw;
+  color: var(--white);
+  margin: -0.5vw 0.1vw;
+}
+.laundry-content {
+  width: 78vw;
+  background-color: var(white);
+}
+
+.laundry-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.laundry-heading {
+  display: block;
+  justify-content: center;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-heading);
+  font-weight: 500;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 1.5vw;
+}
+.laundry-search-icon {
+  width: 2.8vw;
+  margin-right: 2vw;
+}
+
+#poll-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5vw;
+  width: 65vw;
+  height: 75vh;
+  background-color: var(--light-grey);
+  border-radius: 15px;
+}
+#poll-title {
+  font-family: var(--body-fonts);
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 3vw;
+  margin-left: -1.5vw;
+}
+#selfie {
+  width: 18vw;
+  height: 18vw;
+  margin-top: 2.6vw;
+  border-radius: 15px;
+  object-position: center;
+  object-fit: cover;
+}
+#title-line {
+  border-bottom: 0.05vw solid var(--dark-grey);
+  width: 24vw;
+  margin-top: 0.3vh;
+  margin: auto;
+}
+#poll-content {
+  display: flex;
+  flex-direction: row;
+}
+#poll-description {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
+  width: 27vw;
+  padding: 3vh 5vw;
+}
+
+.poll-vote-button {
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-subheading);
+  border: none;
+  border-radius: 50px;
+  padding: 1vh 3vw;
+}
+#vote-heading {
+  text-align: center;
+  font-weight: 500;
+}
+#vote-buttons {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#poll-footer {
+  font-family: var(--body-fonts);
+  font-size: 1.25vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 3vh 4vw;
+}
+#contact-RC {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#last-week-poll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#pie-chart-icon {
+  width: 5.4vw;
+}
+#link-last-week {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#contact-RC-button {
+  background-color: var(--white);
+  color: var(--orange);
+  font-size: var(--font-size-bodytext);
+  border-color: var(--orange);
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 0.02vw;
+  padding: 1vh 2vw;
+  margin-top: 2vh;
+}
