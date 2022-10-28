@@ -115,6 +115,10 @@ h3 {
       flex: 1;
      
     }
+
+    .newsIcon {
+      cursor: pointer;
+    }
       
     .newsIconImage {
       justify-content: center; /*doesn't work*/
