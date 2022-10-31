@@ -1,0 +1,76 @@
+/*CSS pop up calendar*/
+
+:root {
+    --blue: #10828c;
+    --orange: #eba10c;
+    --white: #ffffff;
+    --black: #000000;
+    --light-grey: #efefef;
+    --light-blue: #aacfd3;
+    --light-orange: rgba(235, 161, 12, 0.75);
+    --medium-blue: #4ca1a9;
+    --dark-grey: #676464;
+    --body-fonts: "Roboto";
+    --logo-fonts: "Sansation", sans-serif;
+    --font-size-heading: 2.9vw;
+    --font-size-subheading: 1.5vw;
+    --font-size-bodytext: 1.2vw;
+    --font-size-nav: 50px;
+    --font-size-nav-active: 60px;
+  }
+
+.eventPopUpCalendarBackground {
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-heading);
+    padding: 2vw 2vw 2vw 0vw;
+    margin: 0%;
+  }
+
+.eventsBigCalendarArrow {
+    height: 7vh;
+
+}
+
+/*calendar*/   
+.tg-wrap {
+    padding-left: 0vw;
+    padding-bottom: 8vw;
+}
+.tg  {border-collapse:collapse;border-spacing:0;width: 100%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;background-color: var(--white);}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;background-color: var(--white);}
+.tg .tg-nrw1{font-size:10px;text-align:center;vertical-align:top}
+.tg .tg-6nwz{font-size:14px;text-align:center;vertical-align:top}
+.tg .tg-840q{color:#c0c0c0;font-size:10px;text-align:center;vertical-align:top}
+/*@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}*/
+
+
+/*event button*/
+.eventsBigCalendarButton {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 0.5vh 1vw;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  cursor: pointer;
+}

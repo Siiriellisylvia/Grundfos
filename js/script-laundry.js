@@ -1,7 +1,8 @@
+// First timer Washing Machine
 const startingMinutes = 10;
 let time = startingMinutes * 60;
 
-let countdownEl = document.getElementById("countdown");
+let countdownEl = document.querySelector(".countdown");
 
 setInterval(updateCountdown, 1000);
 
@@ -11,13 +12,63 @@ function updateCountdown() {
 
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  if (startingMinutes < 0) {
+  if (time < 0) {
     countdownEl.innerHTML = `Free`;
   } else {
     countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--;
   }
 }
+
+// Second timer Washing Machine
+const startingMinutesTwo = 0.05;
+let timeTwo = startingMinutesTwo * 60;
+
+let countdownElTwo = document.querySelector("#countdown-two");
+
+setInterval(updateCountdownTwo, 1000);
+
+function updateCountdownTwo() {
+  const minutesTwo = Math.floor(timeTwo / 60);
+  let secondsTwo = timeTwo % 60;
+
+  secondsTwo = secondsTwo < 10 ? "0" + secondsTwo : secondsTwo;
+
+  if (timeTwo < 0) {
+    countdownElTwo.innerHTML = `Free`;
+    document.querySelector(".status-taken-one").className = "status-free";
+    document.querySelector(".machine-number-taken-one").className =
+      "machine-number";
+    ("status-free");
+  } else {
+    countdownElTwo.innerHTML = `${minutesTwo}:${secondsTwo}`;
+    timeTwo--;
+  }
+}
+// Third timer Drying Machine
+const startingMinutesThree = 21.6;
+let timeThree = startingMinutesThree * 60;
+
+let countdownElThree = document.querySelector("#countdown-three");
+
+setInterval(updateCountdownThree, 1000);
+
+function updateCountdownThree() {
+  const minutesThree = Math.floor(timeThree / 60);
+  let secondsThree = timeThree % 60;
+
+  secondsThree = secondsThree < 10 ? "0" + secondsThree : secondsThree;
+
+  if (timeThree < 0) {
+    countdownElThree.innerHTML = `Free`;
+  } else {
+    countdownElThree.innerHTML = `${minutesThree}:${secondsThree}`;
+    timeThree--;
+  }
+}
+
+//Popular Times Chart
+
 const labels = ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 const data = {
