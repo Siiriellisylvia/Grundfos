@@ -13,8 +13,10 @@
 <div class="help-page">
 <!-- navigation section-->
     <nav class="main-navigation">
-        <span id="date"></span>
-        <span id="time"></span>
+        <section class="navigation-dateandtime">
+            <p id="date"></p>
+            <p id="time"></p>
+        </section>
         
         <div class="main-logo">
             <a href="index.html" class="logo-link">
@@ -117,7 +119,13 @@ function openEvents() {
         }
   }
 
+var date = new Date();
+	var current_date = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
+	document.getElementById("date").innerHTML = current_date;
 
+var time = new Date();
+  var current_time = date.getHours()+":"+(date.getMinutes());
+  document.getElementById("time").innerHTML = current_time;
 
 </script>
 </body>
