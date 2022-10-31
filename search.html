@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation</title>
 
-    <link rel="stylesheet" href="css/navigation-style.css" />
+    <link rel="stylesheet" href="css/search-style.css" />
   </head>
-
+<body>
+<div class="search-page">
+<!--  navigation -->
   <nav class="main-navigation">
     <section class="navigation-dateandtime">
     <p id="date"></p>
@@ -37,6 +39,16 @@
         alt="NavigationQRcode"
       />
     </div>
+
   </nav>
-  <script src="js/script-navigation.js"></script>
+
+<!--  content -->
+    <div class="search-content">
+        <a href="#"><img src="images/search-icon.png" 
+        alt="Search icon" class="search-search-icon"></a>
+        <button class="search-bar"><p class="search-bar-text">What are you looking for?</p><img src="images/search-icon.png" class="search-bar-icon"></button>
+    </div>
+</div>
+  <script src="js/script-search.js"></script>
+</body>
 </html>

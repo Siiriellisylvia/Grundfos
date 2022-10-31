@@ -144,6 +144,7 @@
 
   .construction-heading {
     position: absolute;
+    margin-top: 12vw;
     font-family: var(--body-fonts);
     font-size: var(--font-size-heading);
     font-weight: 500;
@@ -151,10 +152,37 @@
     z-index: 1;
   }
 
+.construction-text {
+  position: absolute;
+  text-align: center;
+  margin-top: 20vw;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-bodytext);
+  font-weight: normal;
+  letter-spacing: 0.2vw;
+  z-index: 1;
+}
+
+.construction-button {
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-subheading);
+  height:3vw;
+  width: 10vw;
+  padding: 1vw 1vw 0vw 1vw;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 28vw;
+  position: absolute;
+
+}
 .construction-image {
-  width: 25vw;
+  width: 28vw;
   height: auto;
   z-index:2;
-  margin-left: 38.5vw;
-  margin-top: 2vw;
+  margin-left: 40.3vw;
+  margin-top: -1vw;
 }
