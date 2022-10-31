@@ -1,0 +1,65 @@
+:root {
+    --blue: #10828c;
+    --orange: #eba10c;
+    --white: #ffffff;
+    --black: #000000;
+    --light-grey: #efefef;
+    --light-blue: #aacfd3;
+    --light-orange: rgba(235, 161, 12, 0.75);
+    --medium-blue: #4ca1a9;
+    --dark-grey: #676464;
+    --body-fonts: "Roboto";
+    --logo-fonts: "Sansation", sans-serif;
+    --font-size-heading: 2.9vw;
+    --font-size-subheading: 1.5vw;
+    --font-size-bodytext: 1.2vw;
+    --font-size-nav: 50px;
+    --font-size-nav-active: 60px;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventPopUpTop {
+    display: flex;
+    flex-direction: row;
+}
+
+.eventPopUpImage {
+    width: 50%;
+    height: 50%
+}
+
+.eventPopUpHeader {
+    width: 50%;
+    border-top: 2px solid var(--light-grey);
+    border-right: 2px solid var(--light-grey);
+    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 5px 0px 0px;
+    text-align: center;
+    padding-top: 10vh;
+    background-color: var(--light-grey);
+}
+
+.eventPopUpDescription {
+    border: 2px solid var(--light-grey);
+    border-radius: 0px 0px 5px 5px;
+    height: 45vh;
+}
+
+p {
+    font-family: var(--body-fonts);
+}
+
+h1 {
+    font-family: var(--body-fonts);
+}
+
+.eventPopUpDescriptionIndent {
+    margin-left: 1vw;
+}
+
+
+

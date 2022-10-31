@@ -124,6 +124,7 @@ h3 {
 .eventListing {
   display: flex;
   flex-direction: row; 
+  cursor: pointer;
 }
 
 .eventListingImage {
@@ -170,6 +171,7 @@ h3 {
   width: 8vw;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 /*event idea?*/
@@ -190,6 +192,7 @@ h3 {
   font-size: var(--font-size-bodytext);
   justify-content: center;
   margin-left: 0.8vw;
+  cursor: pointer;
 }
 
 
