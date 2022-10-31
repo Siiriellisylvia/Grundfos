@@ -212,6 +212,7 @@ h3 {
   border-spacing:0;
   height: 45vh;
   width: 20vw;
+  cursor: pointer;
 }
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
   overflow:hidden;padding:10px 5px;word-break:normal;}

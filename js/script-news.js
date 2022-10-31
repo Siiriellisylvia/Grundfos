@@ -1,11 +1,16 @@
 /*News JS*/
 
-
-//hide the clear filter button from the start
-var elem = document.getElementById('clearFilterButton');
-elem.style.display = 'none';
-
 /*click maintenance filter*/
+
+function filterArticles(showClass) {
+    for (const elm of document.getElementsByClassName("newsArticle")) {
+        elm.classList.add("hidden");
+    }
+
+    for (const elm of document.getElementsByClassName(showClass)) {
+        elm.classList.remove("hidden");
+    }
+}
 
 document.getElementById("maintenanceFilterButton").addEventListener("click", maintenanceFunction);
 function maintenanceFunction() {
@@ -14,6 +19,8 @@ function maintenanceFunction() {
     laundryFilterButton.style.color = "#000000";
     outdoorFilterButton.style.color = "#000000";
     holidaysFilterButton.style.color = "#000000";
+
+    filterArticles("maintenanceArticle");
 }
 
 document.getElementById("maintenanceFilterButton").addEventListener("click", showFunction);
@@ -31,7 +38,10 @@ function communityFunction() {
     maintenanceFilterButton.style.color = "#000000"; 
     laundryFilterButton.style.color = "#000000";
     outdoorFilterButton.style.color = "#000000";
-    holidaysFilterButton.style.color = "#000000";}
+    holidaysFilterButton.style.color = "#000000";
+
+    filterArticles("communityArticle");
+}
 
 
 document.getElementById("communityFilterButton").addEventListener("click", showFunction);
