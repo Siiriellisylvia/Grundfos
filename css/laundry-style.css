@@ -54,23 +54,9 @@ body {
   margin-bottom: 30px;
 }
 
-.nav-link {
-  font-family: var(--body-fonts);
-  font-size: 1.6vw;
-  padding: 10px 30px;
-  color: white;
-  text-decoration: none;
-}
-.nav-link-active {
-  font-family: var(--body-fonts);
-  font-size: 1.7vw;
-  font-weight: bold;
-  padding: 10px 30px;
-  color: white;
-  text-decoration: none;
-}
-
 .laundry-content {
+  display: flex;
+  flex-direction: column;
   width: 78vw;
   background-color: var(--white);
 }
@@ -308,4 +294,22 @@ body {
   padding: 30px;
   border-radius: 15px;
   position: absolute;
+}
+
+.help-section-laundry {
+  display: flex;
+  justify-content: right;
+  position: sticky;
+  height: 3vw;
+  width: 78vw;
+  margin-top: 0vw;
+}
+
+.main-help-icon-laundry {
+  width: 3.5vw;
+  height: auto;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  object-fit: contain;
 }
