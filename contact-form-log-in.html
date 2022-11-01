@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="css/contact-form-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <div class="contact-form-page">
@@ -41,7 +42,10 @@
             <div class="formbox">
               <form action="" method="POST">
                 <input class="writing-box" type="email" name="email" placeholder="Email">
-                <input class="writing-box" type="password" name="password" placeholder="Password">
+                <div class="password-container">
+                  <input id="password" class="writing-box" type="password" name="password" placeholder="Password">
+                  <i class="fa-solid fa-eye" id="eye"></i>
+                </div>
                 <div class="log-btn1"><input class="log-btn1" type="button" name="button" value="LOG IN"></div>
               </form>
             </div>
@@ -52,5 +56,6 @@
               <path id="Help_icon" data-name="Help icon" d="M50.411,3C24.267,3,3,23.814,3,49.4S24.267,95.8,50.411,95.8A47.931,47.931,0,0,0,84.573,81.547,45.58,45.58,0,0,0,97.822,49.4C97.822,23.814,76.556,3,50.411,3Zm0,7.734C72.278,10.734,89.921,28,89.921,49.4S72.278,88.069,50.411,88.069A39.887,39.887,0,0,1,22.455,76.762,38.192,38.192,0,0,1,10.9,49.4C10.9,28,28.544,10.734,50.411,10.734Zm0,15.467a15.684,15.684,0,0,0-15.8,15.467h7.9a7.9,7.9,0,0,1,15.8,0A6.912,6.912,0,0,1,53.5,48.195l-1.607.479a7.832,7.832,0,0,0-5.431,7.373V61h7.9V56.052l1.607-.49A14.751,14.751,0,0,0,66.215,41.668,15.684,15.684,0,0,0,50.411,26.2ZM46.46,64.868V72.6h7.9V64.868Z" transform="translate(-3 -3)"/>
             </svg>            
           </div>
+          <script src="js/script-contact-form.js"></script>
 </body>
 </html>

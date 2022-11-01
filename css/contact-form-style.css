@@ -188,17 +188,13 @@
   }
 
   .formbox {
-    margin-left: 18.6vw;
-  }
-
-  .form-box {
-    margin-right: 50vw;
+    margin-left: 19.4vw;
   }
 
   .formbox form input[type=email], input[type=password]  {
     display: block;
     margin-top: 28px;
-    width: 38vw;
+    width: 34.8vw;
     line-height: 50px;
     font-size: var(--font-size-bodytext);
     font-family: var(--body-fonts);
@@ -240,7 +236,7 @@
   }
 
   .log-btn1 {
-    margin-left: 13.6vw;
+    margin-left: 12.9vw;
   }
 
   .help-icon {
@@ -249,5 +245,30 @@
   }
 
   .help-icon1 {
-    margin-left: 75vw;
+    margin-left: 72.5vw;
+  }
+
+  .password-container{
+    width: 34.8vw;
+    position: relative;
+  }
+  .password-container input[type="password"],
+  .password-container input[type="text"]{
+    width: 34.8vw;
+    border: 2px solid var(--black);
+    border-radius: 6px;
+    padding-left: 1.1vw;
+    color: #000000;
+    display: block;
+    margin-top: 28px;
+    line-height: 50px;
+    font-size: var(--font-size-bodytext);
+    font-family: var(--body-fonts);
+  }
+  .fa-eye{
+    position: absolute;
+    top: 38%;
+    right: 1%;
+    cursor: pointer;
+    color: var(--dark-grey);
   }
