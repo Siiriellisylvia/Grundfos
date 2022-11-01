@@ -32,8 +32,8 @@
 
           <div> 
             <div id="poll-box">
-            <div id="poll-title"> AUTUMN LOVERS</div>
-            <div id="title-line"></div>
+            <div class="poll-title"> AUTUMN LOVERS</div>
+            <div class="title-line"></div>
 
             <div id="poll-content">
                 <div id="poll-description">
@@ -49,11 +49,22 @@
             </div>
                     <img src="images/selfie.jpg" alt="Natalia with a pumpkin" id="selfie">
                 </div>
-            
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-close"><span class="close">&times;</span></div>
+                    <div class="poll-title"> THANK YOU FOR YOUR VOTE!</div>
+            <div class="title-line-modal"></div>
+
+            <div id="vote-heading-modal">CURRENT RESULTS OF THE POLL</div>
+                  </div>
+                
+                </div>
                 <div id="poll-footer">
                     <div id="contact-RC">
                         POLL IDEA?
-                        <button id="contact-RC-button"> Contact the Residents' Council</button>
+                        <a href="contact-form.html"><button id="contact-RC-button"> Contact the Residents' Council</button></a>
                     </div>
                     <a href="" id="link-last-week">
                     <div id="last-week-poll">
@@ -69,6 +80,6 @@
           </div>
         </div>
 
-
+<script src="js/script-poll.js"></script>
   </body>
 </html>
