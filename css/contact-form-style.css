@@ -15,6 +15,8 @@
   --font-size-bodytext: 1.2vw;
   --font-size-nav: 50px;
   --font-size-nav-active: 60px;
+  --border-radius-boxes: 6px;
+  --border-radius-buttons: 20px;
   }
 
   body {
@@ -138,6 +140,7 @@
     padding: 11px 28px;
     font-size: 16px;
     box-shadow: 0px 4px 5px rgba(140, 144, 144, 0.4);
+    cursor: pointer;
   }
 
   .scan-text {
@@ -271,4 +274,54 @@
     right: 1%;
     cursor: pointer;
     color: var(--dark-grey);
+  }
+
+  /* Actual Contact Form*/
+
+  .container-box {
+    width: 50vw;
+    height: 75vh;
+    background-color: var(--light-grey);
+    margin-left: 14.2vw;
+    border: solid var(--light-grey);
+    border-radius: 6px;
+    margin-top: 2vh;
+  }
+
+  .radio-option-buttons {
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext);
+    margin-left: 10vw;
+    margin-top: 3vh;
+  }
+
+  .options {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 2.2vw;
+    height: 2.2vw;
+    box-shadow: 0px 0px 5px #AAC5C6;
+    border: 0.1vw solid transparent;
+    background-color: transparent;
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .options:checked {
+    border: 0.6vw solid var(--light-grey);
+    background-color: var(--blue);
+  }
+
+  .options{
+   display: inline-flex;
+   align-items: center;
+   margin-right: 10px;
   }
