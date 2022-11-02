@@ -1,8 +1,15 @@
 /*News JS*/
 
-/*click maintenance filter*/
+
+//hide the clear filter button from the start
+const elem = document.getElementById('clearFilterButton');
+elem.style.display = 'none';
+
+
+//function to filter news articles
 
 function filterArticles(showClass) {
+    
     for (const elm of document.getElementsByClassName("newsArticle")) {
         elm.classList.add("hidden");
     }
@@ -12,6 +19,8 @@ function filterArticles(showClass) {
     }
 }
 
+/*click maintenance filter*/
+
 document.getElementById("maintenanceFilterButton").addEventListener("click", maintenanceFunction);
 function maintenanceFunction() {
     maintenanceFilterButton.style.color = "#eba10c";  //change colour of icon wording
@@ -19,8 +28,7 @@ function maintenanceFunction() {
     laundryFilterButton.style.color = "#000000";
     outdoorFilterButton.style.color = "#000000";
     holidaysFilterButton.style.color = "#000000";
-
-    filterArticles("maintenanceArticle");
+    filterArticles("maintenanceArticle"); //filter maintenance articles using filterArticles function above
 }
 
 document.getElementById("maintenanceFilterButton").addEventListener("click", showFunction);
