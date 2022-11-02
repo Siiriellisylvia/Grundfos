@@ -32,6 +32,7 @@
     padding: none;
     margin-bottom: 0.5vw;
     margin-top: 1vw;
+    
 }
 
 .main-heading-text {
@@ -127,7 +128,6 @@
 .main-icons-bottom {
     display: flex;
     justify-content: space-between;
-    position:sticky;
     margin-top: 0vw;
 
 }
@@ -141,8 +141,7 @@
 
 .main-help-icon {
     width: 3.5vw;
-    height:auto;
     margin-right: 2vw;
     margin-top: 2vw;
-    object-fit: contain;
+
 }
