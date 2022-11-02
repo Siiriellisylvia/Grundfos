@@ -10,12 +10,20 @@ elem.style.display = 'none';
 
 function filterArticles(showClass) {
     
-    for (const elm of document.getElementsByClassName("newsArticle")) {
-        elm.classList.add("hidden");
+    for (const selection of document.getElementsByClassName('newsArticle')) {
+        selection.classList.add('hidden');
     }
 
-    for (const elm of document.getElementsByClassName(showClass)) {
-        elm.classList.remove("hidden");
+    for (const selection of document.getElementsByClassName(showClass)) {
+        selection.classList.remove('hidden');
+    }
+}
+
+//function to show all news articles
+
+function showArticles() {
+    for (const showAll of document.getElementsByClassName('newsArticle')) {
+        showAll.classList.remove('hidden')
     }
 }
 
@@ -114,5 +122,6 @@ function clearFilterFunction() {
     laundryFilterButton.style.color = "#000000";
     outdoorFilterButton.style.color = "#000000";
     holidaysFilterButton.style.color = "#000000";
+    showArticles();
 }
 
