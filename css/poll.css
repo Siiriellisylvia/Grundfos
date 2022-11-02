@@ -248,3 +248,7 @@ path:hover {
   flex-direction: row;
   align-items: flex-end;
 }
+
+.graphContainer {
+  width: 50vw;
+}
