@@ -38,9 +38,9 @@ function showArticles() {
     }
 }
 
-//function to change maintenance icon colour
+//function to change maintenance icon colour - NB doesn't work
 
-function changeSrc1() {
+function changeSrc() {
     document.getElementById("#newsIconMaintenance").src="/images/colour_maintenance_icon.svg";
   }
 

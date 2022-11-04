@@ -122,14 +122,14 @@ h3 {
     }
       
     .newsIconImage {
-      justify-content: center; /*doesn't work*/
+      justify-content: center;
       max-width: 3vw;
       margin: auto;
       display: block;
     }
   
     .newsIconLabel {
-      justify-content: center; /*doesn't work*/
+      justify-content: center; 
       font-family: var(--body-fonts);
     }
   
