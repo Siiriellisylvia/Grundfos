@@ -45,7 +45,7 @@
     
 <!-- heading and search option -->
         <div class="help-top">
-            <h1 class="help-heading">HELP</h1>
+            <h1 class="help-main-heading">HELP</h1>
             <a href="#"><img src="images/search-icon.png" 
             alt="Search icon" class="help-search-icon">
             </a>
@@ -54,21 +54,21 @@
         <section class="help-link-list">
             <div class="help-news-content">
                 <div id="help-news-heading-with-arrow">
-                    <button onclick="openNews()" class="help-news-heading" id="help-news-heading">NEWS
-                    <i id="arrow-down"></i></button>
+                    <button onclick="openDescription(descriptionId = 'help-news-description', headingId = 'help-news-heading', arrowId ='news-arrow-down')" class="help-heading" id="help-news-heading" >NEWS
+                    <i id="news-arrow-down" class="arrow-down"></i></button>
                 </div>
-                <div id="help-news-description" class="help-news-description">
+                <div id="help-news-description" class="help-description">
                 In the <a href="news.html" class="help-link">News</a> section you can find short announcements about the dormitory's
-                affairs. <ul class="help-news-bulletpoint"><li>You can choose a category using the filters.</li></ul>
+                affairs. <ul class="help-bulletpoint"><li>You can choose a category using the filters.</li></ul>
                 </div>
             </div>
 
             <div class="help-events-content">
                 <div id="help-news-heading-with-arrow">
-                    <button onclick="openEvents()" class="help-events-heading" id="help-events-heading">EVENTS
-                    <i id="arrow-down"></i></button>
+                    <button onclick="openDescription('help-events-description', 'help-events-heading', 'events-arrow-down')" class="help-heading" id="help-events-heading">EVENTS
+                    <i id="events-arrow-down" class="arrow-down"></i></button>
                 </div>
-                <div id="help-events-description" class="help-events-description">
+                <div id="help-events-description" class="help-description">
                 In the <a href="events.html" class="help-link">Events</a> section you can find upcoming parties and workshops. There are
                 highlighted events and calendar to give you an overview of the current and
                 approaching month.<ul class="help-news-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
@@ -84,61 +84,7 @@
 </div>
 
 
-<script>
-    function openNews() {
-        var descriptionElement = document.getElementById("help-news-description");
-        var headingElement = document.getElementById("help-news-heading");
-        var arrowElement=document.getElementById("arrow-down");
-  
-        if (descriptionElement.style.display === "none") 
-        {
-            headingElement.style.borderRadius = "10px 10px 0px 0px"
-            headingElement.style.backgroundColor = "#10828c";
-            headingElement.style.color = "white";
-            arrowElement.style.borderColor = "white";
-            descriptionElement.style.display = "block";
-        } 
-        else 
-        {
-            headingElement.style.borderRadius = "10px 10px 10px 10px"
-            headingElement.style.backgroundColor = "#aacfd3";
-            headingElement.style.color = "black";
-            arrowElement.style.borderColor = "black";
-            descriptionElement.style.display = "none";
-        }
-}
-
-function openEvents() {
-    var descriptionElement = document.getElementById("help-events-description");
-        var headingElement = document.getElementById("help-events-heading");
-  
-        if (descriptionElement.style.display === "none") 
-        {
-            headingElement.style.borderRadius = "10px 10px 0px 0px"
-            headingElement.style.backgroundColor = "#10828c";
-            headingElement.style.color = "white";
-            descriptionElement.style.display = "block";
-        } 
-        else 
-        {
-            headingElement.style.borderRadius = "10px 10px 10px 10px"
-            headingElement.style.backgroundColor = "#aacfd3";
-            headingElement.style.color = "black";
-            descriptionElement.style.display = "none";
-        }
-  }
-
-
-
-var date = new Date();
-	var current_date = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
-	document.getElementById("date").innerHTML = current_date;
-
-var time = new Date();
-  var current_time = date.getHours()+":"+(date.getMinutes());
-  document.getElementById("time").innerHTML = current_time;
-
-</script>
+<script src="js/script-help.js"></script>
 </body>
 </html>
         
