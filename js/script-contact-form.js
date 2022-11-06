@@ -6,3 +6,14 @@ eye.addEventListener("click", function(){
     const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
     passwordField.setAttribute("type", type);
   })
+
+  const toggleModal = () => {
+    const { classList } = document.body;
+    if (classList.contains("open")) {
+      classList.remove("open");
+      classList.add("closed");
+    } else {
+      classList.remove("closed");
+      classList.add("open");
+    }
+  };
