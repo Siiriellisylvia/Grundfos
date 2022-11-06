@@ -29,7 +29,14 @@ body {
 
 .eventPopUpImage {
     width: 50%;
-    height: 50%
+    height: 50%;
+   
+}
+
+h2 {
+    color: var(--blue);
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-heading);
 }
 
 .eventPopUpHeader {
@@ -61,5 +68,7 @@ h1 {
     margin-left: 1vw;
 }
 
-
+.detailsText {
+    font-size: smaller;
+}
 

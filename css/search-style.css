@@ -130,13 +130,25 @@
   .search-page {
     display: flex;
     flex-direction: row;
+    background-color: red;
   }
+
   .search-content {
     display: flex;
     position:relative;
     width: 78vw;
-    background-color: (var(--white))
   }
+
+/* .background-blur {
+  z-index: 3;
+  display: flex;
+  position:relative;
+  width: 78vw;
+  background-color: (var(--white));
+  opacity: 0.6;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+} */
 
   .search-search-icon {
     display: none;
@@ -167,8 +179,10 @@
     margin-top: 0.4vw;
     width: 1.9vw;
     padding-right:0.8vw;
+    z-index: 1;
 }
 
 .search-bar-text {
     padding-bottom:0.2vw;
+    z-index: 1;
 }

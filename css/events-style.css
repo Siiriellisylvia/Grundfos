@@ -207,6 +207,10 @@ h3 {
   border-radius: 15px, 15px, 0px, 0px;
 }
 
+.eventsSmallCalendarArrow {
+  height: 3vh;
+}
+
 .tg  {
   border-collapse:collapse;
   border-spacing:0;
@@ -214,7 +218,27 @@ h3 {
   width: 20vw;
   cursor: pointer;
 }
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;
+
+.th {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.eventCircle {
+  width: 25px;
+  height: 25px;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  border: none;
+  }
+
+.eventActiveDate{
+  background-color:var(--light-blue);border:none; font-family:Arial, Helvetica, sans-serif !important;
+  font-size:100%;text-align:center;vertical-align:top;} 
+
+
+.tg td{border:none;border-width:1px;font-family:Arial, sans-serif;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif; font-size: var(--font-size-bodytext); font-family: var(--body-fonts); 
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}

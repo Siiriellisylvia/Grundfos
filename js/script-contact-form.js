@@ -1,5 +1,5 @@
 const passwordField = document.querySelector("#password");
-const eyeIcon= document.querySelector("#eye");
+const eyeIcon = document.querySelector("#eye");
 
 eye.addEventListener("click", function(){
     this.classList.toggle("fa-eye-slash");
@@ -17,3 +17,12 @@ eye.addEventListener("click", function(){
       classList.add("open");
     }
   };
+
+
+eye.addEventListener("click", function () {
+  this.classList.toggle("fa-eye-slash");
+  const type =
+    passwordField.getAttribute("type") === "password" ? "text" : "password";
+  passwordField.setAttribute("type", type);
+});
+

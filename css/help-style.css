@@ -136,7 +136,7 @@
     align-items: center;
   }
 
-  .help-heading {
+  .help-main-heading {
     display: block;
     justify-content: center;
     font-family: var(--body-fonts);
@@ -161,7 +161,9 @@
   align-items: center;
 }
 
-.help-news-heading {
+.help-heading {
+  display:flex;
+  justify-content: space-between;
   width:50vw;
   height: 3.5vw;
   border-radius: 10px;
@@ -171,49 +173,29 @@
   text-align:left;
   font-weight: 500;
   padding-left: 2vw;
+  padding-right:2vw;
+  padding-top:0.8vw;
   font-family: var(--body-fonts);
   font-size: 1.5vw;
 }
 
-.arrow {
+.arrow-down {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 0.3vw;
-  position: relative;
-  margin-left: 40vw;
-}
-
-.down {
+  margin-top:0.5vw;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-#help-news-description {
-  display:none;
-  width:46vw;
-  background-color: var(--light-grey);
-  padding: 1vw 2vw 2vw 2vw;
-  margin-top:0vw;
-  border-radius: 0px 0px 10px 10px;
-  font-family: var(--body-fonts)
-  
+.help-link {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
 }
 
-.help-events-heading {
-  width:50vw;
-  height: 3.5vw;
-  border-radius: 10px;
-  background-color: var(--light-blue);
-  border-style: none;
-  text-align:left;
-  font-weight: 500;
-  padding-left: 2vw;
-  font-family: var(--body-fonts);
-  font-size: 1.5vw;
-}
-
-#help-events-description {
+.help-description {
   display:none;
   width:46vw;
   background-color: var(--light-grey);
@@ -222,6 +204,8 @@
   border-radius: 0px 0px 10px 10px;
   font-family: var(--body-fonts)
 }
+
+
 
   .help-help-icon {
     width: 3.4vw;

@@ -28,9 +28,9 @@
         <!--News filter options-->
 
          <ul id="newsIconsContainer">
-          <li class="newsIcon" id="maintenanceFilterButton">
+          <li class="newsIcon" id="maintenanceFilterButton" onclick="changeSrc()"> <!--changeSrc() doesn't work-->
             <figure class="newsFigure">
-            <img id="newsIconImage1" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
+            <img id="newsIconMaintenance" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
             <figcaption class="newsIconLabel">Maintenance</figcaption>
             </figure>
           </li>
@@ -70,7 +70,7 @@
             </figure>
         </li>
 
-           
+        
          </ul>
 
          <!--news articles-->

@@ -21,6 +21,7 @@
     margin: 0;
   }
 
+
 .main-heading {
     display: flex;
     flex-direction: row;
@@ -28,10 +29,11 @@
     justify-content: center;
     font-family: var(--logo-fonts);
     color: var(--black);
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     padding: none;
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.5px;
     margin-top: 1vw;
+    
 }
 
 .main-heading-text {
@@ -63,7 +65,7 @@
     gap: 2.5vw;
     width: 85vw;
     height: 64vh;
-    margin-top: 2vw;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -127,7 +129,6 @@
 .main-icons-bottom {
     display: flex;
     justify-content: space-between;
-    position:sticky;
     margin-top: 0vw;
 
 }
@@ -141,8 +142,7 @@
 
 .main-help-icon {
     width: 3.5vw;
-    height:auto;
     margin-right: 2vw;
     margin-top: 2vw;
-    object-fit: contain;
+
 }
