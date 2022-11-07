@@ -40,9 +40,24 @@ function showArticles() {
 
 //function to change maintenance icon colour - NB doesn't work
 
-function changeSrc() {
+/*function changeSrc() {
     document.getElementById("#newsIconMaintenance").src="/images/colour_maintenance_icon.svg";
+  }*/
+
+  /*function changeImage() {
+    const image = document.getElementById(#maintenanceFilterButton);
+    if (image.src.match("/images/maintenance_icon.svg")) {
+        image.src = "/images/colour_maintenance_icon.svg";
+    } else {
+        image.src = "/images/maintenance_icon.svg"
+    }
+  }*/
+
+  function changeImage(fileName) {
+    let img = document.querySelector("#newsIconMaintenance");
+    img.setAttribute("src", fileName);
   }
+
 
 /*click maintenance filter*/
 
@@ -54,7 +69,7 @@ function maintenanceFunction() {
     outdoorFilterButton.style.color = "#000000";
     holidaysFilterButton.style.color = "#000000";
     filterArticles("maintenanceArticle"); //filter maintenance articles using filterArticles function above
-    secondClick(); //show all news articles again when clicking the news icon a 2nd time
+    /*secondClick(); //show all news articles again when clicking the news icon a 2nd time*/
 }
 
 document.getElementById("maintenanceFilterButton").addEventListener("click", showFunction);
