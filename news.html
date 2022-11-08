@@ -14,51 +14,53 @@
    <div id="newsWrapper"> 
     <nav class="navigation">
         <div class="logo">
+            <a href="index.html" class="navLogoLink">
           <p class="logo-grundfos">GRUNDFOS</p>
           <p class="logo-kollegiet">KOLLEGIET</p>
+        </a>
         </div>
     </nav>
 
     <section class="newsContent">
         <div class="newsTop">
-            <h1 class="newsH1">NEWS</h1>
+            <h1 class="newsH1"><a href="news.html" id="newsLink">NEWS</a></h1>
             <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
           </div>
         
         <!--News filter options-->
 
          <ul id="newsIconsContainer">
-          <li class="newsIcon" id="maintenanceFilterButton" onclick="changeImage('images/colour_maintenance_icon.svg')"> <!--changeSrc() onclick="changeSrc()"--> 
+          <li class="newsIcon" id="maintenanceFilterButton" onclick="maintenanceColour()">
             <figure class="newsFigure">
             <img id="newsIconMaintenance" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
             <figcaption class="newsIconLabel">Maintenance</figcaption>
             </figure>
           </li>
 
-         <li class="newsIcon" id="communityFilterButton"> 
+         <li class="newsIcon" id="communityFilterButton" onclick="communityColour()"> 
             <figure>
-            <img class="newsIconImage" src="/images/community_icon.svg" alt="Group of people">
+            <img id="newsIconCommunity" class="newsIconImage" src="/images/community_icon.svg" alt="Group of people">
             <figcaption class="newsIconLabel">Community</figcaption>
         </figure>
     </li>
 
-            <li class="newsIcon" id="laundryFilterButton">
+            <li class="newsIcon" id="laundryFilterButton" onclick="laundryColour()">
                 <figure>
-            <img class="newsIconImage" src="/images/laundry_icon.svg" alt="Washing machine">
+            <img id="newsIconLaundry" class="newsIconImage" src="/images/laundry_icon.svg" alt="Washing machine">
             <figcaption class="newsIconLabel">Laundry</figcaption>
         </figure>
     </li>
 
-            <li class="newsIcon" id="outdoorFilterButton">
+            <li class="newsIcon" id="outdoorFilterButton" onclick="outdoorColour()">
                 <figure>
-            <img class="newsIconImage" src="/images/outdoor_icon.svg" alt="Trees">
+            <img id="newsIconOutdoor" class="newsIconImage" src="/images/outdoor_icon.svg" alt="Trees">
              <figcaption class="newsIconLabel">Outdoor areas</figcaption>
             </figure>
         </li>
 
-         <li class="newsIcon" id="holidaysFilterButton">
+         <li class="newsIcon" id="holidaysFilterButton" onclick="holidaysColour()">
             <figure>
-           <img class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
+           <img id="newsIconHolidays" class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
            <figcaption class="newsIconLabel">Holidays</figcaption>
         </figure>
         </li>
@@ -184,9 +186,14 @@
                 side of the building upon residents' request.</p>
         </div>
     </article>
-  
-    
+     
+    <!--help icon
+    <div class="help-section-news">
+        <a href="help.html" class="main-help-link">
+          <img src="images/help-icon.png" alt="main-help-icon" class="main-help-icon-news"></a>
+    </div> -->
     </section> <!--end of news content section-->
+    
 </div> <!--end of wrapper-->
 
     <script src="js/script-news.js"></script>

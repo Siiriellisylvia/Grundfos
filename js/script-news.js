@@ -5,18 +5,14 @@
 const elem = document.getElementById('clearFilterButton');
 elem.style.display = 'none';
 
-
 //function to filter news articles
 
 function filterArticles(showClass) {
-    
     for (const selection of document.getElementsByClassName('newsArticle')) {
         selection.classList.add('hidden');
     }
-
     for (const selection of document.getElementsByClassName(showClass)) {
         selection.classList.remove('hidden');
-
     }
 }
 
@@ -35,28 +31,85 @@ function secondClick() {
 function showArticles() {
     for (const showAll of document.getElementsByClassName('newsArticle')) {
         showAll.classList.remove('hidden')
+    const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/maintenance_icon.svg";
+    const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/community_icon.svg";
+    const launColour = document.getElementById('newsIconLaundry');
+        launColour.src = "images/laundry_icon.svg";
+    const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/outdoor_icon.svg";
+    const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/holidays_icon.svg";
     }
 }
 
-//function to change maintenance icon colour - NB doesn't work
+//function to change news icon colours on click 
 
-/*function changeSrc() {
-    document.getElementById("#newsIconMaintenance").src="/images/colour_maintenance_icon.svg";
-  }*/
+  function maintenanceColour() {
+    const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/colour_maintenance_icon.svg";
+    const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/community_icon.svg";
+    const launColour = document.getElementById('newsIconLaundry');
+        launColour.src = "images/laundry_icon.svg";
+    const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/outdoor_icon.svg";
+    const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/holidays_icon.svg";
+     }
 
-  /*function changeImage() {
-    const image = document.getElementById(#maintenanceFilterButton);
-    if (image.src.match("/images/maintenance_icon.svg")) {
-        image.src = "/images/colour_maintenance_icon.svg";
-    } else {
-        image.src = "/images/maintenance_icon.svg"
+  function communityColour() {
+   const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/colour_community_icon.svg";
+   const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/maintenance_icon.svg";
+   const launColour = document.getElementById('newsIconLaundry');
+        launColour.src = "images/laundry_icon.svg";
+   const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/outdoor_icon.svg";
+   const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/holidays_icon.svg";
     }
-  }*/
 
-  function changeImage(fileName) {
-    let img = document.querySelector("#newsIconMaintenance");
-    img.setAttribute("src", fileName);
-  }
+   function laundryColour() {
+    const launColour = document.getElementById('newsIconLaundry');
+    launColour.src = "images/colour_laundry_icon.svg";
+    const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/maintenance_icon.svg";
+    const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/community_icon.svg";
+    const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/outdoor_icon.svg";
+    const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/holidays_icon.svg";    
+    }
+
+    function outdoorColour() {
+    const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/colour_outdoor_icon.svg";
+    const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/maintenance_icon.svg";
+    const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/community_icon.svg";
+    const launColour = document.getElementById('newsIconLaundry');
+        launColour.src = "images/laundry_icon.svg";
+    const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/holidays_icon.svg";    
+        }
+
+    function holidaysColour() {
+    const holiColour = document.getElementById('newsIconHolidays');
+        holiColour.src = "images/colour_holidays_icon.svg";
+    const mainColour = document.getElementById('newsIconMaintenance');
+        mainColour.src = "images/maintenance_icon.svg";
+    const commColour = document.getElementById('newsIconCommunity');
+        commColour.src = "images/community_icon.svg";
+    const launColour = document.getElementById('newsIconLaundry');
+        launColour.src = "images/laundry_icon.svg";
+    const outdColour = document.getElementById('newsIconOutdoor');
+        outdColour.src = "images/outdoor_icon.svg";
+        }   
 
 
 /*click maintenance filter*/

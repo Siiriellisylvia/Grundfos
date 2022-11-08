@@ -63,6 +63,10 @@ h3 {
     margin: -0.5vw 0.1vw;
   }
 
+  .navLogoLink {
+    text-decoration: none;
+  }
+
 /*events sytles*/
 
 .eventsContent {
@@ -90,8 +94,12 @@ h3 {
   text-align: center;
   flex: 1;
   margin-bottom: 1.5vw;
-  
-}
+  }
+
+ #eventsLink{
+  text-decoration: none;
+  color: #000000;
+ }
 
 .eventsSearchIcon {
   width: 2.8vw;
@@ -252,3 +260,17 @@ justify-content: space-evenly;
 .tg .tg-adty{background-color:#f2f2f2;border-color:#f2f2f2;color:#000000;font-family:Arial, Helvetica, sans-serif !important;
   font-size:100%;text-align:center;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+
+/*help icon*/
+.main-help-icon-events {
+  width: 3.5vw;
+  height: auto;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  object-fit: contain;
+}
+
+.help-section-events {
+  margin-top: 85vh;
+}

@@ -1,7 +1,7 @@
 /* Events JS*/
 
 function myPopUp1() {
-    var myPopUp1 = window.open("events-popup1.html", "", "width=700,height=400,top=200,left=550",);
+    var myPopUp1 = window.open("events-popup1.html", "", "width=700,height=400,top=200,left=550");
     myPopUp1.focus();
   }
 

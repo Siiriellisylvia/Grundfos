@@ -50,9 +50,11 @@ h3 {
       flex-direction: column;
       align-items: center;
       position: fixed;
-      position: sticky; /*- makes news content disappear beind the nav bar...*/
+      top: 0;
+      bottom: 0;
+      position: sticky; 
+          }
     
-    }
     .logo-grundfos {
       font-family: var(--logo-fonts);
       font-size: 2.5vw;
@@ -69,6 +71,10 @@ h3 {
       color: var(--white);
       margin: -0.5vw 0.1vw;
     }
+
+    .navLogoLink {
+      text-decoration: none;
+    }
     
     /*news styles*/
   
@@ -84,6 +90,13 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    position: sticky;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    height: 18vh;
   }
 
   .newsH1 {
@@ -96,6 +109,11 @@ h3 {
     text-align: center;
     flex: 1;
     margin-bottom: 1.5vw;
+      }
+
+  #newsLink {
+    text-decoration: none;
+    color: #000000;
   }
 
   .newsSearchIcon {
@@ -112,8 +130,13 @@ h3 {
       width: 78vw;
       padding: 0;
       margin: 0;
+      margin-top: 0;
       flex: 1;
-     
+     position: fixed;
+     top: 8vw;
+     bottom: 0;
+     position: sticky;
+     background-color: #ffffff;
     }
 
     .newsIcon {
@@ -146,7 +169,8 @@ h3 {
       justify-items: center; 
       align-items: center;
       row-gap: 2vw;
-      margin-bottom: 4vw;     
+      margin-bottom: 4vw;  
+        
     }
 
     .newsArticle {
@@ -211,4 +235,14 @@ h3 {
   
   .hidden {
     display: none;
+  }
+
+  /*help icon*/
+  .main-help-icon-news {
+    width: 3.5vw;
+    height: auto;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    object-fit: contain;
   }
