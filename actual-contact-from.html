@@ -36,7 +36,8 @@
             <label for="radio1">Caretaker</label>
             <input class="options" type="radio" name="contact" value="radio2" id="radio2">
             <label for="radio2">Resident Council</label>
-            <div class="dropdown">
+          </div>
+            <!---<span class="custom-dropdown" style="width:800px;">
               <select>
                 <option value="0">Select subject:</option>
                 <option value="1">Electrical Issues</option>
@@ -44,8 +45,42 @@
                 <option value="3">Damage</option>
                 <option value="4">Other</option>
               </select>
-          </div>
-        </div>
+            </span>
+
+            <span class="custom-dropdown" style="width:800px;">
+              <select disabled>
+                <option value="0">Select subject:</option>
+                <option value="1">Electrical Issues</option>
+                <option value="2">Plumbing Issues</option>
+                <option value="3">Damage</option>
+                <option value="4">Other</option>
+              </select>
+            </span>-->
+            <!--<nav>
+
+              <label for="touch"><span>Select subject</span></label>
+              <input type="checkbox" id="touch">
+
+              <ul class="slide">
+                <li><a href="#">Electrical Issues</a></li>
+                <li><a href="#">Plumbing Issues</a></li>
+                <li><a href="#">Damage</a></li>
+                <li><a href="#">Other</a></li>
+              </ul>
+            </nav>-->
+
+            <div class="dropdown">
+              <input type="text" class="text02" readonly
+              placeholder="Dropdwon Menu">
+              <div class="option">
+                  <div onmouseover="show('Electrical Issues')">Electrical Issues</div>
+                  <div onmouseover="show('Plumbing Issues')">Plumbing Issues</div>
+                  <div onmouseover="show('Damage')">Damage</div>
+                  <div onmouseover="show('Other')">Other</div>
+              </div>
+
+            </div>
+        
 
     </div>
 
