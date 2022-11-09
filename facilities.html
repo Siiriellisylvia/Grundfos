@@ -11,12 +11,36 @@
     <div class="laundry-page">
 
       <!-- navigation section-->
-      <div class="laundry-navigation">
-        <div class="laundry-logo">
-          <p class="logo-grundfos">GRUNDFOS</p>
-          <p class="logo-kollegiet">KOLLEGIET</p>
-        </div>
-      </div>
+      
+        <nav class="main-navigation">
+          <section class="navigation-dateandtime">
+          <p id="date"></p>
+          <p id="time"></p>
+          </section>
+      
+          <div class="main-logo">
+            <a class="logo-grundfos-link" href ="index.html"><p class="logo-grundfos">GRUNDFOS</p></a>
+            <a class="logo-kollegiet-link" href="index.html"><p class="logo-kollegiet">KOLLEGIET</p></a>
+          </div>
+      
+          <div class="navigation-links">
+            <a href="news.html" class="nav-link">NEWS</a>
+            <a href="events.html" class="nav-link">EVENTS</a>
+            <a href="laundry.html" class="nav-link">LAUNDRY</a>
+            <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+            <a href="facilities.html" class="nav-link">FACILITIES</a>
+            <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+          </div>
+      
+          <div class="navigation-qr">
+            <p class="navigation-qr-code-description">MOBILE VERSION</p>
+            <img
+              src="images/QR code.png"
+              class="navigation-qr-code-image"
+              alt="NavigationQRcode"
+            />
+          </div>
+        </nav>
 <!--content section-->
       <div class="laundry-content">
 
@@ -36,7 +60,7 @@
           <!--facility list with buttons-->
           <div class="facility-list">
             
-              <div id="facility-element1" onclick="changeImage('images/rooftop.jpg')">
+              <div class="facility-element" onclick="changeImage(this, 'images/rooftop.jpg')">
                 <div class="svg-container"><svg
                   xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 82.417 60.917"
@@ -52,10 +76,10 @@
                                      />
                 </svg>
               </div>
-                <div class="align-facility">ROOFTOP TERRACE </div> <button id="room-button1" onclick="changeStyle()">12.01</button>
+                <div class="align-facility">ROOFTOP TERRACE </div> <button class="room-button">12.01</button>
               </div>
            
-              <div class="facility-element" onclick="changeImage('images/common-bbq.jpg')">
+              <div class="facility-element" onclick="changeImage(this,'images/common-bbq.jpg')">
                 <img
                   src="images/bbq.svg"
                   alt="Barbecue Icon"
@@ -64,7 +88,7 @@
                 BARBECUE AREA <button class="room-button">11.10</button>
               </div>
             
-              <div class="facility-element" onclick="changeImage('images/common-bbq.jpg')">
+              <div class="facility-element" onclick="changeImage(this, 'images/common-bbq.jpg')">
                 <img
                   src="images/kitchen.svg"
                   alt="Common Room Icon"
@@ -73,7 +97,7 @@
                 COMMON ROOM <button class="room-button">11.03</button>
               </div>
             
-              <div class="facility-element" onclick="changeImage('images/printers.jpg')">
+              <div class="facility-element" onclick="changeImage(this, 'images/printers.jpg')">
                 <div class="svg-container">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101">
                   <g id="PRINTER_ICON" data-name="PRINTER ICON" transform="translate(0 0.328)">
@@ -88,7 +112,7 @@
                 PRINTING ROOM <button class="room-button">2.12</button>
               </div>
             
-              <div class="facility-element" onclick="changeImage('images/laundry-bike.jpg')">
+              <div class="facility-element" onclick="changeImage(this, 'images/laundry-bike.jpg')">
                 <img
                   src="images/laundry.svg"
                   alt="Laundry Icon"
@@ -97,7 +121,7 @@
                 LAUNDRY ROOM <button class="room-button">-1.05</button>
               </div>
             
-                <div class="facility-element" onclick="changeImage('images/laundry-bike.jpg')" onclick="changeStyle()">
+                <div class="facility-element" onclick="changeImage(this,'images/laundry-bike.jpg')" onclick="changeStyle()">
               <img
                 src="images/bicycle.svg"
                 alt="Bicycle Icon"
@@ -118,6 +142,9 @@
         </div>
 
               
+      </div>
+      <div class="bottom-page">
+        <a href="help.html"> <img src="images/help-icon.png" alt="Help Icon" id="help-icon"></a>
       </div>
     </div>
     <script src="js/script-facilities.js"></script>

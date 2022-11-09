@@ -49,19 +49,41 @@
             </div>
                     <img src="images/selfie.jpg" alt="Natalia with a pumpkin" id="selfie">
                 </div>
+
+                <!-- current poll modal box-->
                 <div id="myModal" class="modal">
 
                   <!-- Modal content -->
                   <div class="modal-content">
                     <div class="modal-close"><span class="close">&times;</span></div>
-                    <div class="poll-title"> THANK YOU FOR YOUR VOTE!</div>
+                    <div id="poll-title1"> THANK YOU FOR YOUR VOTE!</div>
             <div class="title-line-modal"></div>
 
             <div id="vote-heading-modal">CURRENT RESULTS OF THE POLL</div>
 
             <!-- PIE CHART-->
             <div class="graphContainer">
-              <canvas id="myChart"></canvas>
+              <canvas id="myChart" width="200" height="200"></canvas>
+            </div>
+          </div>
+
+                
+                </div>
+
+<!-- last week poll modal box-->
+                <div id="myModalSec" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-close"><span class="closeSec">&times;</span></div>
+                    <div id="poll-title2"> LAST WEEK POLL RESULTS</div>
+            <div class="title-line-modal"></div>
+
+            <div id="vote-heading-modal">DO YOU SLEEPWALK?</div>
+
+            <!-- PIE CHART-->
+            <div class="graphContainer">
+              <canvas id="myChartSec" width="200" height="200"></canvas>
             </div>
           </div>
 
@@ -72,7 +94,7 @@
                         POLL IDEA?
                         <a href="contact-form.html"><button id="contact-RC-button"> Contact the Residents' Council</button></a>
                     </div>
-                    <a href="" id="link-last-week">
+                   
                     <div id="last-week-poll">
                         LAST WEEK'S POLL
                          <div id="pie-chart-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.492 153.548">
@@ -85,8 +107,9 @@
                 </div>
           </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js" integrity="sha512-Tfw6etYMUhL4RTki37niav99C6OHwMDB2iBT5S5piyHO+ltK2YX8Hjy9TXxhE1Gm/TmAV0uaykSpnHKFIAif/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/script-poll.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   </body>
 </html>

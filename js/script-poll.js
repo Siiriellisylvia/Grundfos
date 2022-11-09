@@ -1,6 +1,6 @@
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Get the button that opens the modal (HOT, NOT)
 var btn = document.getElementsByClassName("poll-vote-button");
 
 // Get the <span> element that closes the modal
@@ -26,41 +26,81 @@ window.onclick = function (event) {
   }
 };
 
+var modalSec = document.getElementById("myModalSec");
+// Get the button that opens the modal (last week poll)
+var btnSec = document.getElementById("last-week-poll");
+// Get the <span> element that closes the modal
+var spanSec = document.getElementsByClassName("closeSec");
+
+console.log("halllo");
+btnSec.onClick = function () {
+  modalSec.style.display = "block";
+};
+console.log("halllo");
+spanSec.onclick = function () {
+  modalSec.style.display = "none";
+};
+console.log("halllo");
+
 //pie chart on the modal
-const ctx = document.getElementById("myChart").getContext("2d");
+const ctx = document.getElementById("myChart");
 const myChart = new Chart(ctx, {
   type: "pie",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["HOT", "NOT"],
     datasets: [
       {
         label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-        ],
+        data: [69, 32],
+        backgroundColor: ["#10828c", "#eba10c"],
+        borderColor: ["#10828c", "#eba10c"],
         borderWidth: 1,
       },
     ],
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+
+        labels: {
+          usePointStyle: true,
+          pointStyle: "rectRounded",
+          boxWidth: 40,
+          boxHeight: 40,
+          borderRadius: 15,
+          padding: 50,
+          color: "black",
+          font: {
+            size: 30,
+            family: "'Roboto', sans-serif",
+            lineHeight: 1,
+          },
+        },
+      },
+      tooltip: {
+        enabled: false,
+      },
+      datalabels: {
+        align: "center",
+        color: "white",
+        font: {
+          size: 25,
+          family: "'Roboto', sans-serif",
+          weight: "bold",
+          lineHeight: 1,
+        },
+        formatter: (value, context) => {
+          const datapoints = context.chart.config.data.datasets[0].data;
+          function totalSum(total, datapoint) {
+            return total + datapoint;
+          }
+          const totalValue = datapoints.reduce(totalSum, 0);
+          const percentageValue = ((value / totalValue) * 100).toFixed(1);
+          return `${percentageValue}%`;
+        },
       },
     },
   },
+  plugins: [ChartDataLabels],
 });
