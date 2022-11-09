@@ -10,13 +10,35 @@
   <body>
 
     <div class="laundry-page">
-        <div class="laundry-navigation">
-          <div class="laundry-logo">
-            <p class="logo-grundfos">GRUNDFOS</p>
-            <p class="logo-kollegiet">KOLLEGIET</p>
-            <a href="" class="nav-link">NEWS</a> <br>
-              <a href="" class="nav-link-active">POLL OF THE WEEK</a>
-           </div>
+      <nav class="main-navigation">
+        <section class="navigation-dateandtime">
+        <p id="date"></p>
+        <p id="time"></p>
+        </section>
+    
+        <div class="main-logo">
+          <a class="logo-grundfos-link" href ="index.html"><p class="logo-grundfos">GRUNDFOS</p></a>
+          <a class="logo-kollegiet-link" href="index.html"><p class="logo-kollegiet">KOLLEGIET</p></a>
+        </div>
+    
+        <div class="navigation-links">
+          <a href="news.html" class="nav-link">NEWS</a>
+          <a href="events.html" class="nav-link">EVENTS</a>
+          <a href="laundry.html" class="nav-link">LAUNDRY</a>
+          <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
+          <a href="facilities.html" class="nav-link">FACILITIES</a>
+          <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
+        </div>
+    
+        <div class="navigation-qr">
+          <p class="navigation-qr-code-description">MOBILE VERSION</p>
+          <img
+            src="images/QR code.png"
+            class="navigation-qr-code-image"
+            alt="NavigationQRcode"
+          />
+        </div>
+      </nav>
         </div>
   
         <div class="laundry-content">
@@ -77,12 +99,12 @@
                   <div class="modal-content">
                     <div class="modal-close"><span class="closeSec">&times;</span></div>
                     <div id="poll-title2"> LAST WEEK POLL RESULTS</div>
-            <div class="title-line-modal"></div>
+                    <div class="title-line-modal"></div>
 
             <div id="vote-heading-modal">DO YOU SLEEPWALK?</div>
 
             <!-- PIE CHART-->
-            <div class="graphContainer">
+            <div class="graphContainerSec">
               <canvas id="myChartSec" width="200" height="200"></canvas>
             </div>
           </div>
