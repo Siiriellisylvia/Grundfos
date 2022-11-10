@@ -33,7 +33,7 @@ function time() {
 }
 
 setInterval(time, 1000);
-
+/*
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal (HOT, NOT)
@@ -75,8 +75,8 @@ btnSec.onClick = function () {
 spanSec.onclick = function () {
   modalSec.style.display = "none";
 };
-
-//pie chart on the modal
+*/
+//pie chart on the modal 'Autumn Lovers'
 const ctx = document.getElementById("myChart");
 const myChart = new Chart(ctx, {
   type: "pie",
@@ -100,13 +100,13 @@ const myChart = new Chart(ctx, {
         labels: {
           usePointStyle: true,
           pointStyle: "rectRounded",
-          boxWidth: 40,
-          boxHeight: 40,
+          boxWidth: 30,
+          boxHeight: 30,
           borderRadius: 15,
           padding: 50,
           color: "black",
           font: {
-            size: 30,
+            size: 25,
             family: "'Roboto', sans-serif",
             lineHeight: 1,
           },
@@ -138,3 +138,89 @@ const myChart = new Chart(ctx, {
   },
   plugins: [ChartDataLabels],
 });
+
+//pie chart on the modal 'Do you sleepwalk?'
+const ctxSec = document.getElementById("myChartSec");
+const myChartSec = new Chart(ctxSec, {
+  type: "pie",
+  data: {
+    labels: ["YES", "NO"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [10, 39],
+        backgroundColor: ["#10828c", "#eba10c"],
+        borderColor: ["#10828c", "#eba10c"],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: "bottom",
+
+        labels: {
+          usePointStyle: true,
+          pointStyle: "rectRounded",
+          boxWidth: 30,
+          boxHeight: 30,
+          borderRadius: 15,
+          padding: 50,
+          color: "black",
+          font: {
+            size: 25,
+            family: "'Roboto', sans-serif",
+            lineHeight: 1,
+          },
+        },
+      },
+      tooltip: {
+        enabled: false,
+      },
+      datalabels: {
+        align: "center",
+        color: "white",
+        font: {
+          size: 25,
+          family: "'Roboto', sans-serif",
+          weight: "bold",
+          lineHeight: 1,
+        },
+        formatter: (value, context) => {
+          const datapoints = context.chart.config.data.datasets[0].data;
+          function totalSum(total, datapoint) {
+            return total + datapoint;
+          }
+          const totalValue = datapoints.reduce(totalSum, 0);
+          const percentageValue = ((value / totalValue) * 100).toFixed(1);
+          return `${percentageValue}%`;
+        },
+      },
+    },
+  },
+  plugins: [ChartDataLabels],
+});
+
+all_modals = ["modal", "modalSec"];
+all_modals.forEach((modal) => {
+  const modalSelected = document.querySelector("." + modal);
+  modalSelected.classList.remove("fadeIn");
+  modalSelected.classList.add("fadeOut");
+  modalSelected.style.display = "none";
+});
+const modalClose = (modal) => {
+  const modalToClose = document.querySelector("." + modal);
+  modalToClose.classList.remove("fadeIn");
+  modalToClose.classList.add("fadeOut");
+  setTimeout(() => {
+    modalToClose.style.display = "none";
+  }, 500);
+};
+
+const openModal = (modal) => {
+  const modalToOpen = document.querySelector("." + modal);
+  modalToOpen.classList.remove("fadeOut");
+  modalToOpen.classList.add("fadeIn");
+  modalToOpen.style.display = "flex";
+};
