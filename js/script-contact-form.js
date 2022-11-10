@@ -61,7 +61,7 @@ eye.addEventListener("click", function () {
 
 /** actual form drop down menu*/
 function show(a){
-  document.querySelector('.text02').value = a
+  document.querySelector('.text02').value = a;
 }
 
 let dropdown = document.querySelector('.dropdown');
