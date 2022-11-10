@@ -57,7 +57,7 @@ function updateCountdown() {
 }
 
 // Second timer Washing Machine
-const startingMinutesTwo = 0.05;
+const startingMinutesTwo = 0.1;
 let timeTwo = startingMinutesTwo * 60;
 
 let countdownElTwo = document.querySelector("#countdown-two");
