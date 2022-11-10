@@ -1,22 +1,58 @@
+//left side nav bar
+//Date
+var dateToday = new Date();
+var dd = dateToday.getDate();
+var mm = dateToday.getMonth() + 1;
+var yyyy = dateToday.getFullYear();
+if (dd < 10) {
+  dd = "0" + dd;
+}
+
+if (mm < 10) {
+  mm = "0" + mm;
+}
+dateToday = dd + "." + mm + "." + yyyy;
+console.log(dateToday);
+document.getElementById("date").innerHTML = dateToday;
+
+//Time
+function time() {
+  var timeToday = new Date();
+  var hh = timeToday.getHours();
+  var mm = timeToday.getMinutes();
+  if (hh < 10) {
+    hh = "0" + hh;
+  }
+
+  if (mm < 10) {
+    mm = "0" + mm;
+  }
+  timeToday = hh + ":" + mm;
+  console.log(timeToday);
+  document.getElementById("time").innerHTML = timeToday;
+}
+
+setInterval(time, 1000);
+
 // First timer Washing Machine
 const startingMinutes = 10;
-let time = startingMinutes * 60;
+let timeOne = startingMinutes * 60;
 
 let countdownEl = document.querySelector(".countdown");
 
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+  const minutes = Math.floor(timeOne / 60);
+  let seconds = timeOne % 60;
 
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  if (time < 0) {
+  if (timeOne < 0) {
     countdownEl.innerHTML = `Free`;
   } else {
     countdownEl.innerHTML = `${minutes}:${seconds}`;
-    time--;
+    timeOne--;
   }
 }
 

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="/css/news-styles.css">
+</head>
+<body>
+
+    <div id="newsWrapper"> 
+ 
+     <nav class="navigation">
+ 
+         <div class="logo">
+             <a href="index.html" class="navLogoLink">
+           <p class="logo-grundfos">GRUNDFOS</p>
+           <p class="logo-kollegiet">KOLLEGIET</p>
+         </a>
+         </div>
+     </nav>
+ 
+     <section class="newsContent">
+         <div class="newsTop">
+             <h1 class="newsH1"><a href="news.html" id="newsLink">Maintenance News</a></h1>
+             <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
+           </div>
+         
+         <!--News filter options-->
+         <div id="newsBurger">
+             <a href="newsIconFilter.html">☰</a>
+             </div>
+          <ul id="newsIconsContainer">
+                     <li class="newsIcon" id="maintenanceFilterButton" onclick="maintenanceColour()">
+             <figure class="newsFigure">
+             <img id="newsIconMaintenance" class="newsIconImage" src="/images/maintenance_icon.svg" alt="Spanner">
+             <figcaption class="newsIconLabel">Maintenance</figcaption>
+             </figure>
+           </li>
+ 
+          <li class="newsIcon" id="communityFilterButton" onclick="communityColour()"> 
+             <figure>
+             <img id="newsIconCommunity" class="newsIconImage" src="/images/community_icon.svg" alt="Group of people">
+             <figcaption class="newsIconLabel">Community</figcaption>
+         </figure>
+     </li>
+ 
+             <li class="newsIcon" id="laundryFilterButton" onclick="laundryColour()">
+                 <figure>
+             <img id="newsIconLaundry" class="newsIconImage" src="/images/laundry_icon.svg" alt="Washing machine">
+             <figcaption class="newsIconLabel">Laundry</figcaption>
+         </figure>
+     </li>
+ 
+             <li class="newsIcon" id="outdoorFilterButton" onclick="outdoorColour()">
+                 <figure>
+             <img id="newsIconOutdoor" class="newsIconImage" src="/images/outdoor_icon.svg" alt="Trees">
+              <figcaption class="newsIconLabel">Outdoor areas</figcaption>
+             </figure>
+         </li>
+ 
+          <li class="newsIcon" id="holidaysFilterButton" onclick="holidaysColour()">
+             <figure>
+            <img id="newsIconHolidays" class="newsIconImage" src="/images/holidays_icon.svg" alt="Sun">
+            <figcaption class="newsIconLabel">Holidays</figcaption>
+         </figure>
+         </li>
+ 
+         <li class="newsIcon" id="clearFilterButton">
+             <figure>
+                 <img class="newsIconImage" src="/images/clearfilter_icon.svg" alt="Funnel with a cross">
+                 <figcaption class="newsIconLabel">Clear filter</figcaption>
+             </figure>
+         </li>
+ 
+         
+          </ul>
+ 
+          <!--news articles-->
+ 
+     <section id="newsArticleContainer">
+ 
+ 
+     <article class="newsArticle maintenanceArticle">
+         <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+         <div class="newsText">
+             <div class="newsHeader">
+                 <h3 class="newsH3">All power restored</h3>
+                 <p class="newsDate">07.10.2022</p>
+             </div>
+             <p class="newsDescription"> Following a power outage last night, all power has now
+                 been restored to the building</p>
+         </div>
+     </article>
+     
+ 
+     <article class="newsArticle maintenanceArticle">
+         <img class="newsArticleIcon" src="/images/maintenance_icon.svg" alt="Spanner">
+         <div class="newsText">
+             <div class="newsHeader">
+                 <h3 class="newsH3">Water consumption</h3>
+                 <p class="newsDate">02.10.2022</p>
+             </div>
+             <p class="newsDescription"> Last month we experienced high water consumption. If
+                 you have a leak in your toilet, please contact Caretaker.</p>
+         </div>
+     </article>
+ 
+     
+      
+     <!--help icon
+     <div class="help-section-news">
+         <a href="help.html" class="main-help-link">
+           <img src="images/help-icon.png" alt="main-help-icon" class="main-help-icon-news"></a>
+     </div> -->
+     </section> <!--end of news content section-->
+     
+ </div> <!--end of wrapper-->
+ 
+     <script src="js/script-news.js"></script>
+ </body>
+ 
+ </html>

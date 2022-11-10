@@ -26,35 +26,111 @@ body {
   display: flex;
   flex-direction: row;
 }
-.laundry-navigation {
+
+.main-navigation {
   width: 22vw;
   height: 100vh;
   background-color: var(--blue);
-  margin-top: 0;
-  padding: 0;
+  margin-top: 0vw;
+  padding-top: 0.5vw 1vw 0vw 0vw;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.navigation-dateandtime {
+  font-family: var(--body-fonts);
+  font-size: 1vw;
+  color: var(--black);
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.main-logo .logo-grundfos {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.logo-grundfos {
   font-family: var(--logo-fonts);
-  font-size: 2.5vw;
-  letter-spacing: 0.3vw;
+  font-size: 1.95vw;
+  font-weight: bold;
+  letter-spacing: 0.5vw;
+  text-decoration: none;
   color: var(--white);
   margin: 0vh 0px;
-  margin-top: 2vh;
+  margin-top: 1vw;
 }
+
+.logo-grundfos-link {
+  text-decoration: none;
+}
+
 .logo-kollegiet {
+  display: flex;
+  flex-direction: column;
   font-family: var(--logo-fonts);
   font-weight: lighter;
-  font-size: 2vw;
-  letter-spacing: 0.69vw;
+  font-size: 2.45vw;
+  letter-spacing: 0.22vw;
   color: var(--white);
-  margin: -0.5vw 0.1vw;
+  margin: 0vw 0.1vw;
+  margin-left: 3.5vw;
+}
+
+.logo-kollegiet-link {
+  text-decoration: none;
+}
+
+.navigation-links {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  top: 10vw;
+  font-family: var(--body-fonts);
+  line-height: 4vw;
+  color: var(--light-grey);
+}
+
+.nav-link {
+  color: var(--light-grey);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6vw;
+  font-weight: bolder;
+}
+
+.navigation-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0vw;
+}
+
+.navigation-qr-code-description {
+  font-family: var(--body-fonts);
+  color: var(--light-grey);
+  font-size: 0.99vw;
+  line-height: 0vw;
+}
+
+.navigation-qr-code-image {
+  width: 35%;
+  height: auto;
 }
 .laundry-content {
   width: 78vw;
   background-color: var(white);
+  margin-left: 22vw;
 }
 
 .laundry-top {
@@ -171,13 +247,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 #pie-chart-icon {
   width: 5.4vw;
-}
-#link-last-week {
-  text-decoration: none;
-  color: var(--black);
 }
 
 #contact-RC-button {
@@ -204,7 +277,7 @@ path:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
+  left: 22vw;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -215,7 +288,7 @@ path:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 6.2% 27%; /* 15% from the top and centered */
+  margin: 6.2% 5%; /* 15% from the top and centered */
   display: flex;
   flex-direction: column;
   width: 65vw;
@@ -229,6 +302,7 @@ path:hover {
   color: rgb(7, 7, 7);
   font-size: 4vw;
   font-weight: bold;
+  padding: 2px 30px;
 }
 
 .close:hover,
@@ -239,16 +313,45 @@ path:hover {
 }
 
 #vote-heading-modal {
-  margin: 3vw auto;
+  margin: 2vw auto;
   font-family: var(--body-fonts);
   font-size: var(--font-size-subheading);
 }
 .modal-close {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  justify-content: right;
 }
 
 .graphContainer {
-  width: 50vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* Layout Properties */
+  width: 24vw;
+  height: 24vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2vw;
+}
+#myChart {
+  padding: 30px;
+}
+#poll-title1 {
+  font-family: var(--body-fonts);
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 0vw;
+  margin-left: -1.5vw;
+}
+
+.modalSec {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 22vw;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(216, 216, 216); /* Fallback color */
+  background-color: rgba(229, 226, 226, 0.3); /* Black w/ opacity */
 }
