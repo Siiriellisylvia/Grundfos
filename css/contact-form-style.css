@@ -432,6 +432,10 @@
 
   /* Actual Contact Form*/
 
+  .radio1-1 {
+    display: inline-block;
+  }
+
   .container-box {
     width: 50vw;
     height: 75vh;
@@ -446,8 +450,8 @@
     justify-content: center;
     align-items: center;
     font-family: var(--body-fonts);
-    font-size: var(--font-size-bodytext);
-    margin-left: 10vw;
+    font-size: var(--font-size-subheading);
+    margin-left: 11.9vw;
     margin-top: 3vh;
   }
 
@@ -462,11 +466,22 @@
     border: 0.1vw solid transparent;
     background-color: transparent;
     transition: 0.2s all linear;
-    margin-right: 10px;
+    place-content: center;
     position: relative;
     top: 4px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    margin-top: 1.9vh;
+  }
+
+  #radio1 {
+    margin-left: -5.9em;
+    margin-right: 1.7em;
+  }
+
+  #radio2 {
+    margin-left: 10.2vw;
+    margin-right: 1.7em;
   }
 
   .options:checked {
@@ -480,142 +495,17 @@
    margin-right: 10px;
   }
 
-  /*.square {
-    width: .7em;
-    height: .7em;
-    margin: .5em;
-    display: inline-block; 
-   }
-
-  .custom-dropdown {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
-  }
-
-  .custom-dropdown select {
-    background-color: #10828c;
-    color: #ffffff;
-    font-size: var(--body-fonts);
-    padding: .5em;
-    padding-right: 2.5em;
-    border: 0;
-    mask-origin: 0;
-    border-radius: 3px;
-    text-indent: 0.01px;
-    text-overflow: '';
-    -webkit-appearance: button;
-  }
-
-  .custom-dropdown::before,
-  .custom-dropdown::after {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .custom-dropdown::after {
-    content: "\25BC";
-    height: 1em;
-    font-size: var(--body-fonts);
-    line-height: 1;
-    right: 1.2em;
-    top: 50%;
-    margin-top: -.5em;
-  }
-
-  .custom-dropdown::before {
-    width: 2em;
-    right: 0;
-    top: 0em;
-    bottom: 0em;
-    border-radius: 0 3px 3px 0;
-  }
-
-  .custom-dropdown select[disabled] {
-    color: #4ca1a9;
-  }
-
-  .custom-dropdown select[disabled]::after {
-    color: #aacfd3;
-  }
-
-  .custom-dropdown::before {
-    background-color: #eba10c;
-  }
-
-  .custom-dropdown::after {
-    color: #efefef;
-  }*/
-
-  /*li a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  nav {
-    width: 300px;
-    background: #10828c;
-    margin: 40px auto;
-  }
-
-  span {
-    padding: 30px;
-    background-color: #4ca1a9;
-    color: #ffffff;
-    font-size: var(--body-fonts);
-    cursor: pointer;
-    display: block;
-  }
-
-  span::after {
-    float: right;
-    right: 10%;
-    content: "+";
-  }
-
-  .slide {
-    clear: both;
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    text-align: center;
-    transition: height .4s ease;
-  }
-
-  .slide li {
-    padding: 30px;
-  }
-
-  #touch {
-    position: absolute;
-    opacity: 0;
-    height: 0px;
-  }
-
-  #touch:checked + .slide {
-    height: 300px;
-  }*/
-
-  /** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--body-fonts);
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-  }*/
-
   .dropdown {
     position: relative;
-    margin-top: 100px;
-    width: 300px;
-    height: 50px;
+    margin-top: 3.9vh;
+    width: 37vw;
+    height: 5vh;
+    margin-left: 5.2vw;
+  }
+
+  .text02::placeholder {
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext);
   }
 
   .dropdown::before {
@@ -659,16 +549,15 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: var(--border-radius-boxes);
     padding: 12px 20px;
     font-size: 16px;
-    background: #10828c;
-    box-shadow: 0 5px 20px rgba(140, 144, 144, 0.4);
+    background: var(--light-blue);
     outline: none;
     border: none;
   }
 
-  .dropdown .option {
+  .dropdown .opt {
     position: absolute;
     top: 70px;
     width: 100%;
@@ -681,20 +570,75 @@
     transition: 0.25s;
   }
 
-  .dropdown.active .option{
+  .dropdown.active .opt{
     visibility: visible;
     opacity: 1;
 
   }
   
-  .dropdown .option div {
+  .dropdown .opt div {
     padding: 12px 20px;
     cursor: pointer;
   }
 
-  .dropdown .option div:hover {
+  .dropdown .opt div:hover {
     background-color: var(--blue);
     color: var(--white);
+  }
+
+  .msg-box {
+    width: 39.2vw;
+    height: 36vh;
+    background-color: var(--white);
+    border: solid 1px var(--white);
+    border-radius: var(--border-radius-boxes);
+    margin-left: 5.2vw;
+    margin-top: 7vh;
+  }
+
+  .msg-box::placeholder {
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext);
+  }
+
+  .contact-buttons {
+    margin-left: 26.2vw;
+    margin-top: 2.5vh;
+  }
+
+  .cancel-btn {
+    margin-top: 10vh;
+    background-color: var(--white);
+    border: solid 1.5px;
+    border-color: #eba10c;
+    color: var(--orange);
+    padding: 8px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--body-fonts);
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    margin-top: 10vh;
+    background-color: var(--orange);
+    border: solid 1.5px;
+    border-color: #eba10c;
+    color: var(--white);
+    padding: 8px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--body-fonts);
+    font-size: 16px;
+    margin-left: 1.6vw;
   }
 
   /* Congratulations Page*/

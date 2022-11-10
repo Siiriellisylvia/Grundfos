@@ -65,8 +65,8 @@
                     </p>
                     <div id="vote-heading"> SELFIES WITH A PUMPKIN</div>
                     <div id="vote-buttons">
-                    <button class="poll-vote-button"> HOT</button>
-                <button class="poll-vote-button"> NOT</button>
+                    <button onclick="openModal('modal')" class="poll-vote-button"> HOT</button>
+                <button onclick="openModal('modal')"class="poll-vote-button"> NOT</button>
             </div>
             </div>
                     <img src="images/selfie.jpg" alt="Natalia with a pumpkin" id="selfie">
@@ -77,7 +77,7 @@
 
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <div class="modal-close"><span class="close">&times;</span></div>
+                    <div class="modal-close"><span class="close"  onclick="modalClose('modal')">&times;</span></div>
                     <div id="poll-title1"> THANK YOU FOR YOUR VOTE!</div>
             <div class="title-line-modal"></div>
 
@@ -93,11 +93,11 @@
                 </div>
 
 <!-- last week poll modal box-->
-                <div id="myModalSec" class="modal">
+                <div id="myModalSec" class="modalSec">
 
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <div class="modal-close"><span class="closeSec">&times;</span></div>
+                    <div class="modal-close"><span class="closeSec"  onclick="modalClose('modalSec')">&times;</span></div>
                     <div id="poll-title2"> LAST WEEK POLL RESULTS</div>
                     <div class="title-line-modal"></div>
 
@@ -117,7 +117,7 @@
                         <a href="contact-form.html"><button id="contact-RC-button"> Contact the Residents' Council</button></a>
                     </div>
                    
-                    <div id="last-week-poll">
+                    <div id="last-week-poll" onclick="openModal('modalSec')">
                         LAST WEEK'S POLL
                          <div id="pie-chart-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.492 153.548">
                             <path id="Path_35" data-name="Path 35" d="M112.682,221.1a58.55,58.55,0,1,1,0-117.1,4.994,4.994,0,0,1,4.994,4.994v48.561H166.24a4.994,4.994,0,0,1,4.994,4.994A58.614,58.614,0,0,1,112.682,221.1Zm-4.994-106.87a48.569,48.569,0,1,0,53.3,53.312H112.682a4.994,4.994,0,0,1-4.994-4.994Z" transform="matrix(0.921, 0.391, -0.391, 0.921, 36.564, -116.883)" fill="#eba10c"/>
@@ -127,6 +127,9 @@
                       </div>
                     </a>
                 </div>
+          </div>
+          <div class="bottom-page">
+            <a href="help.html"> <img src="images/help-icon.png" alt="Help Icon" id="help-icon"></a>
           </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

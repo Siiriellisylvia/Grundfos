@@ -129,7 +129,7 @@ body {
 .laundry-content {
   display: flex;
   flex-direction: column;
-  margin-left: 22vw;
+  margin-left: 21vw;
   width: 78vw;
   background-color: var(--white);
 }
