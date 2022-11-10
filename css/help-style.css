@@ -27,6 +27,7 @@
     flex-direction: row;
   }
 
+
   /*NAVIGATION*/
 
 .main-navigation {
@@ -37,6 +38,8 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    position:relative;
+    z-index: 2;
 }
   
 .navigation-dateandtime {
@@ -124,11 +127,22 @@
     height: auto;
   }
 
+  
+/* .help-transparent-background {
+    width: 78vw;
+    background-color: red;
+    position: absolute;
+    z-index:2;
+  } */
+
   .help-content {
     width: 78vw;
-    background-color: (var(--white))
+    background-color: (var(--white));
+    position:relative;
+    z-index:1;
+    filter:blur(none);
   }
-  
+
   .help-top {
     display: flex;
     flex-direction: row;
@@ -148,17 +162,80 @@
     margin-bottom: 1.5vw;
   }
 
-  .help-search-icon {
-    width: 2.8vw;
-    margin-right: 2vw;
+
+  .help-search-button {
+    position:absolute;
+    margin-left: 95vw;
+    margin-top:2vw;
+    width:2.8vw;
+    height: auto;
+    background-color:white;
+    border: none;
+    z-index:3;
   }
+
+  .search-content {
+      display: flex;
+      position:fixed;
+      width: 78vw;
+      z-index: 1;
+  }
+
+  .search-bar {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color:var(--light-grey);
+    border-radius: 50px;
+    margin-top:2vw;
+    margin-right:2vw;
+    margin-left: 73vw;
+    width: 25vw;
+    height: 3vw;
+    padding-left: 1.2vw;
+    position:absolute;
+    color:black;
+    border:none;
+    z-index:3;
+    visibility: hidden;
+  }
+
+.search-bar-icon {
+    margin-top: 0.4vw;
+    width: 1.9vw;
+    padding-right:0.8vw;
+    position:relative;
+    z-index: 3;
+}
+
+.search-bar-text {
+    margin-top:0.5vw;
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext)
+}
+
+.help-keyboard {
+  position:absolute;
+  width: 67vw;
+  height:auto;
+  z-index:2;
+  margin-left:27.5vw;
+  margin-top:22vw;
+  visibility: hidden;
+  z-index: 3;
+}
 
 .help-link-list{
   display: flex;
   flex-direction: column;
+  margin-left:14vw;
   margin-top:2vw;
   row-gap: 1vw;
-  align-items: center;
+  position: fixed;
+  z-index:1;
+  filter:blur(none);
 }
 
 .help-heading {
@@ -205,13 +282,12 @@
   font-family: var(--body-fonts)
 }
 
-
-
   .help-help-icon {
     width: 3.4vw;
-    position: fixed;
+    position: absolute;
     margin-left: 73vw;
     margin-top:38vw;
+    margin-bottom:2vw;
 
 
 }

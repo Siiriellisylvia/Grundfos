@@ -37,3 +37,31 @@ document.getElementById("time").innerHTML = timeToday;
 }
 
 setInterval(time, 1000);
+
+
+
+//Show/Hide search bar
+
+function openSearchbar(descriptionId, headingId, arrowId) {
+    var SearchIconElement = document.getElementById(descriptionId);
+    var SearchBarElement = document.getElementById(headingId);
+    var KeyboardElement=document.getElementById(arrowId);
+
+    if (descriptionElement.style.display === "none") 
+        {
+            
+            headingElement.style.borderRadius = "10px 10px 0px 0px"
+            headingElement.style.backgroundColor = "#10828c";
+            headingElement.style.color = "white";
+            arrowElement.style.borderColor = "white";
+            descriptionElement.style.display = "block";
+        } 
+        else 
+        {
+            headingElement.style.borderRadius = "10px 10px 10px 10px"
+            headingElement.style.backgroundColor = "#aacfd3";
+            headingElement.style.color = "black";
+            arrowElement.style.borderColor = "black";
+            descriptionElement.style.display = "none";
+        }
+}
