@@ -149,6 +149,7 @@ body {
   text-align: center;
   flex: 1;
   margin-bottom: 1.5vw;
+  margin-left: 2vw;
 }
 .laundry-search-icon {
   width: 2.8vw;
@@ -164,6 +165,10 @@ body {
   height: 75vh;
   background-color: var(--light-grey);
   border-radius: 15px;
+}
+
+#poll-box-top {
+  position: relative;
 }
 .poll-title {
   font-family: var(--body-fonts);
@@ -186,6 +191,7 @@ body {
   margin-top: 0.3vh;
   margin-left: auto;
   margin-right: auto;
+  position: sticky;
 }
 .title-line-modal {
   border-bottom: 0.05vw solid var(--dark-grey);
@@ -197,16 +203,20 @@ body {
 #poll-content {
   display: flex;
   flex-direction: row;
+  margin-left: 2vw;
 }
+
 #poll-description {
   display: flex;
   flex-direction: column;
   font-family: var(--body-fonts);
   font-size: var(--font-size-bodytext);
   width: 27vw;
-  padding: 3vw 5vw;
+  padding: 2vw 5vw;
 }
-
+#poll-text {
+  text-align: center;
+}
 .poll-vote-button {
   background-color: var(--orange);
   color: var(--white);
@@ -335,6 +345,8 @@ path:hover {
 }
 #myChart {
   padding: 30px;
+  width: 100%;
+  object-fit: contain;
 }
 
 #poll-title1 {

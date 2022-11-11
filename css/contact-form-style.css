@@ -106,7 +106,7 @@
     flex: 1;
     justify-content: center;
     margin-left: 9.5vw;
-    margin-top: 5vh;
+    margin-top: 4vh;
 }
 
   .contact-form-text {
@@ -137,7 +137,7 @@
 
   .log-button {
     margin-left: 30.2vw;
-    margin-top: 12vh;
+    margin-top: 11.1vh;
   }
 
   .log-btn {
@@ -266,6 +266,12 @@
   margin-right: 2vw;
   }
 
+  .help-icon-cf {
+    width: 2.8vw;
+    margin-right: 2vw;
+    margin-top: -24em;
+  }
+
   .help-icon1 {
     margin-left: 72.5vw;
   }
@@ -368,10 +374,11 @@
   }
 
   .tobias {
-    width: 25vw;
+    width: 13vw;
     height: 25vh;
     place-items: center;
-    margin-left: 12.4vw;
+    margin-left: 18.4vw;
+    margin-top: 2vh;
   }
 
   .hello-tobias {

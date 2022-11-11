@@ -33,19 +33,24 @@ function time() {
 }
 
 setInterval(time, 1000);
-
+//change opacity onCLick if desktop version
 function changeImage(facility_element, fileName) {
-  let img = document.querySelector("#original-layout");
-  img.setAttribute("src", fileName);
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    return false;
+  } else {
+    let img = document.querySelector("#original-layout");
+    img.setAttribute("src", fileName);
 
-  // fetch all buttons
-  var buttons = document.getElementsByClassName("room-button");
+    // fetch all buttons
+    var buttons = document.getElementsByClassName("room-button");
 
-  // set opacity of all buttons to 0.75
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].style.opacity = "0.75";
+    // set opacity of all buttons to 0.75
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].style.opacity = "0.75";
+    }
+
+    // set opacity of button in current facility to 1
+    facility_element.getElementsByClassName("room-button")[0].style.opacity =
+      "1";
   }
-
-  // set opacity of button in current facility to 1
-  facility_element.getElementsByClassName("room-button")[0].style.opacity = "1";
 }
