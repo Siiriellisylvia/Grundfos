@@ -149,6 +149,7 @@ body {
   text-align: center;
   flex: 1;
   margin-bottom: 1.5vw;
+  margin-left: 2vw;
 }
 .laundry-search-icon {
   width: 2.8vw;
@@ -197,7 +198,10 @@ body {
 #poll-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 #poll-description {
   display: flex;
   flex-direction: column;
