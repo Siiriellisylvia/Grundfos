@@ -324,7 +324,7 @@
     height: 100%;
     display: grid;
     place-items: center;
-    background: #AAC5C6;
+    background: var(--white);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -334,6 +334,8 @@
     opacity: 1;
     visibility: visible;
     animation: background-in 1s both;
+    width: 79%;
+    margin-left: 21.3vw;
   }
 
   .modal {
@@ -345,11 +347,12 @@
     height: 80vh;
     padding: 48px 40px;
     border-radius: 12px;
-    background: #10828c;
-    color: #ffffff;
+    background: var(--light-grey);
+    color: var(--black);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    margin-left: 12vw;
   }
 
   body.open .modal {
@@ -379,9 +382,9 @@
   }
   
   .text-tobias {
-    font-size: var(--font-size-bodytext);
+    font-size: var(--font-size-subheading);
     font-family: var(--body-fonts);
-    width: 28vw;
+    width: 40vw;
     justify-content: center;
     letter-spacing: 0.11vw;
     text-align: center;
@@ -395,7 +398,7 @@
     margin-top: 10vh;
   }
 
-  .log-out-btn {
+  .log-out-btn-tobias {
     margin-top: 10vh;
     background-color: var(--white);
     border: solid 2px;
@@ -506,6 +509,7 @@
   .text02::placeholder {
     font-family: var(--body-fonts);
     font-size: var(--font-size-bodytext);
+    color: var(--white);
   }
 
   .dropdown::before {
@@ -515,10 +519,12 @@
     right: 28px;
     width: 12px;
     height: 2px;
-    background: #4ca1a9;
+    background: var(--white);
     z-index: 10;
     transform: rotate(40deg);
     transition: 0.5s;
+    margin-left: 12vw;
+    margin-top: 0.8vh;
   }
 
   .dropdown.active::before{
@@ -532,10 +538,12 @@
     right: 20px;
     width: 12px;
     height: 2px;
-    background: #4ca1a9;
+    background: var(--white);
     z-index: 10;
     transform: rotate(-40deg);
     transition: 0.5s;
+    margin-left: 12vw;
+    margin-top: 0.8vh;
   }
 
   .dropdown.active::after {
@@ -546,24 +554,28 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 37vw;
     height: 100%;
     cursor: pointer;
     border-radius: var(--border-radius-boxes);
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: var(--body-fonts);
     background: var(--light-blue);
     outline: none;
     border: none;
+    color: var(--white);
   }
 
   .dropdown .opt {
     position: absolute;
     top: 70px;
-    width: 100%;
+    width: 39.6vw;
     background: var(--medium-blue);
     box-shadow: 0 30px 30px rgba(140, 144, 144, 0.4);
-    border-radius: 10px;
+    border-radius: var(--border-radius-boxes);
+    color: var(--white);
+    font-family: var(--body-fonts);
+    font-size: var(--font-size-bodytext);
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
@@ -759,6 +771,65 @@
   font-size: 16px;
   margin-left: 18.1vw;
   margin-top: 4vh;
+}
+
+/* Are you sure? page*/
+
+.sure-headline {
+  font-size: var(--font-size-heading);
+    font-family: var(--body-fonts);
+    letter-spacing: 0.11vw;
+    text-align: center;
+    margin-top: 19.1vh;
+}
+
+.sure-text {
+  font-size: var(--font-size-subheading);
+    font-family: var(--body-fonts);
+    letter-spacing: 0.11vw;
+    text-align: center;
+    width: 30vw;
+    margin-left: 10.4vw;
+}
+
+.yes-no-buttons {
+  margin-left: 13.5vw;
+  margin-top: 8vh;
+}
+
+.no-btn {
+  margin-top: 10vh;
+  background-color: var(--white);
+  border: solid 1.5px;
+  border-color: #eba10c;
+  color: var(--orange);
+  padding: 14px 44px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--body-fonts);
+  font-size: 16px;
+}
+
+.yes-btn {
+  margin-top: 10vh;
+  background-color: var(--orange);
+  border: solid 1.5px;
+  border-color: #eba10c;
+  color: var(--white);
+  padding: 14px 42px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--body-fonts);
+  font-size: 16px;
+  margin-left: 8vw;
 }
 
 

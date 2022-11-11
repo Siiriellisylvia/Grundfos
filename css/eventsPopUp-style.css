@@ -17,7 +17,7 @@
     --font-size-nav-active: 60px;
   }
 
-body {
+.popupBody {
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,7 @@ body {
    
 }
 
-h2 {
+.popupH2 {
     color: var(--blue);
     font-family: var(--body-fonts);
     font-size: var(--font-size-heading);
@@ -56,11 +56,11 @@ h2 {
     height: 45vh;
 }
 
-p {
+.popupP {
     font-family: var(--body-fonts);
 }
 
-h1 {
+.popupH1 {
     font-family: var(--body-fonts);
 }
 
@@ -68,7 +68,7 @@ h1 {
     margin-left: 1vw;
 }
 
-.detailsText {
+.popupDetailsText {
     font-size: smaller;
 }
 
