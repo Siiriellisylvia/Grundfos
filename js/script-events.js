@@ -38,9 +38,57 @@ function myCalendarPopUp() {
 
 /*modal window*/
 
-//Another attempt - doesn't work for any of the modal windows
+const modal = document.getElementById("myModal");
+const btn1 = document.getElementById("eventListing1");
 
-/*var modal = document.getElementsByClassName("modal");
+btn1.onclick = function () {
+  modal.style.display = "block";
+};
+
+const modal2 = document.getElementById("myModal2");
+const btn2 = document.getElementById("eventListing2");
+
+btn2.onclick = function () {
+  modal2.style.display = "block";
+};
+
+const modal3 = document.getElementById("myModal3");
+const btn3 = document.getElementById("eventListing3");
+
+btn3.onclick = function () {
+  modal3.style.display = "block";
+};
+
+//close modal windows by clicking x
+const modals = document.getElementsByClassName("modal");
+
+for (const modalElement of modals) {
+  var closeBtn = modalElement.querySelector(".close");
+
+  closeBtn.onclick = function () {
+    modalElement.style.display = "none";
+  };
+}
+
+//close modal windows by clicking out of box
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  } else if (event.target == modal2) {
+    modal2.style.display = "none";
+  } else if (event.target == modal3) {
+    modal3.style.display = "none";
+  }
+};
+
+//modalElement is the modal window itself. 'for' is the loop, 'modalElement' is the modal window 'modals' is the class for all the modal windows
+//so when looping through each modal window with the class modal, the closeBtn is the part of the modal window with the class 'close'
+//when you click the closeBtn on the active modal window, the modalElement (modal window) is closed.
+
+/*Another attempt - doesn't work for any of the modal windows
+
+var modal = document.getElementsByClassName("modal");
 
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("myBtn");
@@ -78,27 +126,6 @@ window.onclick = function (event) {
 };*/
 
 // One attempt (only works for the first modal window)
-
-/*const modal = document.getElementById("myModal");
-const btn1 = document.getElementById("eventListing1");
-
-btn1.onclick = function () {
-  modal.style.display = "block";
-};
-
-const modal2 = document.getElementById("myModal2");
-const btn2 = document.getElementById("eventListing2");
-
-btn2.onclick = function () {
-  modal2.style.display = "block";
-};
-
-const modal3 = document.getElementById("myModal3");
-const btn3 = document.getElementById("eventListing3");
-
-btn3.onclick = function () {
-  modal3.style.display = "block";
-};
 
 /*close modal windows*/
 /*const span = document.getElementsByClassName("close")[0];

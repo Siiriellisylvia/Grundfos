@@ -247,19 +247,18 @@ newsH3 {
   padding-bottom: 1vw;
 }
 
+#news-help-icon {
+  width: 3.4vw;
+  bottom: 3vh;
+  position: fixed;
+  
+}
+
 .hidden {
   display: none;
 }
 
-/*help icon*/
-.main-help-icon-news {
-  width: 3.5vw;
-  height: auto;
-  margin-right: 2vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  object-fit: contain;
-}
+
 
 /*RESPONSIVE DESIGN*/
 /*filter page*/
@@ -408,15 +407,13 @@ newsH3 {
     margin-right: 2vw;
   }
 
+  #news-help-icon {
+    display: none;
+  }
+
 }
 
-#news-help-icon {
-  width: 3.4vw;
-  position: absolute;
-  margin-left: 73vw;
-  margin: top 50vh;
-  margin-bottom:2vw;
-}
+
 
 
 
