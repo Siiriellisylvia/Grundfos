@@ -78,15 +78,14 @@ function showSearchbar() {
             SearchBarElement.style.visibility="visible";
             BackgroundContent.style.filter= "blur(3px)";
             SearchIconElement.style.visibility="hidden";
-
-        } 
+        }
+        
     else 
         {
             SearchBarElement.style.visibility = "hidden";
             KeyboardElement.style.visibility = "hidden";
             SearchIconElement.style.visibility= "visible";
             BackgroundContent.style.filter= "blur(0px)";
-
         }
 }
 
