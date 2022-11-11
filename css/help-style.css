@@ -22,7 +22,7 @@
     margin: 0;
   }
   /*HELP STYLING*/
-  .help-page {
+  #help-page {
     display: flex;
     flex-direction: row;
   }
@@ -31,15 +31,12 @@
   /*NAVIGATION*/
 
 .main-navigation {
-    width: 22vw;
-    height: 100vh;
-    background-color: var(--blue);
-    margin-top: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    z-index: 2;
+  width: 22vw;
+  height: 100vh;
+  background-color: var(--blue);
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
   
 .navigation-dateandtime {
@@ -127,20 +124,13 @@
     height: auto;
   }
 
-  
-/* .help-transparent-background {
-    width: 78vw;
-    background-color: red;
-    position: absolute;
-    z-index:2;
-  } */
-
   .help-content {
+    margin-left:22vw;
     width: 78vw;
     background-color: (var(--white));
-    position:relative;
     z-index:1;
     filter:blur(none);
+    position:relative;
   }
 
   .help-top {
@@ -161,7 +151,6 @@
     flex: 1;
     margin-bottom: 1.5vw;
   }
-
 
   .help-search-button {
     position:absolute;
@@ -230,12 +219,13 @@
 .help-link-list{
   display: flex;
   flex-direction: column;
-  margin-left:14vw;
+  align-items: center;
   margin-top:2vw;
   row-gap: 1vw;
-  position: fixed;
+  flex:1;
   z-index:1;
   filter:blur(none);
+
 }
 
 .help-heading {
@@ -245,7 +235,6 @@
   height: 3.5vw;
   border-radius: 10px;
   background-color: var(--light-blue);
-
   border-style: none;
   text-align:left;
   font-weight: 500;
@@ -286,8 +275,5 @@
     width: 3.4vw;
     position: absolute;
     margin-left: 73vw;
-    margin-top:38vw;
-    margin-bottom:2vw;
-
-
+    margin-top: 2vw;
 }

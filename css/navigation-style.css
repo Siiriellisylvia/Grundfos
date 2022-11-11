@@ -40,8 +40,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    margin-left: 1.6vw;
+    margin-right: 1.6vw;
   }
 
   .logo-grundfos {

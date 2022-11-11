@@ -10,8 +10,7 @@
 </head>
 
 <body>
-<div class="help-page">
-<div class="help-transparent-background"></div>
+<div id="help-page">
 <!-- navigation section-->
     <nav class="main-navigation">
         <section class="navigation-dateandtime">
@@ -58,10 +57,12 @@
 <!-- Keyboard -->
 
         <section class="help-link-list" id="help-link-list">
+
             <div class="help-news-content">
-                <div id="help-news-heading-with-arrow">
+                <div id="help-heading-with-arrow">
                     <button onclick="openDescription(descriptionId = 'help-news-description', headingId = 'help-news-heading', arrowId ='news-arrow-down')" 
-                    class="help-heading" id="help-news-heading" >NEWS<i id="news-arrow-down" class="arrow-down"></i></button>
+                    class="help-heading" id="help-news-heading" >NEWS
+                    <i id="news-arrow-down" class="arrow-down"></i></button>
                 </div>
                 <div id="help-news-description" class="help-description">
                 In the <a href="news.html" class="help-link">News</a> section you can find short announcements about the dormitory's
@@ -70,14 +71,69 @@
             </div>
 
             <div class="help-events-content">
-                <div id="help-news-heading-with-arrow">
-                    <button onclick="openDescription('help-events-description', 'help-events-heading', 'events-arrow-down')" class="help-heading" id="help-events-heading">EVENTS
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription(descriptionId = 'help-events-description', headingId='help-events-heading', arrowId='events-arrow-down')" 
+                    class="help-heading" id="help-events-heading">EVENTS
                     <i id="events-arrow-down" class="arrow-down"></i></button>
                 </div>
+                
                 <div id="help-events-description" class="help-description">
                 In the <a href="events.html" class="help-link">Events</a> section you can find upcoming parties and workshops. There are
                 highlighted events and calendar to give you an overview of the current and
-                approaching month.<ul class="help-news-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+                </div>
+            </div>
+
+            <div class="help-laundry-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription(descriptionId ='help-laundry-description', headingId='help-laundry-heading', arrowId='laundry-arrow-down')"
+                    class="help-heading" id="help-laundry-heading">LAUNDRY
+                    <i id="laundry-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-laundry-description" class="help-description">
+                In the <a href="laundry.html" class="help-link">Laundry</a> section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+            </div>
+            </div>
+
+            <div class="help-contactform-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-contact-description', 'help-contact-heading', 'contact-arrow-down')"
+                    class="help-heading" id="help-contact-heading">CONTACT FORM
+                    <i id="contact-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-contact-description" class="help-description">
+                In the <a href="contact-form.html" class="help-link">Contact form</a> section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+            </div>
+            </div>
+
+            <div class="help-facilities-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-facilities-description', 'help-facilities-heading', 'facilities-arrow-down')"
+                    class="help-heading" id="help-facilities-heading">FACILITIES
+                    <i id="facilities-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-facilities-description" class="help-description">
+                In the <a href="facilities.html" class="help-link">Facilities</a> section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+                </div>
+            </div>
+
+            <div class="help-poll-content">
+                <div id="help-heading-with-arrow">
+                    <button onclick="openDescription('help-poll-description', 'help-poll-heading', 'poll-arrow-down')"
+                    class="help-heading" id="help-poll-heading">POLL OF THE WEEK
+                    <i id="poll-arrow-down" class="arrow-down"></i></button>
+                </div>
+                <div id="help-poll-description" class="help-description">
+                In the <a href="poll.html" class="help-link">Poll</a> section you can find upcoming parties and workshops. There are
+                highlighted events and calendar to give you an overview of the current and
+                approaching month.<ul class="help-bulletpoint"><li>Click the calendar to see all events</li><li>Send an event suggestion through the button on the bottom of the page</li></ul> 
+                </div>
             </div>
 
         </section>
