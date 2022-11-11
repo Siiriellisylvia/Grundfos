@@ -41,12 +41,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 2.5vw;
-    margin-right:2.5vw;
+    margin-right: 2.5vw;
   }
 
   .logo-grundfos {
     width:22vw;
-    margin-top: 1vw;
+    height:auto;
+    margin-top: 0vw;
   }
 
 .logo-grundfos-link {
@@ -82,7 +83,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0vw 0vh;
+  margin-top: 0vw 0vh;
+  margin-bottom: 1vh;
 }
 
 .navigation-qr-code-description {
