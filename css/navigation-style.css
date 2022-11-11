@@ -44,39 +44,12 @@ body {
     margin-right:2.5vw;
   }
 
-  .main-logo
-
   .logo-grundfos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--logo-fonts);
-    font-size: 1.95vw;
-    font-weight: bold;
-    letter-spacing: 0.5vw;
-    text-decoration: none;
-    color: var(--white);
-    margin: 0vh 0px;
+    width:22vw;
     margin-top: 1vw;
   }
 
 .logo-grundfos-link {
-  text-decoration: none;
-}
-
-  .logo-kollegiet {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--logo-fonts);
-    font-weight: lighter;
-    font-size: 2.45vw;
-    letter-spacing: 0.22vw;
-    color: var(--white);
-    margin: 0vw 0.1vw;
-    margin-left: 3.5vw;
-  }
-
-.logo-kollegiet-link {
   text-decoration: none;
 }
 
@@ -109,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0vw;
+  margin: 0vw 0vh;
 }
 
 .navigation-qr-code-description {

@@ -611,6 +611,7 @@
   .msg-box::placeholder {
     font-family: var(--body-fonts);
     font-size: var(--font-size-bodytext);
+
   }
 
   .contact-buttons {
