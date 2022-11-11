@@ -7,7 +7,7 @@ eye.addEventListener("click", function(){
     passwordField.setAttribute("type", type);
   })
 
-  /*const toggleModal = () => {
+  const toggleModal = () => {
     const { classList } = document.body;
     if (classList.contains("open")) {
       classList.remove("open");
@@ -19,7 +19,7 @@ eye.addEventListener("click", function(){
   };
 
 
-eye.addEventListener("click", function () {
+/*eye.addEventListener("click", function () {
   this.classList.toggle("fa-eye-slash");
   const type =
     passwordField.getAttribute("type") === "password" ? "text" : "password";
