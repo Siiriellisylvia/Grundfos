@@ -580,6 +580,7 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.25s;
+    z-index: 2;
   }
 
   .dropdown.active .opt{
@@ -611,6 +612,8 @@
   .msg-box::placeholder {
     font-family: var(--body-fonts);
     font-size: var(--font-size-bodytext);
+    position: absolute;
+    padding: 10px 10px;
   }
 
   .contact-buttons {
