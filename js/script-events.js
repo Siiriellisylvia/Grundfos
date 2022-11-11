@@ -71,15 +71,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-/*MICK
-
-const modals = document.getElementsByClassName("modal");
-
-for (const modalElement of modals) {
-  var closeBtn = modalElement.querySelector(".close");
-
-  closeBtn.onclick = function () {
-    modalElement.style.display = "none";
-  };
-}*/

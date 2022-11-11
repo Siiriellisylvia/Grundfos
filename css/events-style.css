@@ -262,7 +262,7 @@ justify-content: space-evenly;
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
 
 /*help icon*/
-.main-help-icon-events {
+ #help-icon{
   width: 3.5vw;
   height: auto;
   margin-right: 2vw;
@@ -271,8 +271,11 @@ justify-content: space-evenly;
   object-fit: contain;
 }
 
-.help-section-events {
-  margin-top: 85vh;
+
+
+.bottom-page {
+  display: flex;
+  height: 5vw;
 }
 
 /*Modal window content CSS*/
