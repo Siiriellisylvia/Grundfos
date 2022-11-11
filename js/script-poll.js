@@ -202,6 +202,11 @@ const myChartSec = new Chart(ctxSec, {
   plugins: [ChartDataLabels],
 });
 
+//responsive chart size
+/*var canvas = document.getElementById("myChart");
+var heightRatio = 1.5;
+canvas.height = canvas.width * heightRatio;*/
+
 all_modals = ["modal", "modalSec"];
 all_modals.forEach((modal) => {
   const modalSelected = document.querySelector("." + modal);
