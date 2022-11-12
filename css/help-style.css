@@ -20,7 +20,9 @@
   body {
     padding: 0;
     margin: 0;
+    scrollbar-gutter: stable;
   }
+
   /*HELP STYLING*/
   #help-page {
     display: flex;
@@ -133,13 +135,6 @@
     position:relative;
   }
 
-  .help-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .help-main-heading {
     display: block;
     justify-content: center;
@@ -220,7 +215,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top:2vw;
+  margin-top:4vw;
   row-gap: 1vw;
   flex:1;
   z-index:1;
@@ -268,12 +263,45 @@
   padding: 1vw 2vw 2vw 2vw;
   margin-top:0vw;
   border-radius: 0px 0px 10px 10px;
-  font-family: var(--body-fonts)
+  font-size: var(--font-size-bodytext);
+  font-family: var(--body-fonts);
+}
+
+.help-contact-ct-container {
+margin-left:13.5vw;
+margin-top:5vh;
+}
+
+.help-contact-ct-heading {
+  font-size: var(--font-size-subheading);
+  font-family: var(--body-fonts);
+}
+
+.help-contact-ct-content {
+width:25vw;
+height:17vh;
+background-color: var(--light-grey);
+border-radius: 15px;
+padding-top:0.5vw;
+padding-left:1vw;
+}
+
+.help-contact-subheading {
+  font-size: var(--font-size-bodytext);
+  font-family: var(--body-fonts);
+  text-align: center;
+}
+
+.help-contact-text {
+  font-size: var(--font-size-bodytext);
+  font-family: var(--body-fonts);
+  padding-left: 4.5vw;
 }
 
   .help-help-icon {
     width: 3.4vw;
     position: absolute;
-    margin-left: 73vw;
-    margin-top: 2vw;
+    margin-top: 42vw;
+    margin-left:73vw;
+
 }
