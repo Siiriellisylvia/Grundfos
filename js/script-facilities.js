@@ -33,24 +33,41 @@ function time() {
 }
 
 setInterval(time, 1000);
+
 //change opacity onCLick if desktop version
+
+window.onresize = function () {
+  location.reload();
+};
+
+var active_facility_id = null;
 function changeImage(facility_element, fileName) {
   if (window.matchMedia("(max-width: 600px)").matches) {
-    return false;
-  } else {
-    let img = document.querySelector("#original-layout");
-    img.setAttribute("src", fileName);
+    return;
+  }
+  // determine current facility ID
+  active_facility_id =
+    facility_element.id == active_facility_id ? null : facility_element.id;
 
-    // fetch all buttons
-    var buttons = document.getElementsByClassName("room-button");
+  let img = document.querySelector("#original-layout");
+  active_facility_id == null
+    ? img.setAttribute("src", "images/none.JPG")
+    : img.setAttribute("src", fileName);
 
-    // set opacity of all buttons to 0.75
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].style.opacity = "0.75";
+  // fetch all facilities
+  var facilities = document.getElementsByClassName("facility-element");
+
+  // iterate over all facilities
+  for (var i = 0; i < facilities.length; i++) {
+    var opacity_value = null;
+
+    if (active_facility_id == null) {
+      opacity_value = "1";
+    } else {
+      opacity_value = facilities[i].id == active_facility_id ? "1" : "0.75";
     }
 
-    // set opacity of button in current facility to 1
-    facility_element.getElementsByClassName("room-button")[0].style.opacity =
-      "1";
+    facilities[i].getElementsByClassName("room-button")[0].style.opacity =
+      opacity_value;
   }
 }
