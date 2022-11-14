@@ -116,6 +116,12 @@ width: 35%;
 height: 80%;
 }
 
+#activePage {
+  font-size: 1.6vw;
+  font-weight: bolder;
+  color: var(--white);
+}
+
 /*events sytles*/
 
 .eventsContent {
@@ -485,3 +491,4 @@ height: 80%;
 .dateHeader {
   padding-top: 8vh;
 }
+
