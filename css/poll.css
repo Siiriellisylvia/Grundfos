@@ -46,41 +46,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
+  margin-left: 1.6vw;
+  margin-right: 1.6vw;
 }
 
-.main-logo .logo-grundfos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--logo-fonts);
-  font-size: 1.95vw;
-  font-weight: bold;
-  letter-spacing: 0.5vw;
-  text-decoration: none;
-  color: var(--white);
-  margin: 0vh 0px;
-  margin-top: 1vw;
+.logo-grundfos {
+  width: 22vw;
+  height: auto;
+  margin-top: 1vh;
 }
 
 .logo-grundfos-link {
-  text-decoration: none;
-}
-
-.logo-kollegiet {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--logo-fonts);
-  font-weight: lighter;
-  font-size: 2.45vw;
-  letter-spacing: 0.22vw;
-  color: var(--white);
-  margin: 0vw 0.1vw;
-  margin-left: 3.5vw;
-}
-
-.logo-kollegiet-link {
   text-decoration: none;
 }
 
@@ -89,8 +65,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 3.5vw;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
+  margin-top: auto;
+  margin-bottom: auto;
   top: 10vw;
   font-family: var(--body-fonts);
   line-height: 4vw;
@@ -113,7 +89,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0vw;
+  margin-top: auto;
+  margin-bottom: 5vh;
 }
 
 .navigation-qr-code-description {
@@ -125,7 +102,7 @@ body {
 
 .navigation-qr-code-image {
   width: 35%;
-  height: auto;
+  height: 80%;
 }
 .laundry-content {
   width: 78vw;
