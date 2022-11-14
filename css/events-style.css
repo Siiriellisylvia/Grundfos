@@ -35,35 +35,85 @@ body {
 }
 
 /*navigation styles*/
-.navigation {
+.main-navigation {
   width: 22vw;
   height: 100vh;
   background-color: var(--blue);
-  margin-top: 0;
-  padding: 0;
+  margin-top: 0vw;
+  padding-top: 0.5vw 1vw 0vw 0vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.logo-grundfos {
-  font-family: var(--logo-fonts);
-  font-size: 2.5vw;
-  letter-spacing: 0.3vw;
-  color: var(--white);
-  margin: 0vh 0px;
-  margin-top: 2vh;
-}
-.logo-kollegiet {
-  font-family: var(--logo-fonts);
-  font-weight: lighter;
-  font-size: 2vw;
-  letter-spacing: 0.69vw;
-  color: var(--white);
-  margin: -0.5vw 0.1vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  position: sticky;
 }
 
-.navLogoLink {
-  text-decoration: none;
+.navigation-dateandtime {
+  font-family: var(--body-fonts);
+  font-size: 1vw;
+  color: var(--black);
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1.6vw;
+  margin-right: 1.6vw;
+}
+
+.logo-grundfos {
+  width:22vw;
+  height:auto;
+  margin-top:1vh;
+}
+
+.logo-grundfos-link {
+text-decoration: none;
+}
+
+.navigation-links {
+font-size: 1.5vw;
+display: flex;
+flex-direction: column;
+margin-left: 3.5vw;
+margin-top: auto;
+margin-bottom: auto;
+top: 10vw;
+font-family: var(--body-fonts);
+line-height: 4vw;
+color:var(--light-grey)
+}
+
+.nav-link {
+color: var(--light-grey);
+text-decoration: none;
+}
+
+.nav-link:hover {
+color: white;
+text-decoration:none;
+font-size: 1.6vw;
+font-weight: bolder;
+}
+
+.navigation-qr {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: auto;
+margin-bottom: 5vh;
+}
+
+.navigation-qr-code-description {
+font-family: var(--body-fonts);
+color:var(--light-grey);
+font-size: 0.99vw;
+line-height: 0vw;
+}
+
+.navigation-qr-code-image {
+width: 35%;
+height: 80%;
 }
 
 /*events sytles*/
