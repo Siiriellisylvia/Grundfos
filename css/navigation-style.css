@@ -47,7 +47,7 @@ body {
   .logo-grundfos {
     width:22vw;
     height:auto;
-    margin-top: 0vw;
+    margin-top:1vh;
   }
 
 .logo-grundfos-link {
@@ -59,8 +59,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 3.5vw;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: auto;
+  margin-bottom: auto;
   top: 10vw;
   font-family: var(--body-fonts);
   line-height: 4vw;
