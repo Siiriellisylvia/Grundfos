@@ -1,5 +1,8 @@
 /*News JS*/
 
+/* global variable clicked true or false state*/
+/* second event listener - if clicked so this, else do this*/
+
 //hide the clear filter button from the start
 const elem = document.getElementById("clearFilterButton");
 elem.style.display = "none";
