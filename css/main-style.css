@@ -16,6 +16,11 @@
     --font-size-nav-active: 60px;
   }
   
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
 .main-heading {
     display: flex;
     flex-direction: row;
@@ -39,6 +44,12 @@
     color:var(--blue);
     font-weight: bold;
     padding: 0vw 0.5vw 0vw 0.5vw;
+    margin-bottom: 0vw;
+    margin-top: none;
+}
+
+.main-heading-text {
+    font-weight:lighter;
     margin-bottom: 0vw;
     margin-top: none;
 }
@@ -133,7 +144,6 @@
     margin-top: 1vw;
     margin-left: 1vw;
     margin-bottom: 1vw;
-
 }
 
 .main-help-icon {
@@ -146,4 +156,100 @@
     margin-right:2vw;
     margin-bottom: 1vw;
 
+}
+
+/*MOBILE NAVIGATION*/
+.navigation-mobile {
+    background-color: var(--blue);
+    display: none;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .mobile-nav-icon {
+    padding: 15px 30px;
+  }
+
+/*mobile heading*/
+.mobile-main-heading {
+    display: none;
+}
+
+/* breakpoints*/
+
+/*for small devices*/
+
+@media only screen and (max-width: 599px) {
+
+    .main-heading {
+        display:none;
+    }
+
+    .mobile-main-heading {
+        text-align: center;
+        font-family: var(--logo-fonts);
+    }
+
+    .mobile-main-heading-grundfos-kollegiet {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 4.8vw;
+        margin-top:2vw;
+        letter-spacing: 0.6vw;
+    }
+
+    .mobile-main-heading-welcome {
+        font-weight:lighter;
+        margin-bottom: 0vw;
+        margin-top: 13vw;
+        margin-right:0vw;
+        margin-left:3vw;
+        font-size: 10vw;
+        letter-spacing: 2.5vw;
+    }
+    
+    .mobile-main-heading-grundfos {
+        color:var(--blue);
+        font-weight: bold;
+        padding: 0vw 0.5vw 0vw 0.5vw;
+        margin-bottom: 0vw;
+        margin-top: 0vw;
+    }
+    
+    .mobile-main-heading-kollegiet {
+        font-weight:lighter;
+        margin-bottom: 0vw;
+        margin-top: 0vw;;
+        padding-left:1.5vw;
+    }
+
+
+    .horizontal-line {
+        border-bottom: 0.05vw solid var(--dark-grey);
+        width: 87vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation-mobile {
+        margin-top: 3rem;
+        margin-left:0vw;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+      }
+
+    .main-search-icon {
+        display:none;
+      }
+
+    .main-help-icon {
+        display:none;
+    }
+
+    .main-qrcode {
+        display:none;
+    }
 }
