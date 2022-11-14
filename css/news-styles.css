@@ -308,7 +308,7 @@ newsH3 {
 }
 
 /*RESPONSIVE DESIGN*/
-/*filter page*/
+/*filter page
 
 #filterHeader {
   display: flex;
@@ -347,11 +347,15 @@ newsH3 {
 
 .filterNewsLink {
   text-decoration: none;
-}
+}*/
 
 #maintenanceLink {
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-mobile{
+  display: none;
 }
 
 /* breakpoints*/
@@ -367,9 +371,13 @@ newsH3 {
 
   .dropDown {
     display: block;
-    margin-top: 5vh;
+    margin-top: 7vh;
     margin-left: 11vw;
     font-family: var(--body-fonts);
+    background-color: var(--white);
+   position: absolute;
+   position: sticky;
+   
   }
 
   .dropbtn {
@@ -385,9 +393,12 @@ newsH3 {
   }
 
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  .dropDown {
+    position: fixed;
+    top: 10vh;
+    background-color: var(--white);
+    width: 100vw;
+    height: 10vh;
   }
 
   /* Dropdown Content (Hidden by Default) */
@@ -399,6 +410,8 @@ newsH3 {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 0px 0px 15px 15px;
+    
+
   }
 
   /* Links inside the dropdown */
@@ -423,7 +436,7 @@ newsH3 {
     display: none;
   }
 
-  .navigation {
+  .main-navigation {
     display: none;
   }
 
@@ -445,10 +458,12 @@ newsH3 {
     text-align: center;
     flex: 1;
     margin-bottom: 1.5vw;
+   
   }
 
   #newsArticleContainer {
-    margin-top: 4vh;
+    margin-top: 18vh;
+    padding-bottom: 10vh;
   }
 
   .newsArticleIcon {
@@ -570,14 +585,18 @@ newsH3 {
     display: flex;
     width: 100vw;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
     bottom: 0;
+    height: 8vh;
+    margin: auto;
+    justify-items: center;
+    
   }
 
-  .mobile-nav-icon {
-    padding: 15px 30px;
-  }
+.navigation {
+  display: none;
+}
 }
 
 /*for larger devices*/
