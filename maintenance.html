@@ -27,9 +27,21 @@
  
      <section class="newsContent">
          <div class="newsTop">
-             <h1 class="newsH1"><a href="news.html" id="newsLink" style="margin-left:-18vw ;">Maintenance News</a></h1>
+             <h1 class="newsH1"><a href="news.html" id="newsLink">NEWS</a></h1>
              <img class="newsSearchIcon" src="images/search.svg" alt="Search icon">
            </div>
+
+     <!--dropdown filter for mobile-->
+<div class="dropDown">
+    <button onclick="newsDrop()" class="dropbtn" id="dropClick">Maintenance</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="news.html">All categories</a>
+      <a href="#">Community</a>
+      <a href="#">Laundry</a>
+      <a href="#">Outdoor Areas</a>
+      <a href="#">Holidays</a>
+    </div>
+</div>
          
          <!--News filter options-->
          <div id="newsBurger">
