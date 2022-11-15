@@ -134,7 +134,7 @@ body {
 }
 
 .laundry-status {
-  width: 78vw;
+  width: 76vw;
   display: flex;
   flex-direction: row;
 }
@@ -157,7 +157,7 @@ body {
 }
 .dryers-status {
   margin-left: 5vw;
-  width: 39vw;
+  width: 30vw;
   height: 35vh;
   align-items: center;
   justify-content: center;
@@ -318,13 +318,13 @@ body {
   font-family: var(--body-fonts);
   font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
-  margin-left: 7vw;
+  margin-left: 9vw;
 }
 #statistics-description {
   font-family: var(--body-fonts);
   font-size: 1.2vw;
   letter-spacing: 0.11vw;
-  margin-left: 7vw;
+  margin-left: 9vw;
 }
 
 .graphContainer {
@@ -338,7 +338,7 @@ body {
   /*UI Properties */
   border-radius: 15px;
   opacity: 1;
-  margin-left: 7vw;
+  margin-left: 9vw;
 }
 #myChart {
   background-color: #efefef;
