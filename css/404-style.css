@@ -233,13 +233,13 @@
     display: flex;
     width: 100vw;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     bottom: 0;
     height: 8vh;
     margin: auto;
     justify-items: center;
-    padding-left: 7.5vw;
+    padding-right: 7.5vw;
     
     
   }
@@ -293,21 +293,20 @@
 }
 
 .construction-button-mobile-box {
-  margin-top: 6vh;
+  margin-top: 4.8vh;
 }
 
 .construction-button-mobile {
   background-color: var(--orange);
   color: var(--white);
   font-family: var(--body-fonts);
-  font-size: 22px;
-  height: 18vw;
-  width: 48vw;
-  padding: 1vw 1vw 1vw 1vw;
+  font-size: 20px;
+  height: 15vw;
+  width: 46vw;
   border: none;
   border-radius: 30px;
   text-decoration: none;
-  margin-left: 45vw;
+  margin-left: 43.4vw;
 }
 
 }
