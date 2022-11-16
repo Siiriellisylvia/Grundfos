@@ -133,7 +133,6 @@ a {
 }
 .laundry-search-icon {
   width: 2.8vw;
-  margin-right: 2vw;
 }
 
 .laundry-status {
@@ -157,9 +156,10 @@ a {
 .row-dryers {
   display: flex;
   flex-direction: row;
+  margin-left: 1vw;
 }
 .dryers-status {
-  margin-left: 5vw;
+  margin-left: 7vw;
   width: 30vw;
   height: 35vh;
   align-items: center;
@@ -170,6 +170,7 @@ a {
   font-size: var(--font-size-subheading);
   letter-spacing: 0.11vw;
   margin-bottom: 0.4vw;
+  margin-left: 1vw;
 }
 
 .status-free {
@@ -368,7 +369,6 @@ a {
 .main-help-icon-laundry {
   width: 3.5vw;
   height: auto;
-  margin-right: 2vw;
   margin-top: 2vw;
   margin-bottom: 0vw;
   object-fit: contain;
@@ -474,10 +474,12 @@ a {
   }
   .status-heading {
     font-family: var(--body-fonts);
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0vw;
     margin-bottom: 0.4vw;
     width: 100vw;
+    margin-left: -2vw;
+    margin-top: 2rem;
   }
   .mobile-logo {
     display: flex;
@@ -491,17 +493,18 @@ a {
   .washers-status {
     width: 100vw;
     height: auto;
-    margin-right: 0vw;
+    justify-content: center;
+    text-align: center;
     align-items: center;
   }
   .dryers-status {
     flex-wrap: wrap;
-    margin-left: 0vw;
     width: 100vw;
     height: auto;
-    margin: 0 auto;
     align-items: center;
     justify-content: center;
+    text-align:center;
+    margin-bottom: 4rem;
   }
   .status-free {
     width: 8rem;
@@ -509,6 +512,11 @@ a {
     margin: 1rem;
   }
   .status-taken {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+  }
+  .status-taken-one{
     width: 8rem;
     height: 8rem;
     margin: 1rem;
@@ -527,6 +535,8 @@ a {
   }
   .machine-status {
     font-size: 1.3rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .machine-status-taken {
     font-size: 1.3rem;
@@ -538,8 +548,8 @@ a {
   }
   #countdown-two {
     margin: 0;
-    margin-bottom: -2.7vw;
     padding: 0;
+    margin-bottom: -2rem;
     font-size: 1.3rem;
   }
   #countdown-three {
@@ -552,6 +562,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-left: 1.8rem;
   }
   .machine-number {
     padding-top: 0.5vw;
@@ -564,22 +575,20 @@ a {
     margin-top: 2rem;
   }
   .machine-number-taken {
-    background-color: var(--light-blue);
     padding-top: 0.5vw;
     font-size: 1.2rem;
     padding-left: 2vw;
     padding-right: 2vw;
     border-radius: 40%;
     margin: 0;
-    margin-bottom: -0.2vw;
-    margin-top: 0;
+    margin-bottom: -1rem;
+    margin-top: -1.3rem;
   }
   .machine-number-taken-one {
-    background-color: var(--light-blue);
     padding-top: 0.5vw;
-    font-size: 1rem;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    font-size: 1.2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
     border-radius: 40%;
     margin: 0;
     margin-bottom: -0.2vw;
