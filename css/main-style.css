@@ -64,7 +64,7 @@
     margin-top: 6vh;
 }
 
-.main-news-container {
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +134,7 @@
 .main-qrcode {
     position: absolute;
     width: 5.5vw;
-    height:10vh;
+    height: auto;
     margin-top:auto;
     margin-bottom:5vh;
     margin-left:3vw;
@@ -144,7 +144,7 @@
     display: block;
     position: absolute;
     width: 3.5vw;
-    height: 6.5vh;
+    height: auto;
     margin-left: 92vw;
     margin-top:4vh;
 
@@ -172,6 +172,13 @@
     .mobile-main-heading {
         display: none;
     }
+    .mobile-main-content-cards {
+        display: none;
+    }
+
+    .navigation-mobile {
+        display:none;
+    }
 }
 
 /*for small devices*/
@@ -191,7 +198,7 @@
         display:flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 4.8vw;
+        font-size: 6vw;
         margin-top:2vw;
         letter-spacing: 0.6vw;
     }
@@ -227,6 +234,65 @@
         width: 87vw;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .main-content-cards {
+        display: none;
+    }
+
+    .mobile-main-content-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 4vw;
+        margin-top: 3.5vh;
+    }
+
+    .mobile-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:42vw;
+        height: 42vw;
+        background-color: var(--blue);
+        border-radius: 10px;
+    }
+    
+    .mobile-main-image {
+        width: 42vw;
+        height: 35vw;
+        border-radius: 10px 10px 0px 0px;
+        padding: 0vw;
+        object-fit: cover;
+        object-position: 100% 25%;
+    }
+    
+    
+    .mobile-main-laundry-image {
+        width: 42vw;
+        height: 35vw;
+        border-radius: 10px 10px 0px 0px;
+        padding: 0vw;
+        object-fit: cover;
+        object-position: 25% 100%;
+    }
+
+    .mobile-main-link-text {
+        color: white;
+        font-family: var(--body-fonts);
+        font-size: 4vw;
+        font-weight: light;
+        margin: 1vh ;
+        text-decoration: none;
+    }
+
+    .main-link {
+        text-decoration: none;
+    }
+    
+    .main-link:visited {
+        text-decoration: none;
     }
 
     .navigation-mobile {
