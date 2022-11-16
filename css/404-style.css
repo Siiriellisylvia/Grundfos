@@ -233,12 +233,14 @@
     display: flex;
     width: 100vw;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     height: 8vh;
     margin: auto;
     justify-items: center;
+    padding-left: 7.5vw;
+    
     
   }
 
@@ -300,8 +302,8 @@
   font-family: var(--body-fonts);
   font-size: 22px;
   height: 18vw;
-  width: 40vw;
-  padding: 3vw 6vw 3vw 6vw;
+  width: 48vw;
+  padding: 1vw 1vw 1vw 1vw;
   border: none;
   border-radius: 30px;
   text-decoration: none;
