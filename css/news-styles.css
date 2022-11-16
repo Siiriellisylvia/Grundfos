@@ -563,9 +563,9 @@ newsH3 {
     position: fixed;
     background-color: var(--white);
     margin-bottom: 0vh;
-    margin-left: 9vw;
+    margin-left: 6vw;
     z-index: 5;
-    top: 0;
+   top: 0;
   }
 
   .mobile-name {
