@@ -239,7 +239,10 @@
     height: 8vh;
     margin: auto;
     justify-items: center;
-     
+  
+    padding-right: 7.5vw;
+    
+    
   }
 
   /*mobile content*/
