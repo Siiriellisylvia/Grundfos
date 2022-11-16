@@ -33,7 +33,12 @@
 
      <!--dropdown filter for mobile-->
 <div class="dropDown" id="headerBox">
-    <button onclick="newsDrop()" class="dropbtn" id="dropClick">Maintenance</button>
+    <div id="mobileFlexDropFilter">
+    <button onclick="newsDrop()" class="dropbtn" id="dropClick">Maintenance
+        <img src="images/arrow-down.svg" alt="down arrow" id="downArrow">
+    </button>
+    <a href="news.html"><img src="/images/clearfilter_icon.svg" alt="clear filter button" id="mobileClearFilterButton"></a>
+</div>
     <div id="myDropdown" class="dropdown-content">
       <a href="news.html">All categories</a>
       <a href="#">Community</a>
