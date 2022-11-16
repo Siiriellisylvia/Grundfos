@@ -27,6 +27,15 @@ function myPopUp3() {
   myPopUp3.focus();
 }
 
+function myPopUp4() {
+  var myPopUp4 = window.open(
+    "events-popup4.html",
+    "",
+    "width=700,height=400,top=200,left=550"
+  );
+  myPopUp3.focus();
+}
+
 function myCalendarPopUp() {
   var myCalendarPopUp = window.open(
     "events-popupcalendar.html",
