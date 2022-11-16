@@ -250,6 +250,7 @@
     height: 84.9vh;
     width: 100vw;
     position: relative;
+    z-index:2;
     
   }
 
@@ -268,11 +269,14 @@
   border-radius: 5px;
   margin-top: -25.9em;
   margin-left: 10em;
+  z-index:1;
   
 }
 
 .puc-text-box {
   margin-top: 1vh;
+  z-index:1;
+
 }
 
 .puc-text {
@@ -280,6 +284,7 @@
   text-align: center;
   font-size: 24px;
   margin-top: auto;
+  z-index:1;
   
 }
 
@@ -290,10 +295,12 @@
   text-align: center;
   margin-left: 36vw;
   margin-top: 4vh;
+  z-index:1;
 }
 
 .construction-button-mobile-box {
   margin-top: 4.8vh;
+  z-index:1;
 }
 
 .construction-button-mobile {
@@ -307,6 +314,7 @@
   border-radius: 30px;
   text-decoration: none;
   margin-left: 43.4vw;
+  z-index:1;
 }
 
 }
