@@ -276,7 +276,8 @@ a {
 }
 @media screen and (min-height: 700px) {
   .facility-display {
-    margin-top: 6vw;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 

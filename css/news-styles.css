@@ -35,6 +35,11 @@ body {
   margin: 0;
 }
 
+#blockingRectangle {
+  display: none;
+
+}
+
 #newsBurger a {
   text-decoration: none;
 }
@@ -363,6 +368,18 @@ newsH3 {
 /*for small devices*/
 
 @media only screen and (max-width: 599px) {
+  #blockingRectangle {
+    display: block;
+    height: 25vh;
+    width: 100vw;
+    background-color: var(--white);
+    z-index: 0;
+    top: 8vh;
+    position: fixed;
+    top: 0;
+    position: sticky;
+  } 
+ 
   #newsBurger {
     display: none;
     padding-left: 20vw;
@@ -421,6 +438,11 @@ newsH3 {
     display: block;
   }
 
+/* add a similar class here for JS to straighten the bottom corners of the dropdown header*/
+.straighten {
+  border-radius: 15px 15px 0px 0px;
+}
+
   #downArrow {
     width: 6vw;
     position: fixed;
@@ -458,7 +480,6 @@ newsH3 {
   }
 
   #newsArticleContainer {
-    margin-top: 18vh;
     padding-bottom: 10vh;
     row-gap: 2.5vh;
   }
@@ -526,11 +547,7 @@ newsH3 {
     display: none;
   }
 
-  .newsContent {
-    margin-top: 10vh;
-  }
-
-  .newsTop {
+   .newsTop {
     height: 1vh;
     margin-top: 10vh;
     margin-left: 40vw;
@@ -547,6 +564,8 @@ newsH3 {
     background-color: var(--white);
     margin-bottom: 0vh;
     margin-left: 9vw;
+    z-index: 5;
+    top: 0;
   }
 
   .mobile-name {

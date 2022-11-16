@@ -236,16 +236,17 @@ function clearFilterFunction() {
 toggle between hiding and showing the dropdown content */
 function newsDrop() {
   document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("dropClick").style.borderRadius = "15px 15px 0px 0px";
+  /*document.getElementById("dropClick").style.borderRadius = "15px 15px 0px 0px";*/
+  document.getElementById("dropClick").classList.toggle("straighten");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
-    var Close = document.getElementById("dropClick");
+    /*var Close = document.getElementById("dropClick");
     if ((Close.style.borderRadius = "15px 15px 0px 0px")) {
       Close.style.borderRadius = "15px";
-    }
+    }*/
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -254,18 +255,15 @@ window.onclick = function (event) {
         openDropdown.classList.remove("show");
       }
     }
+
+    var straighten = document.getElementById("dropClick");
+    if (straighten.classList.contains("straighten")) {
+      straighten.classList.remove("straighten");
+    }
   }
 };
 
 //Navigation date and time script
-
-// var date = new Date();
-// 	var current_date = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
-// 	document.getElementById("date").innerHTML = current_date;
-
-// var time = new Date();
-//   var current_time = date.getHours()+":"+(date.getMinutes());
-//   document.getElementById("time").innerHTML = current_time;
 
 //Date
 var dateToday = new Date();
@@ -301,3 +299,17 @@ function time() {
 }
 
 setInterval(time, 1000);
+
+// border radius mobile version
+/*function borderRadius() {
+  var dropdownElement = document.getElementById(myDropdown);
+  var headerBoxElement = document.getElementById(dropClick);
+
+  if (dropdownElement.style.display === "none") {
+    headerBoxElement.style.borderRadius = "15px 15px 0px 0px";
+    dropdownElement.style.display = "block";
+  } else {
+    headerBoxElement.style.borderRadius = "15px 15px 15px 15px";
+    dropdownElement.style.display = "none";
+  }
+}*/
