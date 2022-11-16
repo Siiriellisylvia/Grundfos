@@ -129,7 +129,6 @@ body {
 }
 .laundry-search-icon {
   width: 2.8vw;
-  margin-right: 2vw;
 }
 .facility-display {
   margin-top: 2vw;
@@ -220,7 +219,7 @@ body {
 
 #help-icon {
   width: 3.5vw;
-  margin-left: 73vw;
+  margin-left: 75vw;
 }
 a {
   margin: 0;
@@ -276,7 +275,7 @@ a {
 }
 @media screen and (min-height: 700px) {
   .facility-display {
-    margin-top: auto;
+    margin-top: 5vw;
     margin-bottom: auto;
   }
 }
