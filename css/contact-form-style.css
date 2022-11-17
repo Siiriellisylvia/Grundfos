@@ -62,23 +62,42 @@ body {
   text-decoration: none;
 }
 .contact-form-content {
+  /*width: 78vw;
+  background-color: var(--white);
+  margin-left: 20.5vw;*/
+  display: flex;
+  flex-direction: column;
+  margin-left: 20.5vw;
   width: 78vw;
   background-color: var(--white);
-  margin-left: 20.5vw;
 }
 .contact-form-top {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1vw;
 }
 .contact-form-heading {
-  display: block;
+  /*display: block;
   justify-content: center;
   font-family: var(--body-fonts);
   font-size: var(--font-size-heading);
   font-weight: 500;
   letter-spacing: 0.1vw;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 1.5vw;*/
+  display: block;
+  justify-content: center;
+  font-family: var(--body-fonts);
+  font-size: var(--font-size-heading);
+  font-weight: 500;
+  letter-spacing: 0.2vw;
   text-align: center;
   flex: 1;
   margin-bottom: 1.5vw;
@@ -177,7 +196,7 @@ body {
   flex: 1;
   justify-content: center;
   margin-left: 9.5vw;
-  margin-top: 4vh;
+  margin-top: 1.5vh;
 }
 
 .contact-form-text {
@@ -193,7 +212,7 @@ body {
 .profile-icon {
   width: 22vw;
   height: 22vh;
-  margin-top: 6vh;
+  margin-top: 4.5vh;
   display: block;
   justify-content: center;
   margin-left: 25.1vw;
@@ -208,7 +227,7 @@ body {
 
 .log-button {
   margin-left: 30.2vw;
-  margin-top: 11.1vh;
+  margin-top: 7vh;
 }
 
 .log-btn {
@@ -231,12 +250,29 @@ body {
   font-size: 2vw;
   font-family: var(--body-fonts);
   justify-content: center;
-  margin-left: 33.5vw;
-  margin-top: 8vh;
+  margin-left: 31.9vw;
+  margin-top: 5vh;
+}
+
+.scan-text1 {
+  font-family: var(--body-fonts);
+  font-size: 1.8vw;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  border-color: #eba10c;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--body-fonts);
+  display: inline-block;
+  padding: 11px 28px;
+  cursor: pointer;
 }
 
 .arrow {
   margin-left: 33.7vw;
+  margin-top: -0.3em;
 }
 
 .arrow {
@@ -349,6 +385,7 @@ input[type="button"] {
 
 .help-icon1 {
   margin-left: 72.5vw;
+  margin-top: -1em;
 }
 
 .password-container {
