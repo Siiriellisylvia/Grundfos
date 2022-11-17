@@ -231,7 +231,8 @@ body {
 }
 
 .log-btn {
-  border-radius: 20px;
+  border-radius: 50px;
+  padding: 0.5vw 1vw;
   border: 1.5px solid;
   background-color: transparent;
   border-color: #eba10c;
@@ -242,8 +243,14 @@ body {
   display: inline-block;
   padding: 11px 28px;
   font-size: 16px;
-  box-shadow: 0px 4px 5px rgba(140, 144, 144, 0.4);
   cursor: pointer;
+}
+
+.log-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .scan-text {
@@ -251,7 +258,7 @@ body {
   font-family: var(--body-fonts);
   justify-content: center;
   margin-left: 31.9vw;
-  margin-top: 5vh;
+  margin-top: 9vh;
 }
 
 .scan-text1 {
@@ -359,18 +366,18 @@ input[type="button"] {
   text-decoration: none;
   font-family: var(--body-fonts);
   font-size: 16px;
-  box-shadow: 0px 4px 5px rgba(140, 144, 144, 0.4);
 }
 
 .log-btn1 {
   margin-left: 12.9vw;
 }
 
-.log-btn1:hover,
-.log-btn1z:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+/*.log-btn1:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}*/
 
 .help-icon {
   width: 2.8vw;
@@ -542,6 +549,13 @@ body.closed .modal {
   font-size: 16px;
 }
 
+.log-out-btn-tobias:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .contact-form-btn {
   margin-top: 10vh;
   background-color: var(--orange);
@@ -557,6 +571,13 @@ body.closed .modal {
   font-family: var(--body-fonts);
   font-size: 16px;
   margin-left: 4.6vw;
+}
+
+.contact-form-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Actual Contact Form*/
@@ -780,6 +801,13 @@ body.closed .modal {
   font-size: 16px;
 }
 
+.cancel-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .submit-btn {
   margin-top: 10vh;
   background-color: var(--orange);
@@ -796,6 +824,13 @@ body.closed .modal {
   font-family: var(--body-fonts);
   font-size: 16px;
   margin-left: 1.6vw;
+}
+
+.submit-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Congratulations Page*/
@@ -864,6 +899,13 @@ body.closed .modal {
   font-size: 16px;
 }
 
+.send-another-form-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .log-out-btn {
   margin-top: 10vh;
   background-color: var(--orange);
@@ -880,6 +922,14 @@ body.closed .modal {
   font-size: 16px;
   margin-left: 4.6vw;
 }
+
+.log-out-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Log out page*/
 .log-out-icon {
   width: 20.9vw;
@@ -914,6 +964,13 @@ body.closed .modal {
   font-size: 16px;
   margin-left: 18.1vw;
   margin-top: 4vh;
+}
+
+.home-page-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Are you sure? page*/
@@ -957,6 +1014,13 @@ body.closed .modal {
   font-size: 16px;
 }
 
+.no-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .yes-btn {
   margin-top: 10vh;
   background-color: var(--orange);
@@ -973,6 +1037,13 @@ body.closed .modal {
   font-family: var(--body-fonts);
   font-size: 16px;
   margin-left: 8vw;
+}
+
+.yes-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+path:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Navigation*/
