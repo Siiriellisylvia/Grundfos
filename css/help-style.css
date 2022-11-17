@@ -250,8 +250,8 @@ body {
 }
 
 .help-contact-ct-container {
-  margin-left: 13.5vw;
-  margin-top: 5vh;
+  margin-left: 11vw;
+  margin-top: 2vw;
 }
 
 .help-contact-ct-heading {
@@ -261,7 +261,7 @@ body {
 
 .help-contact-ct-content {
   width: 25vw;
-  height: 17vh;
+  height: 10vw;
   background-color: var(--light-grey);
   border-radius: 15px;
   padding-top: 0.5vw;
