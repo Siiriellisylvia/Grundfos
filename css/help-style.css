@@ -120,20 +120,20 @@ body {
 
 .help-main-heading {
   display: block;
-  justify-content: center;
+  margin-left:31vw;
   font-family: var(--body-fonts);
   font-size: var(--font-size-heading);
   font-weight: 500;
   letter-spacing: 0.2vw;
-  text-align: center;
   flex: 1;
   margin-bottom: 1.5vw;
+  margin-top:3vw;
 }
 
 .help-search-button {
   position: fixed;
   margin-left: 95vw;
-  margin-top: 2vw;
+  margin-top: 3vw;
   width: 2.8vw;
   height: auto;
   background-color: white;
@@ -154,8 +154,8 @@ body {
   justify-content: space-between;
   align-content: center;
   background-color: var(--light-grey);
-  border-radius: 50px;
-  margin-top: 2vw;
+  border-radius: 10px;
+  margin-top: 3vw;
   margin-right: 2vw;
   margin-left: 73vw;
   width: 25vw;
@@ -196,7 +196,7 @@ body {
 .help-link-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 11vw;
   margin-top: 4vw;
   row-gap: 1vw;
   flex: 1;
