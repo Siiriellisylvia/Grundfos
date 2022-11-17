@@ -44,8 +44,9 @@ function openDescription(descriptionId, headingId, arrowId) {
     var descriptionElement = document.getElementById(descriptionId);
     var headingElement = document.getElementById(headingId);
     var arrowElement=document.getElementById(arrowId);
+    
 
-    if (descriptionElement.style.display === "none") 
+    if (descriptionElement.style.display != "block") 
         {
             headingElement.style.borderRadius = "10px 10px 0px 0px"
             headingElement.style.backgroundColor = "#10828c";
@@ -53,6 +54,7 @@ function openDescription(descriptionId, headingId, arrowId) {
             arrowElement.style.borderColor = "white";
             descriptionElement.style.display = "block";
         } 
+
         else 
         {
             headingElement.style.borderRadius = "10px 10px 10px 10px"
@@ -70,10 +72,11 @@ function showSearchbar() {
     var SearchIconElement = document.getElementById("help-search-button");
     var SearchBarElement = document.getElementById("search-bar");
     var KeyboardElement=document.getElementById("help-keyboard");
-    var BackgroundContent=document.getElementById("help-content")
+    var BackgroundContent=document.getElementById("help-content");
 
-    if (SearchBarElement.style.visibility == "hidden") 
+    if (SearchBarElement.style.visibility != "visible") 
         {
+            
             KeyboardElement.style.visibility ="visible";
             SearchBarElement.style.visibility="visible";
             BackgroundContent.style.filter= "blur(3px)";

@@ -116,6 +116,7 @@ body {
   z-index: 1;
   filter: blur(none);
   position: relative;
+  visibility: visible;
 }
 
 .help-main-heading {
@@ -139,6 +140,7 @@ body {
   background-color: white;
   border: none;
   z-index: 3;
+  visibility: visible;
 }
 
 .search-content {
@@ -146,6 +148,7 @@ body {
   position: fixed;
   width: 78vw;
   z-index: 1;
+  visibility: hidden;
 }
 
 .search-bar {
@@ -206,6 +209,7 @@ body {
 }
 
 .help-heading {
+  visibility: visible;
   display: flex;
   justify-content: space-between;
   width: 50vw;
@@ -239,7 +243,6 @@ body {
 }
 
 .help-description {
-  display: none;
   width: 46vw;
   background-color: var(--light-grey);
   padding: 1vw 2vw 2vw 2vw;
@@ -247,6 +250,7 @@ body {
   border-radius: 0px 0px 10px 10px;
   font-size: var(--font-size-bodytext);
   font-family: var(--body-fonts);
+  display: none;
 }
 
 .help-contact-ct-container {
