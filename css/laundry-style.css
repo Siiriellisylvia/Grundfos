@@ -287,8 +287,9 @@ a {
   text-align: center;
   width: 22vw;
   padding: 10px 12px;
+  margin-top: 2vw;
   border-radius: 15px;
-  background-color: var(--light-grey);
+  background-color: var(--light-blue);
   font-family: var(--body-fonts);
   font-size: var(--font-size-bodytext);
 }
