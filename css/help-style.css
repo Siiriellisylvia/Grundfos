@@ -200,7 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 11vw;
-  margin-top: 6vw;
+  margin-top: 5vw;
   row-gap: 1vw;
   flex: 1;
   z-index: 1;
@@ -259,7 +259,7 @@ body {
 }
 
 .help-contact-ct-heading {
-  font-size: var(--font-size-subheading);
+  font-size: 1.5vw;
   font-family: var(--body-fonts);
 }
 
@@ -269,24 +269,25 @@ body {
   background-color: var(--light-grey);
   border-radius: 15px;
   padding-top: 0.5vw;
-  padding-left: 1vw;
 }
 
 .help-contact-subheading {
-  font-size: var(--font-size-bodytext);
   font-family: var(--body-fonts);
   text-align: center;
+  font-weight: 500;
+  font-size: 1.5vw;
+
 }
 
 .help-contact-text {
   font-size: var(--font-size-bodytext);
   font-family: var(--body-fonts);
-  padding-left: 4.5vw;
+  padding-left: 5vw;
 }
 
 .help-help-icon {
   width: 3.4vw;
   position: fixed;
-  margin-top: 45vw;
+  margin-top: 44vw;
   margin-left: 73vw;
 }
