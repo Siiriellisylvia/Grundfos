@@ -366,6 +366,10 @@
         display:none;
       }
 
+      .help-search-button {
+      display:none;
+      }
+
     .main-help-icon {
         display:none;
     }
