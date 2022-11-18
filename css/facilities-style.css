@@ -130,6 +130,7 @@ body {
 }
 .laundry-search-icon {
   width: 2.8vw;
+  margin-right: 1vw;
 }
 .facility-display {
   margin-top: 2vw;
@@ -215,12 +216,13 @@ body {
 
 .bottom-page {
   display: flex;
+  justify-content: end;
   height: 5vw;
 }
 
 #help-icon {
   width: 3.5vw;
-  margin-left: 75vw;
+  /*margin-left: 75vw;*/
 }
 a {
   margin: 0;
