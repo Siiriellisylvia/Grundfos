@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="Description"
-      content="Facilities in Grundfos Kollegiet"
-    />
+    <meta name="Description" content="Facilities in Grundfos Kollegiet" />
     <meta
       name="KeyWords"
       content="student, dormitory, info screen, residents"
@@ -16,218 +13,274 @@
     <link rel="stylesheet" href="css/facilities-style.css" />
   </head>
   <body>
-
     <div class="laundry-page">
       <a href="index.html" id="link-main-page">
-        <div class="mobile-logo"> 
-        <div class="mobile-name"> <h1 class="main-heading-grundfos">GRUNDFOS  </h1> <h1 class="main-heading-text">KOLLEGIET</h1> </div>
-        <div class="horizontal-line"></div></div></a>
+        <div class="mobile-logo">
+          <div class="mobile-name">
+            <h1 class="main-heading-grundfos">GRUNDFOS</h1>
+            <h1 class="main-heading-text">KOLLEGIET</h1>
+          </div>
+          <div class="horizontal-line"></div></div
+      ></a>
       <!-- navigation section-->
 
       <nav class="main-navigation">
         <section class="navigation-dateandtime">
-        <p id="date"></p>
-        <p id="time"></p>
+          <p id="date"></p>
+          <p id="time"></p>
         </section>
-    
+
         <div class="main-logo">
-          <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png" alt="Grundfos Kollegiet Logo"></a>
+          <a class="logo-grundfos-link" href="index.html"
+            ><img
+              class="logo-grundfos"
+              src="images/Logo.png"
+              alt="Grundfos Kollegiet Logo"
+          /></a>
         </div>
         <div class="navigation-links">
           <a href="news.html" class="nav-link">NEWS</a>
           <a href="events.html" class="nav-link">EVENTS</a>
           <a href="laundry.html" class="nav-link">LAUNDRY</a>
           <a href="contact-form.html" class="nav-link">CONTACT FORM</a>
-          <a href="facilities.html" class="nav-link" style="font-weight:bold; font-size: 1.7vw;">FACILITIES</a>
+          <a
+            href="facilities.html"
+            class="nav-link"
+            style="font-weight: bold; font-size: 1.7vw"
+            >FACILITIES</a
+          >
           <a href="poll.html" class="nav-link">POLL OF THE WEEK</a>
         </div>
-    
+
         <div class="navigation-qr">
           <p class="navigation-qr-code-description">MOBILE VERSION</p>
           <img
-            src="images/QR code.png"
+            src="images/QRcode.png"
             class="navigation-qr-code-image"
             alt="NavigationQRcode"
           />
         </div>
       </nav>
 
- 
-    <!--content section-->
-    <div class="laundry-content">
-      <!-- heading and search option -->
-      <div class="laundry-top">
-        <h1 class="laundry-heading">FACILITIES</h1>
-        <a href="404.html">
-          <img
-            src="images/search.svg"
-            alt="Search icon"
-            class="laundry-search-icon"
-        /></a>
-      </div>
-
-      <div class="facility-display">
-        <!--facility list with buttons-->
-        <div class="facility-list">
-          <div
-            class="facility-element" id="facility_1"
-            onclick="changeImage(this, 'images/rooftop.jpg')" alt="Highlighted rooftop facility"
-          >
-            <div class="svg-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 82.417 60.917"
-              >
-                <path
-                  id="IMAGE_ICON"
-                  data-name="IMAGE ICON"
-                  d="M76.25,67.917H8.167A7.167,7.167,0,0,1,1,60.75V14.167A7.167,7.167,0,0,1,8.167,7H76.25a7.167,7.167,0,0,1,7.167,7.167V60.75A7.167,7.167,0,0,1,76.25,67.917Zm3.583-53.75a3.585,3.585,0,0,0-3.583-3.583H8.167a3.585,3.585,0,0,0-3.583,3.583V60.75a3.585,3.585,0,0,0,3.583,3.583H76.25a3.585,3.585,0,0,0,3.583-3.583ZM73.265,56.656,61.917,45.308l-6.484,6.484,5.973,5.973a1.75,1.75,0,0,1-2.474,2.474L33.25,34.558l-22.1,22.1a1.75,1.75,0,0,1-2.474-2.474L31.8,31.06a1.605,1.605,0,0,1,.17-.258,1.644,1.644,0,0,1,2.732.258L52.958,49.317l7.507-7.507a1.832,1.832,0,0,1,.17-.258,1.882,1.882,0,0,1,2.562,0,1.833,1.833,0,0,1,.17.258L75.739,54.182a1.75,1.75,0,1,1-2.474,2.474ZM51.167,28.5a7.167,7.167,0,1,1,7.167-7.167A7.167,7.167,0,0,1,51.167,28.5Zm0-10.75a3.583,3.583,0,1,0,3.583,3.583A3.585,3.585,0,0,0,51.167,17.75Z"
-                  transform="translate(-1 -7)"
-                  fill-rule="evenodd"
-                  stroke="black"
-                  stroke-width="2.4"
-                />
-              </svg>
-            </div>
-            <div class="align-facility">ROOFTOP TERRACE</div>
-            <button class="room-button">12.01</button>
-          </div>
-
-          <div
-            class="facility-element" id="facility_2"
-            onclick="changeImage(this,'images/common-bbq.jpg')"
-          >
+      <!--content section-->
+      <div class="laundry-content">
+        <!-- heading and search option -->
+        <div class="laundry-top">
+          <h1 class="laundry-heading">FACILITIES</h1>
+          <a href="404.html">
             <img
-              src="images/bbq.svg"
-              alt="Barbecue Icon"
-              class="facility-icon"
-              alt="Barbecue Icon"
-            />
-            BARBECUE AREA <button class="room-button">11.10</button>
-          </div>
+              src="images/search.svg"
+              alt="Search icon"
+              class="laundry-search-icon"
+          /></a>
+        </div>
 
-          <div
-            class="facility-element" id="facility_3"
-            onclick="changeImage(this, 'images/common-bbq.jpg')"
-          >
-            <img
-              src="images/kitchen.svg"
-              alt="Common Room Icon"
-              class="facility-icon"
-            />
-            <div class="align-facility-img">COMMON ROOM </div><button class="room-button">11.03</button>
-          </div>
-
-          <div
-            class="facility-element" id="facility_4"
-            onclick="changeImage(this, 'images/printers.jpg')"
-          >
-            <div class="svg-container">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101">
-                <g
-                  id="PRINTER_ICON"
-                  data-name="PRINTER ICON"
-                  transform="translate(0 0.328)"
+        <div class="facility-display">
+          <!--facility list with buttons-->
+          <div class="facility-list">
+            <div
+              class="facility-element"
+              id="facility_1"
+              onclick="changeImage(this, 'images/rooftop.jpg')"
+            >
+              <div class="svg-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 82.417 60.917"
                 >
-                  <rect
-                    id="Rectangle_148"
-                    data-name="Rectangle 148"
-                    width="101"
-                    height="101"
-                    transform="translate(0 -0.328)"
-                    fill="none"
-                  />
                   <path
-                    id="Path_50"
-                    data-name="Path 50"
-                    d="M109.8,54.247a3.221,3.221,0,0,1-3.221-3.221V38.442H62.442V51.026a3.221,3.221,0,0,1-6.442,0v-15.8A3.221,3.221,0,0,1,59.221,32H109.8a3.221,3.221,0,0,1,3.221,3.221v15.8A3.221,3.221,0,0,1,109.8,54.247Z"
-                    transform="translate(-34.006 -19.281)"
+                    id="IMAGE_ICON"
+                    data-name="IMAGE ICON"
+                    d="M76.25,67.917H8.167A7.167,7.167,0,0,1,1,60.75V14.167A7.167,7.167,0,0,1,8.167,7H76.25a7.167,7.167,0,0,1,7.167,7.167V60.75A7.167,7.167,0,0,1,76.25,67.917Zm3.583-53.75a3.585,3.585,0,0,0-3.583-3.583H8.167a3.585,3.585,0,0,0-3.583,3.583V60.75a3.585,3.585,0,0,0,3.583,3.583H76.25a3.585,3.585,0,0,0,3.583-3.583ZM73.265,56.656,61.917,45.308l-6.484,6.484,5.973,5.973a1.75,1.75,0,0,1-2.474,2.474L33.25,34.558l-22.1,22.1a1.75,1.75,0,0,1-2.474-2.474L31.8,31.06a1.605,1.605,0,0,1,.17-.258,1.644,1.644,0,0,1,2.732.258L52.958,49.317l7.507-7.507a1.832,1.832,0,0,1,.17-.258,1.882,1.882,0,0,1,2.562,0,1.833,1.833,0,0,1,.17.258L75.739,54.182a1.75,1.75,0,1,1-2.474,2.474ZM51.167,28.5a7.167,7.167,0,1,1,7.167-7.167A7.167,7.167,0,0,1,51.167,28.5Zm0-10.75a3.583,3.583,0,1,0,3.583,3.583A3.585,3.585,0,0,0,51.167,17.75Z"
+                    transform="translate(-1 -7)"
+                    fill-rule="evenodd"
+                    stroke="black"
+                    stroke-width="2.4"
                   />
-                  <path
-                    id="Rectangle_149"
-                    data-name="Rectangle 149"
-                    d="M-4.779-8H45.545a3.221,3.221,0,0,1,3.221,3.221V22.195a3.221,3.221,0,0,1-3.221,3.221H-4.779A3.221,3.221,0,0,1-8,22.195V-4.779A3.221,3.221,0,0,1-4.779-8Zm47.1,6.442H-1.558V18.974H42.325Z"
-                    transform="translate(30.169 64.901)"
-                  />
-                  <path
-                    id="Path_51"
-                    data-name="Path 51"
-                    d="M102.246,116.373H88.021a3.221,3.221,0,1,1,0-6.442h11V81.543a3.434,3.434,0,0,0-3.615-3.1H30.056a3.434,3.434,0,0,0-3.615,3.1v28.389h11a3.221,3.221,0,1,1,0,6.442H23.221A3.221,3.221,0,0,1,20,113.153V81.543A9.821,9.821,0,0,1,30.056,72H95.41a9.821,9.821,0,0,1,10.056,9.543v31.61A3.221,3.221,0,0,1,102.246,116.373Z"
-                    transform="translate(-12.231 -43.476)"
-                  />
-                  <circle
-                    id="Ellipse_18"
-                    data-name="Ellipse 18"
-                    cx="5"
-                    cy="5"
-                    r="5"
-                    transform="translate(69 40.672)"
-                  />
-                </g>
-              </svg>
+                </svg>
+              </div>
+              <div class="align-facility">ROOFTOP TERRACE</div>
+              <button class="room-button">12.01</button>
             </div>
-            <div class="align-facility-img">PRINTING ROOM </div> <button class="room-button">2.12</button>
-          </div>
 
-          <div
-            class="facility-element" id="facility_5"
-            onclick="changeImage(this, 'images/laundry-bike.jpg')"
-          >
-            <img
-              src="images/laundry.svg"
-              alt="Laundry Icon"
-              class="facility-icon"
-            />
-            LAUNDRY ROOM <button class="room-button">-1.05</button>
-          </div>
+            <div
+              class="facility-element"
+              id="facility_2"
+              onclick="changeImage(this,'images/common-bbq.jpg')"
+            >
+              <img
+                src="images/bbq.svg"
+                alt="Barbecue Icon"
+                class="facility-icon"
+              />
+              BARBECUE AREA <button class="room-button">11.10</button>
+            </div>
 
-          <div
-            class="facility-element" id="facility_6"
-            onclick="changeImage(this,'images/laundry-bike.jpg')"
-            onclick="changeStyle()"
-          >
-            <img
-              src="images/bicycle.svg"
-              alt="Bicycle Icon"
-              class="facility-icon"
-            />
-            <div class="align-facility">BICYCLE STORAGE</div>
-            <button class="room-button">-1.03</button>
+            <div
+              class="facility-element"
+              id="facility_3"
+              onclick="changeImage(this, 'images/common-bbq.jpg')"
+            >
+              <img
+                src="images/kitchen.svg"
+                alt="Common Room Icon"
+                class="facility-icon"
+              />
+              <div class="align-facility-img">COMMON ROOM</div>
+              <button class="room-button">11.03</button>
+            </div>
+
+            <div
+              class="facility-element"
+              id="facility_4"
+              onclick="changeImage(this, 'images/printers.jpg')"
+            >
+              <div class="svg-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101">
+                  <g
+                    id="PRINTER_ICON"
+                    data-name="PRINTER ICON"
+                    transform="translate(0 0.328)"
+                  >
+                    <rect
+                      id="Rectangle_148"
+                      data-name="Rectangle 148"
+                      width="101"
+                      height="101"
+                      transform="translate(0 -0.328)"
+                      fill="none"
+                    />
+                    <path
+                      id="Path_50"
+                      data-name="Path 50"
+                      d="M109.8,54.247a3.221,3.221,0,0,1-3.221-3.221V38.442H62.442V51.026a3.221,3.221,0,0,1-6.442,0v-15.8A3.221,3.221,0,0,1,59.221,32H109.8a3.221,3.221,0,0,1,3.221,3.221v15.8A3.221,3.221,0,0,1,109.8,54.247Z"
+                      transform="translate(-34.006 -19.281)"
+                    />
+                    <path
+                      id="Rectangle_149"
+                      data-name="Rectangle 149"
+                      d="M-4.779-8H45.545a3.221,3.221,0,0,1,3.221,3.221V22.195a3.221,3.221,0,0,1-3.221,3.221H-4.779A3.221,3.221,0,0,1-8,22.195V-4.779A3.221,3.221,0,0,1-4.779-8Zm47.1,6.442H-1.558V18.974H42.325Z"
+                      transform="translate(30.169 64.901)"
+                    />
+                    <path
+                      id="Path_51"
+                      data-name="Path 51"
+                      d="M102.246,116.373H88.021a3.221,3.221,0,1,1,0-6.442h11V81.543a3.434,3.434,0,0,0-3.615-3.1H30.056a3.434,3.434,0,0,0-3.615,3.1v28.389h11a3.221,3.221,0,1,1,0,6.442H23.221A3.221,3.221,0,0,1,20,113.153V81.543A9.821,9.821,0,0,1,30.056,72H95.41a9.821,9.821,0,0,1,10.056,9.543v31.61A3.221,3.221,0,0,1,102.246,116.373Z"
+                      transform="translate(-12.231 -43.476)"
+                    />
+                    <circle
+                      id="Ellipse_18"
+                      data-name="Ellipse 18"
+                      cx="5"
+                      cy="5"
+                      r="5"
+                      transform="translate(69 40.672)"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="align-facility-img">PRINTING ROOM</div>
+              <button class="room-button">2.12</button>
+            </div>
+
+            <div
+              class="facility-element"
+              id="facility_5"
+              onclick="changeImage(this, 'images/laundry-bike.jpg')"
+            >
+              <img
+                src="images/laundry.svg"
+                alt="Laundry Icon"
+                class="facility-icon"
+              />
+              LAUNDRY ROOM <button class="room-button">-1.05</button>
+            </div>
+
+            <div
+              class="facility-element"
+              id="facility_6"
+              onclick="changeImage(this,'images/laundry-bike.jpg')"
+            >
+              <img
+                src="images/bicycle.svg"
+                alt="Bicycle Icon"
+                class="facility-icon"
+              />
+              <div class="align-facility">BICYCLE STORAGE</div>
+              <button class="room-button">-1.03</button>
+            </div>
+          </div>
+          <!--building layout-->
+          <div class="facility-layout">
+            <div>
+              <img
+                src="images/none.JPG"
+                alt="building Layout"
+                class="building-layout"
+                id="original-layout"
+              />
+            </div>
           </div>
         </div>
-        <!--building layout-->
-        <div class="facility-layout">
-          <div>
-            <img
-              src="images/none.JPG"
-              alt="building Layout"
-              class="building-layout"
-              id="original-layout"
-            />
-          </div>
+        <div class="bottom-page">
+          <a href="help.html" id="link-help">
+            <img src="images/help-icon.png" alt="Help Icon" id="help-icon"
+          /></a>
         </div>
-      </div>
-      <div class="bottom-page">
-        <a href="help.html" id="link-help">
-          <img src="images/help-icon.png" alt="Help Icon" id="help-icon"
-        /></a>
-      </div>
-<!-- mobile navigation-->
-          <div class="navigation-mobile">
-           <a href="404.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32.81" height="32.111" viewBox="0 0 32.81 32.111" class="mobile-nav-icon">
-            <path id="Help_icon" data-name="Help icon" d="M19.4,3A16.25,16.25,0,0,0,3,19.055,16.25,16.25,0,0,0,19.4,35.111a16.584,16.584,0,0,0,11.82-4.933A15.771,15.771,0,0,0,35.81,19.055,16.25,16.25,0,0,0,19.4,3Zm0,2.676A13.507,13.507,0,0,1,33.075,19.055,13.507,13.507,0,0,1,19.4,32.435a13.8,13.8,0,0,1-9.673-3.912,13.215,13.215,0,0,1-4-9.467A13.507,13.507,0,0,1,19.4,5.676Zm0,5.352a5.427,5.427,0,0,0-5.468,5.352h2.734a2.735,2.735,0,0,1,5.468,0,2.392,2.392,0,0,1-1.666,2.258l-.556.166a2.71,2.71,0,0,0-1.879,2.551v1.714h2.734V21.357l.556-.169a5.1,5.1,0,0,0,3.545-4.808A5.427,5.427,0,0,0,19.4,11.028ZM18.038,24.407v2.676h2.734V24.407Z" transform="translate(-3 -3)" fill="#fff"/>
-          </svg>
-           </a>
-           <a href="burger.html"> <svg xmlns="http://www.w3.org/2000/svg" width="38.421" height="23.644" viewBox="0 0 38.421 23.644" class="mobile-nav-icon">
-            <path id="icons8-menu" d="M3.478,7a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Z" transform="translate(-2 -7)" fill="#fff"/>
-          </svg>
-          
+        <!-- mobile navigation-->
+        <div class="navigation-mobile">
+          <a href="404.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32.81"
+              height="32.111"
+              viewBox="0 0 32.81 32.111"
+              class="mobile-nav-icon"
+            >
+              <path
+                id="Help_icon"
+                data-name="Help icon"
+                d="M19.4,3A16.25,16.25,0,0,0,3,19.055,16.25,16.25,0,0,0,19.4,35.111a16.584,16.584,0,0,0,11.82-4.933A15.771,15.771,0,0,0,35.81,19.055,16.25,16.25,0,0,0,19.4,3Zm0,2.676A13.507,13.507,0,0,1,33.075,19.055,13.507,13.507,0,0,1,19.4,32.435a13.8,13.8,0,0,1-9.673-3.912,13.215,13.215,0,0,1-4-9.467A13.507,13.507,0,0,1,19.4,5.676Zm0,5.352a5.427,5.427,0,0,0-5.468,5.352h2.734a2.735,2.735,0,0,1,5.468,0,2.392,2.392,0,0,1-1.666,2.258l-.556.166a2.71,2.71,0,0,0-1.879,2.551v1.714h2.734V21.357l.556-.169a5.1,5.1,0,0,0,3.545-4.808A5.427,5.427,0,0,0,19.4,11.028ZM18.038,24.407v2.676h2.734V24.407Z"
+                transform="translate(-3 -3)"
+                fill="#fff"
+              />
+            </svg>
           </a>
-           <a href="404.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31.939" viewBox="0 0 32 31.939" class="mobile-nav-icon">
-            <path id="Search_icon" data-name="Search icon" d="M14.9,2.25A12.448,12.448,0,0,1,27.343,14.669a12.3,12.3,0,0,1-2.8,7.839l9.917,9.9-1.788,1.785-9.916-9.9A12.426,12.426,0,1,1,14.9,2.25Zm0,2.484a9.935,9.935,0,1,0,9.954,9.935A9.927,9.927,0,0,0,14.9,4.734Z" transform="translate(-2.46 -2.25)" fill="#fff"/>
-          </svg>
-           </a>
-       </div>
+          <a href="burger.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38.421"
+              height="23.644"
+              viewBox="0 0 38.421 23.644"
+              class="mobile-nav-icon"
+            >
+              <path
+                id="icons8-menu"
+                d="M3.478,7a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Zm0,10.344a1.478,1.478,0,1,0,0,2.956H38.943a1.478,1.478,0,1,0,0-2.956Z"
+                transform="translate(-2 -7)"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+          <a href="404.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="31.939"
+              viewBox="0 0 32 31.939"
+              class="mobile-nav-icon"
+            >
+              <path
+                id="Search_icon"
+                data-name="Search icon"
+                d="M14.9,2.25A12.448,12.448,0,0,1,27.343,14.669a12.3,12.3,0,0,1-2.8,7.839l9.917,9.9-1.788,1.785-9.916-9.9A12.426,12.426,0,1,1,14.9,2.25Zm0,2.484a9.935,9.935,0,1,0,9.954,9.935A9.927,9.927,0,0,0,14.9,4.734Z"
+                transform="translate(-2.46 -2.25)"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <script src="js/script-facilities.js"></script>
