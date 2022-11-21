@@ -35,7 +35,6 @@ a {
   height: 100vh;
   background-color: var(--blue);
   margin-top: 0vw;
-  padding-top: 0.5vw 1vw 0vw 0vw;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -283,7 +282,7 @@ a {
   margin-top: 0.4vw;
 }
 
-#rules-description {
+.rules-description {
   text-align: center;
   width: 22vw;
   padding: 10px 12px;
@@ -447,7 +446,7 @@ a {
   .laundry-rules-mobile {
     display: block;
   }
-  #rules-description {
+  .rules-description {
     width: 80vw;
     padding: 10px 12px;
     border-radius: 15px;

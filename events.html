@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Events page for Grundfos Kollegiet">
+    <meta name="keywords" content="Student, dormitory, events, residents">
     <title>Events</title>
     <link rel="stylesheet" href="css/events-style.css">
 </head>
@@ -20,7 +22,7 @@
       </section>
   
       <div class="main-logo">
-        <a class="logo-grundfos-link" href ="index.html"><img class="logo-grundfos" src="images/Logo.png"></a>
+        <a class="logo-grundfos-link" href ="index.html" aria-label="Logo link"><img class="logo-grundfos" src="images/Logo.png" alt="Grundfos Kollegiet Logo"></a>
       </div>
       <div class="navigation-links">
         <a href="news.html" class="nav-link">NEWS</a>
@@ -34,10 +36,9 @@
       <div class="navigation-qr">
         <p class="navigation-qr-code-description">MOBILE VERSION</p>
         <img
-          src="images/QR code.png"
+          src="images/QRcode.png"
           class="navigation-qr-code-image"
-          alt="NavigationQRcode"
-        />
+          alt="NavigationQRcode">
       </div>
     </nav>
 
@@ -57,39 +58,39 @@
 
                <section class="eventListings">
 
-                 <article class="eventListing" id="eventListing1"/*onclick="myPopUp1()"*/>
-                    <img class="eventListingImage" src="/images/Confetti image.svg" alt="Confetti falling on party">
+                 <article class="eventListing" id="eventListing1">
+                    <img class="eventListingImage" src="/images/ConfettiImage.svg" alt="Confetti falling on party">
                     <div class="eventDetails">
                         <p class="eventDate">28.10.2022</p>
                         <h3 class="eventH3">CONFETTI RAIN</h3>
-                        <button class="eventsReadMore" /*onclick="myPopUp1()*/">
+                        <button class="eventsReadMore">
                         Read more
                         </button>
                     </div>
                  </article>
 
-                <article class="eventListing" id="eventListing2"/*onclick="myPopUp2()"*/>
-                  <img class="eventListingImage" src="/images/Ninja Image.svg" alt="Group of people in black clothing wearing ninja masks">
+                <article class="eventListing" id="eventListing2">
+                  <img class="eventListingImage" src="/images/NinjaImage.svg" alt="Group of people in black clothing with ninga masks">
                   <div class="eventDetails">
                       <p class="eventDate">02.12.2022</p>
                       <h3 class="eventH3">NINJA NIGHT</h3>
-                      <button class="eventsReadMore" /*onclick="myPopUp2()"*/>
+                      <button class="eventsReadMore">
                       Read more
                       </button>
                   </div>
                 </article>
 
-                <article class="eventListing" id="eventListing3"/*onclick="myPopUp3()"*/>
-                 <img class="eventListingImage" src="/images/Balloon Image.svg" alt="3 balloons">
+                <article class="eventListing" id="eventListing3">
+                 <img class="eventListingImage" src="/images/BalloonImage.svg" alt="3 balloons">
                  <div class="eventDetails">
                       <p class="eventDate">02.12.2022</p>
                       <h3 class="eventH3">BALLOON POPPING</h3>
-                      <button class="eventsReadMore" /*onclick="myPopUp3()"*/>
+                      <button class="eventsReadMore">
                       Read more
                       </button>
                  </div>
                 </article>
- 
+               </section>
           </div> <!--end of upcoming events-->
 
           
@@ -101,9 +102,9 @@
               <thead>
                 <tr class="eventCalendarHeader">
                  <th class="tg-tvsr" colspan="7" id="calendarHeaderFlex">
-                  <span> <img src="images/left_arrow_real.svg" class="eventsSmallCalendarArrow" id="eventsArrowLeft"></span>
+                  <span> <img src="images/left_arrow_real.svg" class="eventsSmallCalendarArrow" id="eventsArrowLeft" alt="Left arrow for calendar"></span>
                   <span style="color:#000">October 2022</span>
-                  <span> <img src="images/right_arrow.svg" class="eventsSmallCalendarArrow" id="eventsArrowRight"></span>
+                  <span> <img src="images/right_arrow.svg" class="eventsSmallCalendarArrow" id="eventsArrowRight" alt="Right arrow for calendar"></span>
                 </th>
                </tr>
              </thead>
@@ -185,10 +186,10 @@
     
               <section class="eventIdea">
                  <p class="eventP"> EVENT IDEA?</p>
-                 <a href="contact-form.html">
-                    <button id="eventIdeaButton">
+                 <a href="contact-form.html" id="contactLink">
+                    <div id="eventIdeaButton">
                      Contact the Residents' Council
-                     </button>
+                    </div>
                 </a>
 
                 </section> 
@@ -204,7 +205,7 @@
       </section> <!--end of events content section-->
       
    
-
+  </div>
 
 
 <!--modal1-->
@@ -212,7 +213,7 @@
 <div id="myModal" class="modal">
   <div class="modal-content">
     <section class="eventPopUpTop">
-      <img src="/images/Confetti image popup.svg" alt="Confetti falling on a party" class="eventPopUpImage">
+      <img src="/images/ConfettiImagePopup.svg" alt="Confetti falling on a party" class="eventPopUpImage">
 
       <div class="eventPopUpHeader">
         <span class="close">&times;</span>
@@ -238,7 +239,7 @@
   <div id="myModal2" class="modal">
   <div class="modal-content">
     <section class="eventPopUpTop">
-      <img src="/images/Ninja Image Popup.svg" alt="Group of people in black clothing with ninga masks" class="eventPopUpImage">
+      <img src="/images/NinjaImagePopup.svg" alt="Group of people in black clothing with ninga masks" class="eventPopUpImage">
 
       <div class="eventPopUpHeader">
         <span class="close">&times;</span>
@@ -265,7 +266,7 @@
 <div id="myModal3" class="modal">
   <div class="modal-content">
     <section class="eventPopUpTop">
-      <img src="/images/balloon image.jpg" alt="Three balloons" class="eventPopUpImage">
+      <img src="/images/balloonImage.jpg" alt="Three balloons" class="eventPopUpImage">
       
       <div class="eventPopUpHeader">
         <span class="close">&times;</span>
