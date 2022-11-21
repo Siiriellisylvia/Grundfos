@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help</title>
-    <link rel="stylesheet" href="/css/help-style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Info screen for Grundfos Kollegiet dormitory, 
+    where you can find information about events, laundry availability, facilities and read the latest news. 
+    Residents of the dormitory can also contact their caretaker and resident council and participate 
+    in the poll of the week.">
+    <meta name="keywords" content="Student, Info screen, Dormitory, Resident">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundfos Kollegiet - Help</title>
+    <link rel="stylesheet" href="/css/help-style.css">
   </head>
 
   <body>
@@ -19,8 +24,7 @@
 
         <div class="main-logo">
           <a class="logo-grundfos-link" href="index.html"
-            ><img class="logo-grundfos" src="images/Logo.png"
-          /></a>
+            ><img class="logo-grundfos" alt="Grundfos Logo" src="images/Logo.png"></a>
         </div>
         <div class="navigation-links">
           <a href="news.html" class="nav-link">NEWS</a>
@@ -34,10 +38,9 @@
         <div class="navigation-qr">
           <p class="navigation-qr-code-description">MOBILE VERSION</p>
           <img
-            src="images/QR code.png"
+            src="images/QRcode.png"
             class="navigation-qr-code-image"
-            alt="NavigationQRcode"
-          />
+            alt="Navigation QRcode">
         </div>
       </nav>
 
@@ -45,16 +48,17 @@
       <a href="#"><img
         class="help-search-button"
         id="help-search-button"
+        alt="Search Button"
         src="images/search.svg"
         onclick="showSearchbar()"
       /></a>
       <button class="search-bar" id="search-bar" onclick="showSearchbar()">
         <p class="search-bar-text">What are you looking for?</p>
-        <img src="images/search.svg" class="search-bar-icon" />
+        <img src="images/search.svg" class="search-bar-icon" alt="Search icon">
       </button>
 
       <!-- Keyboard -->
-      <img class="help-keyboard" id="help-keyboard" src="images/keyboard.png" />
+      <img class="help-keyboard" id="help-keyboard" alt="Keyboard" src="images/keyboard.png">
 
       <!--content-->
       <div class="help-content" id="help-content">
@@ -64,7 +68,7 @@
         <a href="help.html">
           <img
             src="images/help-icon.png"
-            alt="help-help-icon"
+            alt="Help icon"
             class="help-help-icon"
           />
         </a>
@@ -89,7 +93,7 @@
           </div>
 
           <div class="help-events-content">
-            <div id="help-heading-with-arrow">
+            <div class="help-heading-with-arrow">
               <button
                 onclick="openDescription(descriptionId = 'help-events-description', headingId='help-events-heading', arrowId='events-arrow-down')"
                 class="help-heading"
@@ -115,7 +119,7 @@
           </div>
 
           <div class="help-laundry-content">
-            <div id="help-heading-with-arrow">
+            <div class="help-heading-with-arrow">
               <button
                 onclick="openDescription(descriptionId ='help-laundry-description', headingId='help-laundry-heading', arrowId='laundry-arrow-down')"
                 class="help-heading"
@@ -140,7 +144,7 @@
           </div>
 
           <div class="help-contactform-content">
-            <div id="help-heading-with-arrow">
+            <div class="help-heading-with-arrow">
               <button
                 onclick="openDescription('help-contact-description', 'help-contact-heading', 'contact-arrow-down')"
                 class="help-heading"
@@ -165,7 +169,7 @@
           </div>
 
           <div class="help-facilities-content">
-            <div id="help-heading-with-arrow">
+            <div class="help-heading-with-arrow">
               <button
                 onclick="openDescription('help-facilities-description', 'help-facilities-heading', 'facilities-arrow-down')"
                 class="help-heading"
@@ -188,7 +192,7 @@
           </div>
 
           <div class="help-poll-content">
-            <div id="help-heading-with-arrow">
+            <div class="help-heading-with-arrow">
               <button
                 onclick="openDescription('help-poll-description', 'help-poll-heading', 'poll-arrow-down')"
                 class="help-heading"

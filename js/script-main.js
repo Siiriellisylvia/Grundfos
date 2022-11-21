@@ -1,7 +1,7 @@
 //Show/Hide search bar
 
 function showSearchbar() {
-    var SearchIconElement = document.getElementById("help-search-button");
+    var SearchIconElement = document.getElementById("search-button");
     var SearchBarElement = document.getElementById("search-bar");
     var KeyboardElement=document.getElementById("keyboard");
     var BackgroundContent=document.getElementById("main-all-content")
