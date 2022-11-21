@@ -252,7 +252,13 @@ height: 80%;
   font-size: var(--font-size-bodytext);
   justify-content: center;
   margin-left: 0.8vw;
+  margin-right: 0.8vw;
   cursor: pointer;
+  width: 16.5vw;
+}
+
+#contactLink{
+  text-decoration: none;
 }
 
 /*calendar*/
