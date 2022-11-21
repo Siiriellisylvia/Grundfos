@@ -291,7 +291,7 @@ line-height: 0vw;
 
 .construction-button-mobile-box {
   margin-top: 4.8vh;
-  z-index:1;
+  z-index: 2;
 }
 
 .construction-button-mobile {
@@ -305,8 +305,11 @@ line-height: 0vw;
   border-radius: 30px;
   text-decoration: none;
   margin-left: 43.4vw;
-  z-index:1;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
 }
+
 
 }
 /*for larger devices*/
