@@ -31,7 +31,7 @@ body {
 
 #eventsWrapper {
   display: flex;
-  direction: row;
+  flex-direction: row;
 }
 
 /*navigation styles*/
@@ -269,7 +269,7 @@ height: 80%;
 }
 
 .eventCalendarHeading {
-  border-radius: 15px, 15px, 0px, 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .eventsSmallCalendarArrow {
