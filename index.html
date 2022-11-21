@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your title</title>
-    <link rel="stylesheet" href="css/main-style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Info screen for Grundfos Kollegiet dormitory, 
+    where you can find information about events, laundry availability, facilities and read the latest news. 
+    Residents of the dormitory can also contact their caretaker and resident council and participate 
+    in the poll of the week.">
+    <meta name="keywords" content="Student, Info screen, Dormitory, Resident">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Screen for Grundfos Kollegiet</title>
+    <link rel="stylesheet" href="css/index-style.css">
   </head>
 
   
@@ -13,19 +18,20 @@
 
 <!-- search -->
       <a href="#"><img
-        class="help-search-button"
-        id="help-search-button"
+        class="search-button"
+        id="search-button" 
+        alt="Search button"
         src="images/search.svg"
         onclick="showSearchbar()"></a>
       <button class="search-bar" id="search-bar" onclick="showSearchbar()">
         <p class="search-bar-text">What are you looking for?</p>
-        <img src="images/search.svg" class="search-bar-icon" />
+        <img src="images/search.svg" class="search-bar-icon" alt="Search bar icon">
       </button>
 
 <!-- Keyboard -->
-      <img class="keyboard" id="keyboard" src="images/keyboard.png" />
+      <img class="keyboard" id="keyboard" src="images/keyboard.png" alt="Keyboard pop-up">
 
-<section class="main-all-content" id="main-all-content">
+<div class="main-all-content" id="main-all-content">
 
     <section class="mobile-main-heading">
         <h1 class="mobile-main-heading-welcome">WELCOME TO</h1>
@@ -35,7 +41,7 @@
         </div>
     </section>
 
-<section class="main-heading-and-content">
+<div class="main-heading-and-content">
     
 <section class="main-heading">
     <h1 class="main-heading-text">WELCOME TO</h1>
@@ -45,7 +51,7 @@
 
       <div class="horizontal-line"></div>
 
-<section class="main-content-cards">
+<div class="main-content-cards">
 
     <a href="news.html" class="main-link">
         <div class="main-container">
@@ -87,18 +93,17 @@
             <img src="images/poll.png" alt="main-poll-image" class="main-image">
             <p class="main-link-text">POLL OF THE WEEK</p>
         </div></a>
-</section>
-</section>
+</div>
+</div>
 
-<section class="main-icons-bottom">
-    <img src="images/QR code.png" alt="main-qrcode" class="main-qrcode">
+<div class="main-icons-bottom">
+    <img src="images/QRcode.png" alt="main-qrcode" class="main-qrcode">
     <a href="help.html" class="main-help-link">
     <img src="images/help-icon.png" alt="main-help-icon" class="main-help-icon"></a>
-</section>
-
+</div>
 
 <!-- mobile content cards -->
-<section class="mobile-main-content-cards">
+<div class="mobile-main-content-cards">
 
     <a href="news.html" class="main-link">
         <div class="mobile-main-container">
@@ -140,8 +145,7 @@
             <img src="images/poll.png" alt="main-poll-image" class="mobile-main-image">
             <p class="mobile-main-link-text">POLL OF THE WEEK</p>
         </div></a>
-</section>
-</section>
+    </div>
 
 <!-- mobile navigation-->
 <div class="navigation-mobile">
@@ -159,8 +163,8 @@
    </svg>
     </a>
 </div>
+</div>
 
-</section>
 <script src="js/script-main.js"></script>
   </body>
 </html>
