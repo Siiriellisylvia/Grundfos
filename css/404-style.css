@@ -185,6 +185,7 @@ line-height: 0vw;
     position: fixed;
     background-color: var(--white);
     margin-bottom: 0vh;
+    text-decoration: none;
   }
 
   .mobile-name {
@@ -193,6 +194,7 @@ line-height: 0vw;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
   }
   .main-heading-grundfos {
     font-family: var(--logo-fonts);
@@ -202,6 +204,7 @@ line-height: 0vw;
     padding: 0vw 2vw 0vw 0.5vw;
     margin-bottom: 0vw;
     margin-top: 0vw;
+    text-decoration: none;
   }
 
   .main-heading-text {
@@ -211,6 +214,7 @@ line-height: 0vw;
     font-size: 1.8rem;
     margin-bottom: 0vw;
     margin-top: 0vw;
+    text-decoration: none;
   }
   .horizontal-line {
     border-bottom: 0.05vw solid var(--light-grey);
@@ -231,6 +235,7 @@ line-height: 0vw;
     margin: auto;
     justify-items: center;
     padding-right: 7.5vw;
+    z-index: 2;
     
     
   }
@@ -241,7 +246,7 @@ line-height: 0vw;
     height: 84.9vh;
     width: 100vw;
     position: relative;
-    z-index:2;
+    z-index: 2;
     
   }
 
