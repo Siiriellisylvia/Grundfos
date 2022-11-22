@@ -333,7 +333,7 @@ a {
   }
   .laundry-heading {
     font-size: 7vw;
-    margin-top: 34vw;
+    margin-top: 25vw;
     margin-bottom: 5vw;
     margin-left: auto;
     margin-right: auto;
@@ -367,5 +367,8 @@ a {
   }
   .laundry-page {
     flex-direction: column;
+  }
+  #facility_6 {
+    margin-bottom: 10rem;
   }
 }

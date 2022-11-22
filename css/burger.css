@@ -38,7 +38,12 @@ a {
   position: fixed;
   background-color: var(--white);
 }
-
+.mobile-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+  z-index: 2;
+}
 .mobile-name {
   display: flex;
   flex-direction: row;
@@ -82,7 +87,9 @@ a {
 
 #burger-container-white {
   background-color: white;
-  border-radius: 0px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 #search-container {
   background-color: #10828c;
@@ -101,6 +108,7 @@ a {
 
 .menu-seaweed-container {
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   margin-top: 15vw;
@@ -110,6 +118,7 @@ a {
 
 .menu-white-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -140,9 +149,9 @@ a {
   font-weight: bolder;
 }
 #first-link {
-  margin-top: 12vh;
+  margin-top: 7rem;
 }
 
 #last-link {
-  margin-bottom: 14.07vh;
+  margin-bottom: 9rem;
 }
